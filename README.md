@@ -19,9 +19,10 @@ Den är utformad för att visa olika användbara egenskaper hos modeller baserad
     * Klicka på gröna knappen "+ New repository"
     * Välj: Repository type = Local Folder
     * Hitta på valftitt namn och fyll i under "Repository name"
-1. Ladda ner exempelfilerna för kursen genom att på den här GitHub-sidan genom att klicka på https://github.com/modellbibliotek/kurs-openEHR-jan-2021/archive/main.zip
+1. Ladda ner exempelfilerna för kursen från det här GitHub-projektet genom att klicka på https://github.com/modellbibliotek/kurs-openEHR-jan-2021/archive/main.zip
 1. Packa (i valfritt bibliotek på in dator) upp zip-filen 
-1. Klicka på "Import" längst upp i archetype designer. Då visas en dialog som har bl.a. har en ruta med texten "Drop here"; dra dit och släpp av filerna du packade upp i förra steget. klicka sedan en gröna knappen "Upload all" och när allt sedan laddats upp, klicka då close.
+1. Klicka på "Import" längst upp i archetype designer. Då visas en dialog som har bl.a. har en ruta med texten "Drop here"; dra dit och släpp av filerna du packade upp i förra steget. Klicka sedan en gröna knappen "Upload all" och när allt sedan laddats upp, klicka då close.
+1. Nu kan du öppna akutmall_undervisningsexempel_2a eller de ingående arketyperna
 
 ## Valfria extrasteg senare:
 1. Följ den fjärde lathunden `Koppla Archetype Designer till arbetsytan på GitHub` 
