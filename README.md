@@ -22,4 +22,4 @@ Den är utformad för att visa olika användbara egenskaper hos modeller baserad
   * Branch: master
 3. Du kan nu öppna kurs-exemplet och ingående arketyper, men antagligen inte spara i det gemensamma biblioteket.
 4. Skicka ett mail till asa.skagerhult@regionostergotland.se och erik.sundvall@regionostergotland.se där du berättar ditt GitHub-användarnamn (men _inte_ ditt lösenord) så att de kan tillåta dig att spara (inte bara läsa) i kursens repository/bibliotek. Vill du spara något lokalt på din dator innan dess så kan du välja "exportera" från .
-5. Om du vill koppla in fler repositories upprepa lathund 4 med olika innehåll i "Repository" CKM-mirror kan vara kul att utforska men tar en del tid att ladda in.
+5. Om du vill koppla in fler repositories upprepa lathund 4 med olika innehåll i "Repository". CKM-mirror kan vara kul att koppla in och utforska men tar en del tid att ladda in med sina över 500 arketyper.
