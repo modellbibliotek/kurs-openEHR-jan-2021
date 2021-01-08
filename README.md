@@ -8,10 +8,6 @@ Vi rekommenderar att du använder Google Chrome för Archetype Editor, men vissa
 
 Kom ihåg att du kan spana in, översätta och ladda ner arketyper även via https://ckm.openehr.org/ckm/
 
-## akutmall_undervisningsexempel_2a
-Template/mallen akutmall_undervisningsexempel_2a är en förenklad (inte helt realtistisk) delmängd av saker som kan vara inressanta vid akut omhändertagande av vissa skador. 
-Den är utformad för att visa olika användbara egenskaper hos modeller baserade på en kombination av openEHR och Snomed CT.
-
 ## Förberedelser
 1. Skapa användare på Github och i Archetype Designer enligt instruktioner i de två första lathundarna på https://openehr.atlassian.net/wiki/spaces/healthmod/pages/966295553/Snabbstartsguide+f+r+modelleringsverktyg
 1. Om du inte redan är inloggad i Archetype Designer följ tredje lathunden (om inloggning)
@@ -23,6 +19,10 @@ Den är utformad för att visa olika användbara egenskaper hos modeller baserad
 1. Packa (i valfritt bibliotek på in dator) upp zip-filen 
 1. Klicka på "Import" längst upp i archetype designer. Då visas en dialog som har bl.a. har en ruta med texten "Drop here"; dra dit och släpp av filerna du packade upp i förra steget. Klicka sedan en gröna knappen "Upload all" och när allt sedan laddats upp, klicka då close.
 1. Nu kan du öppna akutmall_undervisningsexempel_2a eller de ingående arketyperna
+
+## akutmall_undervisningsexempel_2a
+Template/mallen akutmall_undervisningsexempel_2a är en förenklad (inte helt realtistisk) delmängd av saker som kan vara inressanta vid akut omhändertagande av vissa skador. 
+Den är utformad för att visa olika användbara egenskaper hos modeller baserade på en kombination av openEHR och Snomed CT.
 
 ## Valfria extrasteg senare:
 1. Följ den fjärde lathunden `Koppla Archetype Designer till arbetsytan på GitHub` 
