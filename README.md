@@ -4,7 +4,7 @@ Se https://discourse.openehr.org/t/digital-utbildningsserie-om-openehr-nov-2020-
 
 Spana gärna in https://discourse.openehr.org/t/openehr-se-borja-lasa-har/391 för mer info om svenskt arketyparbete.
 
-Vi rekommenderar att du använder Google Chrome för Archetype Editor, men vissa andra moderna webbläsare kan också funka. Var beredd på att det tar tid (uppåt en halvminut) att öppna ett repository och flera sekunder att sedan öppna elelr spara en enskild arketyp i verktyget.
+Vi rekommenderar att du använder Google Chrome för Archetype Editor, men vissa andra moderna webbläsare kan också funka. Var beredd på att det tar tid (uppåt en halvminut) att öppna ett repository och flera sekunder att sedan öppna eller spara en enskild arketyp i verktyget.
 
 Kom ihåg att du kan spana in, översätta och ladda ner arketyper även via https://ckm.openehr.org/ckm/
 
