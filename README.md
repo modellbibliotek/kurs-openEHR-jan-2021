@@ -14,13 +14,17 @@ Den är utformad för att visa olika användbara egenskaper hos modeller baserad
 
 ## Förberedelser
 1. Skapa användare på Github och i Archetype Designer enligt instruktioner i de två första lathundarna på https://openehr.atlassian.net/wiki/spaces/healthmod/pages/966295553/Snabbstartsguide+f+r+modelleringsverktyg
-3. Om du inte redan är inloggad i Archetype Designer följ tredje lathunden (om inloggning)
-2. I den fjärde lathunden `Koppla Archetype Designer till arbetsytan på GitHub` Skriv istället följande:
-  * Repository type: GitHub
-  * Repository name: **kurs-openEHR-jan-2021**
-  * Owner: modellbibliotek
-  * Repository: **kurs-openEHR-jan-2021**
-  * Branch: master
-3. Du kan nu öppna kurs-exemplet och ingående arketyper, men antagligen inte spara i det gemensamma biblioteket.
-4. Skicka ett mail till asa.skagerhult@regionostergotland.se och erik.sundvall@regionostergotland.se där du berättar ditt GitHub-användarnamn (men _inte_ ditt lösenord) så att de kan tillåta dig att spara (inte bara läsa) i kursens repository/bibliotek. Vill du spara något lokalt på din dator innan dess så kan du välja "exportera" från .
-5. Om du vill koppla in fler repositories upprepa lathund 4 med olika innehåll i "Repository". CKM-mirror kan vara kul att koppla in och utforska men tar en del tid att ladda in med sina över 500 arketyper.
+1. Om du inte redan är inloggad i Archetype Designer följ tredje lathunden (om inloggning)
+1. För att riskfritt kunna experimentera och spara, skapa ett eget repository lokalt på servern genom att:
+    * Klicka på gröna knappen "+ New repository"
+    * Välj: Repository type = Local Folder
+    * Hitta på valftitt namn och fyll i under "Repository name"
+1. Ladda ner exempelfilerna för kursen genom att på den här GitHub-sidan klicka på den gröna knappen "Code" och i pratbubblen som dyker upp välja "Download zip"
+1. Packa i (valfritt bibliotek på in dator) upp zip-filen 
+1. Klicka på "Import" längst upp i archetype designer. Då visas en dialog som har bl.a. har en ruta med texten "Drop here"; dra dit och släpp av filerna du packade upp i förra steget. klicka sedan en gröna knappen "Upload all" och när allt sedan laddats upp, klicka då close.
+
+## Valfria extrasteg senare:
+1. Följ den fjärde lathunden `Koppla Archetype Designer till arbetsytan på GitHub`
+1. Du kan nu öppna en variant av kurs-exemplet och ingående arketyper, men antagligen inte spara i det gemensamma biblioteket.
+1. Om du vill koppla in fler repositories upprepa lathund 4 med olika innehåll i "Repository". CKM-mirror kan vara kul att koppla in och utforska, men tar en del tid att ladda in med sina över 500 arketyper.
+1. Skicka ett mail till asa.skagerhult@regionostergotland.se och erik.sundvall@regionostergotland.se där du berättar ditt GitHub-användarnamn (men _inte_ ditt lösenord) om du vill kunna spara (inte bara läsa) i repository/arbetsytor som använs i nationellt samarbete.
