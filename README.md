@@ -24,7 +24,6 @@ Den är utformad för att visa olika användbara egenskaper hos modeller baserad
 1. Klicka på "Import" längst upp i archetype designer. Då visas en dialog som har bl.a. har en ruta med texten "Drop here"; dra dit och släpp av filerna du packade upp i förra steget. klicka sedan en gröna knappen "Upload all" och när allt sedan laddats upp, klicka då close.
 
 ## Valfria extrasteg senare:
-1. Följ den fjärde lathunden `Koppla Archetype Designer till arbetsytan på GitHub`
-1. Du kan nu öppna en variant av kurs-exemplet och ingående arketyper, men antagligen inte spara i det gemensamma biblioteket.
-1. Om du vill koppla in fler repositories upprepa lathund 4 med olika innehåll i "Repository". CKM-mirror kan vara kul att koppla in och utforska, men tar en del tid att ladda in med sina över 500 arketyper.
+1. Följ den fjärde lathunden `Koppla Archetype Designer till arbetsytan på GitHub` 
+1. Om du vill koppla in fler repositories upprepa lathund 4 med olika innehåll i "Repository". CKM-mirror kan t.ex. vara kul att koppla in och utforska, men tar en del tid att ladda in med sina över 500 arketyper.
 1. Skicka ett mail till asa.skagerhult@regionostergotland.se och erik.sundvall@regionostergotland.se där du berättar ditt GitHub-användarnamn (men _inte_ ditt lösenord) om du vill kunna spara (inte bara läsa) i repository/arbetsytor som använs i nationellt samarbete.
