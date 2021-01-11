@@ -28,3 +28,13 @@ Den är utformad för att visa olika användbara egenskaper hos modeller baserad
 1. Följ den fjärde lathunden `Koppla Archetype Designer till arbetsytan på GitHub` 
 1. Om du vill koppla in fler repositories upprepa lathund 4 med olika innehåll i "Repository". CKM-mirror kan t.ex. vara kul att koppla in och utforska, men tar en del tid att ladda in med sina över 500 arketyper.
 1. Skicka ett mail till asa.skagerhult@regionostergotland.se och erik.sundvall@regionostergotland.se där du berättar ditt GitHub-användarnamn (men _inte_ ditt lösenord) om du vill kunna spara (inte bara läsa) i repository/arbetsytor som använs i nationellt samarbete.
+
+## Exempelpatienter (till övningar m.m.)
+|Field|Patient One|Patient Two|Patient Three|Patient Four|
+|---|---|---|---|---|
+|Skada|127347009|44801007|443786003|242004002|
+|Klinisk beskrivning|The patient held his hand in a door opening at work when a collegue accidentely slammed it.|The patient fell down the stairs at home  and landed on his right hip.|The patient wrenched her knee while playing badminton.|The patient was experimenting with a friend when things went out of control and there was an explosion.|
+|Anatomisk plats|80768000|62175007|32153003|6921000|
+|Datum och tid för skada|2020/01/23 11:34|2020/01/23 12:34|2020/01/23 13:34|2020/01/23 14:34|
+|SpO₂|98%|96%||97%|
+|Syrgasflöde||||5 l/min|
