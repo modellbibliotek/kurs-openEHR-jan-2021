@@ -32,9 +32,23 @@ Den är utformad för att visa olika användbara egenskaper hos modeller baserad
 ## Exempelpatienter (till övningar m.m.)
 |Field|Patient One|Patient Two|Patient Three|Patient Four|
 |---|---|---|---|---|
+|**Problem/Diagnos**|||||
 |Skada|127347009|44801007|443786003|242004002|
 |Klinisk beskrivning|The patient held his hand in a door opening at work when a collegue accidentely slammed it.|The patient fell down the stairs at home  and landed on his right hip.|The patient wrenched her knee while playing badminton.|The patient was experimenting with a friend when things went out of control and there was an explosion.|
 |Anatomisk plats|80768000|62175007|32153003|6921000|
-|Datum och tid för skada|2020/01/23 11:34|2020/01/23 12:34|2020/01/23 13:34|2020/01/23 14:34|
+|Datum och tid för skada|2020-01-23 11:34|2020-01-23 12:34|2020-01-23 13:34|2020-01-23 14:34|
+|**Pulsoximetri**|||||
 |SpO₂|98%|96%||97%|
 |Syrgasflöde||||5 l/min|
+|På luft|True|True||False|
+|**Andning**|||||
+|Frekvens|19|21|14|18|
+|Syrgasflöde||||5 l/min|
+|På luft|True|True||False|
+|**Puls/Hjärtfrekvens**|||||
+|Frekvens|72|92|50|112|
+|Regelbunden|Regular|Regular|Regular|Irregular|
+|Oregelbunden typ||||Regularly Irregular|
+|Kropsställning|Reclining|Lying|Reclining|Lying|
+|Metod|Automatic, non-invasive|Automatic, non-invasive|Palpation|Automatic, non-invasive|
+|Lokalisation|Finger|Finger|Radial Artery - Left|Toe|
