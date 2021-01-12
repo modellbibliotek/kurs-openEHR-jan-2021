@@ -17,9 +17,9 @@ language
 		["sv"] = <
 			language = <[ISO_639-1::sv]>
 			author = <
-				["name"] = <"Åsa Skagerhult, Lisa Axelsson">
+				["name"] = <"Åsa Skagerhult">
 				["organisation"] = <"Region Östergötland">
-				["email"] = <"asa.skagerhult@regionostergotland.se, lisa.axelsson@regionostergotland.se">
+				["email"] = <"asa.skagerhult@regionostergotland.se">
 			>
 		>
 		["nb"] = <
@@ -63,13 +63,13 @@ Nicht zur Dokumentation während der Schwangerschaft und der postpartalen Phase 
 		>
 		["sv"] = <
 			language = <[ISO_639-1::sv]>
-			purpose = <"*Att ge en objektiv indikation om försämring av patientens kliniska status.">
-			use = <"Att bedöma och registrera en poängsumma som är baserad på kategorisering av 6 fysiologiska mätvärden,... :
-- 
-- försämring av den kliniska statusen
-- 
-">
-			keywords = <"*warning(en)", "*triage(en)", "*NEWS(en)", "*Sats(en)", "*EWS(en)", "*deterioration(en)", "varning", "triage", "försämring", "syremättnad">
+			purpose = <"Att registrera en poäng för varje del i NEWS2-skalan och den sammanlagda summan.">
+			use = <"Används för att registrera poäng för varje del i NEWS2-skalan och den sammanlagda poängsumman.
+
+I klinisk praktik används NEWS2 för att bedöma och registrera försämring av den kliniska statusen hos en riskpatient, eller för att bedöma försämringsgraden för en akut sjuk patient.
+
+Om patienten har...">
+			keywords = <"*warning(en)", "*triage(en)", "*NEWS(en)", "*Sats(en)", "*EWS(en)", "*deterioration(en)">
 			misuse = <"*Not to be used to record actual measurements for each parameter. Use specific OBSERVATION archetypes for this purpose:
 - OBSERVATION.blood_pressure;
 - OBSERVATION.pulse;
@@ -141,8 +141,8 @@ Tidlig oppdagelse av forverret tilstand. Pasientsikkerhetsprogrammet [cited 2019
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"E0A418D9A3AE09E79B33EB0CFD482D53">
-		["build_uid"] = <"5d068cdf-e844-4651-a83d-d29e0ebb8857">
+		["MD5-CAM-1.0.1"] = <"E0494E96EA302F7F5EFC4AE45149824F">
+		["build_uid"] = <"85fcc6a1-f58a-4d03-a90a-936cc6480a56">
 		["revision"] = <"1.0.2-alpha">
 	>
 
@@ -735,19 +735,17 @@ ontology
 		["sv"] = <
 			items = <
 				["at0000"] = <
-					text = <"NEWS2-bedömning">
-					description = <"*A simple assessment score used to identify clinical deterioration in a patient. (en)
-ett hjälpmedel för att bedöma patientens vitala funktioner
-">
-					comment = <"*This is the second version of the National Early Warning Score (NEWS), issued by the UK Royal College of Physicians in 2017. (en)">
+					text = <"NEWS2">
+					description = <"En förenklad metod för att registrera försämring av den kliniska statusen hos en patient.">
+					comment = <"Det är den andra versionen av National Early Warning Score (NEWS), utfärdad 2017 av UK Royal College of Physicians.">
 				>
 				["at0001"] = <
 					text = <"Event Series">
 					description = <"@ internal @">
 				>
 				["at0002"] = <
-					text = <"*Any point in time event (en)">
-					description = <"*Default, unspecified point in time event which may be explicitly defined in a template or at run-time. (en)">
+					text = <"Ospecificerad händelse">
+					description = <"Ospecificerad standardhändelse vid en tidpunkt eller inom ett tidsintervall som explicit kan definieras i en mall eller genereras automatiskt av vissa IT-system.">
 				>
 				["at0003"] = <
 					text = <"Tree">
@@ -759,11 +757,11 @@ ett hjälpmedel för att bedöma patientens vitala funktioner
 				>
 				["at0005"] = <
 					text = <"Hjärtfrekvens">
-					description = <"Kategori för uppmätt puls.">
+					description = <"Kategori för uppmätt hjärtfrekvens.">
 				>
 				["at0006"] = <
 					text = <"Andningsfrekvens">
-					description = <"Kategori för uppmätt andningsfrekvens.">
+					description = <"Intervall för uppmätt andningsfrekvens (AF).">
 				>
 				["at0007"] = <
 					text = <"Temperatur">
@@ -771,23 +769,24 @@ ett hjälpmedel för att bedöma patientens vitala funktioner
 				>
 				["at0008"] = <
 					text = <"Medvetandegrad">
-					description = <"Kategori för medvetandegrad, bedöms med ACVPU-skalan.">
+					description = <"Kategori för medvetandegrad. Bedöms enligt ACVPU-skalan.">
 				>
 				["at0010"] = <
 					text = <"<=40">
-					description = <"Pulsen är mindre än eller lika med 40 slag i per minut.">
+					description = <"Hjärtfrekvensen är lägre än eller lika med 40 slag per minut. 
+">
 				>
 				["at0011"] = <
 					text = <"111-130">
-					description = <"Pulsen är mellan 111 och 130 slag per minut.">
+					description = <"Hjärtfrekvensen är mellan 111 och 130 slag per minut.">
 				>
 				["at0012"] = <
 					text = <"41-50">
-					description = <"Pulsen är mellan 41 och 50 slag per minut.">
+					description = <"Hjärtfrekvensen är mellan 40 och 50 slag per minut.">
 				>
 				["at0013"] = <
 					text = <"51-90">
-					description = <"Pulsen är mellan 51 och 90 slag per minut.">
+					description = <"Hjärtfrekvensen är mellan 51 och 90 slag per minut.">
 				>
 				["at0014"] = <
 					text = <"111-219">
@@ -803,55 +802,53 @@ ett hjälpmedel för att bedöma patientens vitala funktioner
 				>
 				["at0017"] = <
 					text = <"<=90">
-					description = <"Det systoliska blodtrycket är mindre än eller lika med 90 mmHg.">
+					description = <"Det systoliska blodtrycket är lägre än eller lika med 90 mmHg.">
 				>
 				["at0018"] = <
 					text = <"12-20">
-					description = <"Andningsfrekvensen är mellan 12 till 20 andetag per minut.">
+					description = <"Andningsfrekvens mellan 12 och 20 andetag per minut. Sätts till 0 poäng.">
 				>
 				["at0019"] = <
 					text = <"9-11">
-					description = <"*Är \"fr.om. och t.o.m\" bättre än \"mellan?
-Andningsfrekvensen är mellan 9 till 11 andetag per minut.">
+					description = <"Andningsfrekvens mellan 9 och 11 andetag per minut. Sätts till 1 poäng.">
 				>
 				["at0020"] = <
 					text = <"21-24">
-					description = <"Andningsfrekvensen är mellan 21 till 24 andetag per minut.">
+					description = <"Andningsfrekvens mellan 21 och 24 andetag per minut. Sätts till 2 poäng.">
 				>
 				["at0021"] = <
 					text = <"<=8">
-					description = <"*Borde det stå \"den uppmätta andningsfrekvensen\"?
-Andningsfrekvensen är mindre än eller lika med 8 andetag per minut.">
+					description = <"Andningsfrekvens lägre än eller lika med 8 andetag per minut. Sätts till 3 poäng.">
 				>
 				["at0022"] = <
-					text = <"36.1-38.0">
-					description = <"Kroppstemperaturen är mellan 36.1 och 38.0 grader Celsius.">
+					text = <"36,1-38,0">
+					description = <"Kroppstemperaturen är mellan 36,1 och 38,0 grader Celsius.">
 				>
 				["at0023"] = <
-					text = <"35.1-36.0">
-					description = <"Kroppstemperaturen är mellan 35.1 och 36.0 grader Celsius.">
+					text = <"35,1-36,0">
+					description = <"Kroppstemperaturen är mellan 35,1 och 36,0 grader Celsius.">
 				>
 				["at0024"] = <
-					text = <"Alert">
+					text = <"Alert och vaken">
 					description = <"Patienten är helt vaken och alert.">
 				>
 				["at0025"] = <
-					text = <"Confusion, V, P eller U">
-					description = <"Patienten har nytillkommen eller förvärrad förvirring, reagerar enbart på röst eller smärta, eller är medvetandesänkt och reagerar inte på röst eller smärta.">
+					text = <"C, V, P eller U">
+					description = <"Patienten har nytillkommen förvirring, reagerar enbart på tilltal eller smärta, eller är medvetandesänkt och reagerar inte på tilltal eller smärta.">
 				>
 				["at0028"] = <
-					text = <"*Total score (en)">
-					description = <"*The total sum of ordinal values associated with six relevant NEWS2 physiological parameters, plus the supplemental oxygen weighting score.(en)">
-					comment = <"*The total score may be generated at run-time. (en)">
+					text = <"Totalpoäng (NEWS2)">
+					description = <"Summan av alla NEWS2-poäng.">
+					comment = <"Vissa IT-system kan automatiskt räkna ut totalpoängen. Detta kan variera mellan olika IT-system.">
 				>
 				["at0029"] = <
 					text = <"Syremättnad skala 1">
 					description = <"Kategori för uppmätt syremättnad.">
-					comment = <"Syremättnad skala 1 och syremättnad skala 2 bedömer samma fysiologiska variabel men ska användas i olika kliniska scenarier. Skala 1 används för de flesta patienter, med undantag för patienter som optimalt ska ha en syremättnad på 88-92%, till exempel patienter med hyperkapnisk andningssvikt.">
+					comment = <"yremättnad skala 1 och syremättnad skala 2 bedömer samma fysiologiska variabel men ska användas i olika kliniska scenarier. Skala 1 används för de flesta patienter, med undantag för patienter som optimalt ska ha en syremättnad på 88-92%, till exempel patienter med hyperkapnisk andningssvikt.">
 				>
 				["at0030"] = <
 					text = <">= 96">
-					description = <"Syremättnaden är lika med, eller högre än 96%.">
+					description = <"Syremättnaden är högre än eller lika med 96%.">
 				>
 				["at0031"] = <
 					text = <"94-95">
@@ -859,31 +856,31 @@ Andningsfrekvensen är mindre än eller lika med 8 andetag per minut.">
 				>
 				["at0032"] = <
 					text = <"92-93">
-					description = <"Syremättnaden är mellan 92% och 95%.">
+					description = <"Syremättnaden är mellan 92% och 93%.">
 				>
 				["at0033"] = <
 					text = <"<=91">
-					description = <"Syremättnaden är mindre än eller lika med 91%.">
+					description = <"Syremättnaden är lägre än eller lika med 91%.">
 				>
 				["at0034"] = <
 					text = <"Luft eller syrgas?">
-					description = <"Får patienten syrgasbehandling?">
+					description = <"Om patienten andas rumsluft eller får syrgastillförsel.">
 				>
 				["at0036"] = <
 					text = <"Luft">
-					description = <"Patienten andas rumsluft, får inte syrgasbehandling.">
+					description = <"Patienten får inte syrgastillförsel.">
 				>
 				["at0037"] = <
 					text = <"Syrgas">
-					description = <"Patienten får syrgasbehandling.">
+					description = <"Patienten får syrgastillförsel.">
 				>
 				["at0038"] = <
-					text = <">=39.1">
-					description = <"Kroppstemperaturen är större än eller lika med 39.1 grader Celcius.">
+					text = <">=39,1">
+					description = <"Kroppstemperaturen är högre än eller lika med 39,1 grader Celsius.">
 				>
 				["at0039"] = <
-					text = <"<=35.0">
-					description = <"Kroppstemperaturen är mindre än eller lika med 35 grade Celsius.">
+					text = <"<=35,0">
+					description = <"Kroppstemperaturen är lägre än eller lika med 35 grader Celsius.">
 				>
 				["at0045"] = <
 					text = <"Tree">
@@ -891,82 +888,81 @@ Andningsfrekvensen är mindre än eller lika med 8 andetag per minut.">
 				>
 				["at0046"] = <
 					text = <"Tilläggsinformation">
-					description = <"*Additional information required to extend the model with local content or to align with other reference models/formalisms. (en)">
-					comment = <"*For example: local information requirements; or additional metadata to align with FHIR. (en)">
+					description = <"Plats för att infoga tilläggsinformation som krävs för lokala anpassningar eller anpassning till andra referensmodeller eller formella krav.">
+					comment = <"Exempelvis lokala informationskrav eller metadata för anpassning till FHIR.">
 				>
 				["at0047"] = <
 					text = <"Syremättnad skala 2">
-					description = <"Kategori för uppmätt syremättnad, används bara för patienter som optimalt ska ha en syremättnad på 88-92%, till exempel patienter med hyperkapnisk andningssvikt">
-					comment = <"Syremättnad skala 1 och syremättnad skala 2 bedömer samma fysiologiska variabel men ska användas i olika kliniska scenarier. Skala 2 används bara för patienter som optimalt ska ha en syremättnad på 88-92%, till exempel patienter med hyperkapnisk andningssvikt. För alla andra patienter används skala 1.
-">
+					description = <"Kategori för uppmätt syremättnad. Används bara för patienter som optimalt ska ha en syremättnad på 88-92%, exempelvis patienter med hyperkapnisk andningssvikt.">
+					comment = <"Syremättnad skala 1 och Syremättnad skala 2 bedömer samma fysiologiska variabel men ska användas i olika kliniska scenarier. Skala 2 används för patienter med hyperkapnisk andningssvikt som fastställts antingen vid en tidigare sjukhusvistelse eller under nuvarande. För alla andra patienter används skala 1.">
 				>
 				["at0048"] = <
-					text = <"88-92 eller ≥93">
+					text = <"88-92 or >=93 på luft">
 					description = <"Syremättnaden är mellan 88% och 92% eller lika med eller större än 93% på luft.">
 				>
 				["at0049"] = <
 					text = <"86-87">
-					description = <"Syremättnaden är mellan 86% och 87%.">
+					description = <"Syremättnaden är mellan 86 % och 87%.">
 				>
 				["at0050"] = <
 					text = <"84-85">
 					description = <"Syremättnaden är mellan 84 % och 85%.">
 				>
 				["at0051"] = <
-					text = <"≥97 on O₂">
-					description = <"Syremättnaden är lika med, eller större än 97%, med syrgas.">
+					text = <">=97 med syrgas">
+					description = <"Syremättnaden är lika med, eller större än 97%, med syrgastillförsel. Sätts till 3 poäng.">
 				>
 				["at0056"] = <
 					text = <"Klinisk riskkategori">
-					description = <"*Overall category representing the urgency and scale of the clinical response required in response to the physiological parameters.(en)">
+					description = <"Riskkategorisering baserad på de fysiologiska parametrarna samt beskrivning av lämplig responsnivå.">
 				>
 				["at0057"] = <
-					text = <"*Low(en)">
-					description = <"*Ward-based response.(en)">
+					text = <"Låg">
+					description = <"Avdelningsbaserade åtgärder.">
 				>
 				["at0058"] = <
-					text = <"*Low-medium(en)">
-					description = <"*Urgent ward-based response.(en)">
+					text = <"Låg-mellan">
+					description = <"Brådskande avdelningsbaserade åtgärder.">
 				>
 				["at0059"] = <
-					text = <"*Medium(en)">
-					description = <"*Key threshold for urgent response.(en)">
+					text = <"Mellan">
+					description = <"Brådskande åtgärder.">
 				>
 				["at0060"] = <
-					text = <"*High(en)">
-					description = <"*Urgent or emergency response.(en)">
+					text = <"Hög">
+					description = <"Akuta åtgärder.">
 				>
 				["at0061"] = <
-					text = <"≤83">
-					description = <"Syremättnaden är mindre än eller lika med 83%.">
+					text = <"<=83">
+					description = <"Syremättnaden är lägre än eller lika med 83%.">
 				>
 				["at0062"] = <
-					text = <"93-94 on O₂">
-					description = <"Syremättnaden är mellan 93% och 94% med syrgas.">
+					text = <"93-94 med syrgas">
+					description = <"Syremättnaden är mellan 93% och 94% med syrgastillförsel. Sätts till 1 poäng.">
 				>
 				["at0063"] = <
-					text = <"95-96 on O₂">
-					description = <"Syremättnaden är mellan 95% och 96% med syrgas.">
+					text = <"95-96 med syrgas">
+					description = <"Syremättnaden är mellan 95% och 96% med syrgastillförsel.">
 				>
 				["at0064"] = <
 					text = <">=25">
-					description = <"Andningsfrekvensen är lika med eller högre än 25 andetag per minut">
+					description = <"Andningsfrekvens högre än eller lika med 25 andetag per minut. Sätts till 3 poäng.">
 				>
 				["at0065"] = <
 					text = <">=131">
-					description = <"Pulsen är lika med eller större än 131 slag per minut.">
+					description = <"Hjärtfrekvensen är högre än eller lika med 131 slag per minut.">
 				>
 				["at0066"] = <
-					text = <"38.1-39.0">
-					description = <"Kroppstemperaturen är mellan 38.1 och 39.0 grader Celsius.">
+					text = <"38,1-39,0">
+					description = <"Kroppstemperaturen är mellan 38,1 och 39,0 grader Celsius.">
 				>
 				["at0067"] = <
 					text = <"≥220">
-					description = <"Det systoliska blodtrycket är lika med eller större än 220 mmHg.">
+					description = <"Det systoliska blodtrycket är lika med eller högre än 220 mmHg.">
 				>
 				["at0068"] = <
 					text = <"91-110">
-					description = <"Pulsen är mellan 91 och 110 slag per minut.">
+					description = <"Hjärtfrekvensen är mellan 91 och 110 slag per minut.">
 				>
 			>
 		>
