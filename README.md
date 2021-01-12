@@ -53,3 +53,7 @@ Den är utformad för att visa olika användbara egenskaper hos modeller baserad
 |Kropsställning|Reclining|Lying|Reclining|Lying|
 |Metod|Automatic, non-invasive|Automatic, non-invasive|Palpation|Automatic, non-invasive|
 |Lokalisation|Finger|Finger|Radial Artery - Left|Toe|
+
+Det är inte självklart vilka Snomedbegrepp som vore lämpliga "föräldrabegrepp" till en akutmottagningsmall. 417163006 | traumatisk och/eller icke-traumatisk skada | är ett förslag som ändå inte täcker in alla ovanstående exempel. Man får gå högre i hierarkierna.
+
+Sannolikt skulle man behöva använda/göra ett termonologiurval för akutvård. (Kanske kopplat till akutmotagningarnas RETTS-koder m.m.?)
