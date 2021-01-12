@@ -21,7 +21,7 @@ Kom ihåg att du kan spana in, översätta och ladda ner arketyper även via htt
 1. Nu kan du öppna akutmall_undervisningsexempel_2a eller de ingående arketyperna
 
 ## akutmall_undervisningsexempel_2a
-Template/mallen akutmall_undervisningsexempel_2a är en förenklad (inte helt realtistisk) delmängd av saker som kan vara inressanta vid akut omhändertagande av vissa skador. 
+Template/mallen akutmall_undervisningsexempel_2a är en förenklad (inte helt realistisk) delmängd av saker som kan vara intressanta vid akut omhändertagande av vissa skador. 
 Den är utformad för att visa olika användbara egenskaper hos modeller baserade på en kombination av openEHR och Snomed CT.
 
 ## Valfria extrasteg senare:
