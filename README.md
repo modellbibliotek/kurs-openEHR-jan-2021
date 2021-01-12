@@ -33,8 +33,8 @@ Den är utformad för att visa olika användbara egenskaper hos modeller baserad
 |Field|Patient One|Patient Two|Patient Three|Patient Four|
 |---|---|---|---|---|
 |**Problem/Diagnos**|||||
-|Skada|127347009 arbetsskada + 125665001 klämskada (eller 50793006 klämskada på hand?) | 125667009 kontusion (eller 44801007 kontusion på höft?)|443786003 skada under idrottsaktivitet |397996002 skada orsakad av explosion|
-|Klinisk beskrivning|The patient held his hand in a door opening at work when a collegue accidentely slammed it.|The patient fell down the stairs at home  and landed on his right hip.|The patient wrenched her knee while playing badminton.|The patient was experimenting with a friend when things went out of control and there was an explosion.|
+|Skada|127347009 arbetsskada + 125665001 klämskada (eller 50793006 klämskada på hand?) | 125667009 kontusion (eller 44801007 kontusion på höft?)|443786003 skada under idrottsaktivitet + 281599007 distorsion av ligament i ben (eller 54888009 distorsion av knä) |397996002 skada orsakad av explosion|
+|Klinisk beskrivning|The patient held his hand in a door opening at work when a collegue accidentely slammed it.|The patient fell down the stairs at home  and landed on his right hip.|The patient sprained her knee while playing badminton.|The patient was experimenting with a friend when things went out of control and there was an explosion.|
 |Anatomisk plats (grovt för att förenkla exemplet)|80768000 vänster arm, struktur|62175007 höger ben, struktur|32153003 vänster ben, struktur|6921000 höger arm, struktur|
 |Anatomisk plats (alternativ utan lateralitet)|53120007 övre extremitet, struktur|61685007 nedre extremitet, struktur |61685007 nedre extremitet, struktur|53120007 övre extremitet, struktur|
 |Datum och tid för skada|2020-01-23 11:34|2020-01-23 12:34|2020-01-23 13:34|2020-01-23 14:34|
