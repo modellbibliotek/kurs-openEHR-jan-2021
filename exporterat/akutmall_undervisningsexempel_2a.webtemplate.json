@@ -348,6 +348,367 @@
             }
           }
         }, {
+          "id" : "del",
+          "name" : "Del",
+          "localizedName" : "Del",
+          "rmType" : "DV_CODED_TEXT",
+          "nodeId" : "at0064",
+          "min" : 0,
+          "max" : 2,
+          "localizedNames" : {
+            "de" : "Perspektive",
+            "sv" : "Del",
+            "en" : "Aspect"
+          },
+          "localizedDescriptions" : {
+            "de" : "Qualifizierende Angabe unter spezifischer Sicht der identifizierten Körperstelle.",
+            "sv" : "Utmärkande detalj hos den specifika delen av det identifierade kroppsstället.",
+            "en" : "Qualifying detail about the specific aspect of the identified body site."
+          },
+          "annotations" : {
+            "comment" : "Används, om det behövs, för att öka precisionen i identifieringen av kroppsstället."
+          },
+          "aqlPath" : "/content[openEHR-EHR-EVALUATION.problem_diagnosis.v1]/data[at0001]/items[openEHR-EHR-CLUSTER.anatomical_location.v1]/items[at0064]/value",
+          "inputs" : [ {
+            "suffix" : "code",
+            "type" : "CODED_TEXT",
+            "list" : [ {
+              "value" : "at0067",
+              "label" : "Medial",
+              "localizedLabels" : {
+                "de" : "Medial",
+                "sv" : "Medial",
+                "en" : "Medial"
+              },
+              "localizedDescriptions" : {
+                "de" : "Zur Körpermitte hin orientiert.",
+                "sv" : "I riktning mot kroppsställets mittlinje.",
+                "en" : "Towards the midline of the body site."
+              }
+            }, {
+              "value" : "at0068",
+              "label" : "Lateral",
+              "localizedLabels" : {
+                "de" : "Lateral",
+                "sv" : "Lateral",
+                "en" : "Lateral"
+              },
+              "localizedDescriptions" : {
+                "de" : "Zur Seite oder zum Rand der Körperstelle.",
+                "sv" : "I riktning mot kroppsställets sida eller kant.",
+                "en" : "Towards the side, or edge, of the body site."
+              }
+            }, {
+              "value" : "at0069",
+              "label" : "Superior",
+              "localizedLabels" : {
+                "de" : "Superior",
+                "sv" : "Superior",
+                "en" : "Superior"
+              },
+              "localizedDescriptions" : {
+                "de" : "Über der Körpermitte, oft in Richtung des Kopfes.",
+                "sv" : "Ovanför kroppsstället, ofta i betydelsen i riktning mot huvudet.",
+                "en" : "Above the body site, often meaning towards the head."
+              }
+            }, {
+              "value" : "at0070",
+              "label" : "Inferior",
+              "localizedLabels" : {
+                "de" : "Inferior",
+                "sv" : "Inferior",
+                "en" : "Inferior"
+              },
+              "localizedDescriptions" : {
+                "de" : "Unterhalb der Körpermitte, oft in Richtung der Füße.",
+                "sv" : "Nedanför kroppsstället, ofta i betydelsen i riktning mot fötterna.",
+                "en" : "Below the body site, often meaning towards the feet."
+              }
+            }, {
+              "value" : "at0071",
+              "label" : "Främre",
+              "localizedLabels" : {
+                "de" : "Anterior",
+                "sv" : "Främre",
+                "en" : "Anterior"
+              },
+              "localizedDescriptions" : {
+                "de" : "In Richtung der Vorderseite oder der ventralen Oberfläche des Körpers.",
+                "sv" : "Främre delen eller ventrala ytan av kroppsstället.",
+                "en" : "Towards the front, or ventral surface, of  the body site."
+              }
+            }, {
+              "value" : "at0072",
+              "label" : "Bakre",
+              "localizedLabels" : {
+                "de" : "Posterior",
+                "sv" : "Bakre",
+                "en" : "Posterior"
+              },
+              "localizedDescriptions" : {
+                "de" : "In Richtung Rücken oder Rückseite des Körpers.",
+                "sv" : "Bakre delen eller dorsala ytan av kroppsstället.",
+                "en" : "Towards the back, or dorsal surface, of the body site."
+              }
+            }, {
+              "value" : "at0073",
+              "label" : "Proximal",
+              "localizedLabels" : {
+                "de" : "Proximal",
+                "sv" : "Proximal",
+                "en" : "Proximal"
+              },
+              "localizedDescriptions" : {
+                "de" : "Zur Körpermitte hin. Beschreibt für gewöhnlich einen Teil eines Gliedmaßes, Fingers oder eines Anhängsels.",
+                "sv" : "Mer central eller närmare fastsättningspunkten, vanligtvis en beskrivning av en del av extremitet, finger, tå eller bihang.",
+                "en" : "More central or closer to the point of attachment, and usually describing part of a limb, digit or appendage."
+              }
+            }, {
+              "value" : "at0074",
+              "label" : "Distal",
+              "localizedLabels" : {
+                "de" : "Distal",
+                "sv" : "Distal",
+                "en" : "Distal"
+              },
+              "localizedDescriptions" : {
+                "de" : "Mehr periphere oder weiter vom Körpermitte entfernte Stelle. Beschreibt in der Regel einen Teil einer Extremität, eines Fingers/Zehs oder Körperglieds.",
+                "sv" : "Mer perifert eller längre bort från fastsättningspunkten, vanligtvis en beskrivning av en del av extremitet, finger, tå eller bihang.",
+                "en" : "More peripheral, or further from the point of attachment, and usually describing part of a limb, digit or appendage."
+              }
+            }, {
+              "value" : "at0080",
+              "label" : "Djup",
+              "localizedLabels" : {
+                "de" : "Tief",
+                "sv" : "Djup",
+                "en" : "Deep"
+              },
+              "localizedDescriptions" : {
+                "de" : "Entfernt von der Oberfläche der Körperstelle.",
+                "sv" : "I riktning bort från kroppsställets yta.",
+                "en" : "Away from the surface of the body site."
+              }
+            }, {
+              "value" : "at0081",
+              "label" : "Ytlig",
+              "localizedLabels" : {
+                "de" : "Oberflächlich",
+                "sv" : "Ytlig",
+                "en" : "Superficial"
+              },
+              "localizedDescriptions" : {
+                "de" : "Auf die Oberfläche zu, bezeichnet oberflächlich gelegene Strukturen.",
+                "sv" : "I riktning mot kroppsställets yta.",
+                "en" : "Towards the surface of the body site."
+              }
+            }, {
+              "value" : "at0075",
+              "label" : "Palmar",
+              "localizedLabels" : {
+                "de" : "Palmar",
+                "sv" : "Palmar",
+                "en" : "Palmar"
+              },
+              "localizedDescriptions" : {
+                "de" : "In Richtung der Handfläche.",
+                "sv" : "I riktning mot handflatan.",
+                "en" : "Towards the palm of the hand."
+              }
+            }, {
+              "value" : "at0076",
+              "label" : "Plantar",
+              "localizedLabels" : {
+                "de" : "Plantar",
+                "sv" : "Plantar",
+                "en" : "Plantar"
+              },
+              "localizedDescriptions" : {
+                "de" : "In Richtung der Fußsohle.",
+                "sv" : "I riktning mot fotsulan.",
+                "en" : "Towards the sole of the foot."
+              }
+            }, {
+              "value" : "at0082",
+              "label" : "Dorsal",
+              "localizedLabels" : {
+                "de" : "Dorsal",
+                "sv" : "Dorsal",
+                "en" : "Dorsal"
+              },
+              "localizedDescriptions" : {
+                "de" : "In Richtung des Handrückens oder des Fußrückens hin gelegen. Als Gegenstück zu Palmar oder Plantar, nicht als Synonym für posterior.",
+                "sv" : "I riktning mot handens baksida eller fotens ovansida. Används som motsats till handflata och fotsula, inte som en synonym till bakre.",
+                "en" : "Towards the back of the hand or top of the foot. To be used as opposites of palmar or plantar, not as a synonym of posterior."
+              }
+            }, {
+              "value" : "at0077",
+              "label" : "I mitten av",
+              "localizedLabels" : {
+                "de" : "Mid",
+                "sv" : "I mitten av",
+                "en" : "Mid"
+              },
+              "localizedDescriptions" : {
+                "de" : "In der Mitte des Körpers.",
+                "sv" : "I mitten av kroppsstället.",
+                "en" : "In the middle of the body site."
+              }
+            }, {
+              "value" : "at0078",
+              "label" : "Oral",
+              "localizedLabels" : {
+                "de" : "Oral",
+                "sv" : "Oral",
+                "en" : "Oral"
+              },
+              "localizedDescriptions" : {
+                "de" : "Den Mund betreffend. Wird üblicherweise zur Beschreibung von Stellen im Verdauungssystem verwendet.",
+                "sv" : "I riktning mot munnen. Används vanligtvis för att beskriva lokalisation inom matspjälkningssystemet.",
+                "en" : "Towards the mouth. Usually used to describe locations within the digestive system."
+              }
+            }, {
+              "value" : "at0079",
+              "label" : "Anal",
+              "localizedLabels" : {
+                "de" : "Anal",
+                "sv" : "Anal",
+                "en" : "Anal"
+              },
+              "localizedDescriptions" : {
+                "de" : "Zum Anus hin. Wird üblicherweise zur Beschreibung von Stellen im Verdauungssystem verwendet.",
+                "sv" : "I riktning mot anus. Används vanligtvis för att beskriva lokalisation inom matspjälkningssystemet.",
+                "en" : "Towards the anus. Usually used to describe locations within the digestive system."
+              }
+            } ],
+            "listOpen" : true
+          }, {
+            "suffix" : "other",
+            "type" : "TEXT"
+          } ]
+        }, {
+          "id" : "anatomisk_linje",
+          "name" : "Anatomisk linje",
+          "localizedName" : "Anatomisk linje",
+          "rmType" : "DV_CODED_TEXT",
+          "nodeId" : "at0055",
+          "min" : 0,
+          "max" : 1,
+          "localizedNames" : {
+            "de" : "Anatomische Linie",
+            "sv" : "Anatomisk linje",
+            "en" : "Anatomical Line"
+          },
+          "localizedDescriptions" : {
+            "de" : "Zusätzliches Detail unter Verwendung theoretischer Linien, die durch anatomische Strukturen erweitert werden können, um einen einheitlichen Bezugspunkt auf dem menschlichen Körper zu erhalten.",
+            "sv" : "Ytterligare detalj där teoretiska linjer dragits genom anatomiska strukturer för att ge en fast referenspunkt på människokroppen.",
+            "en" : "Additional detail using theoretical lines drawn through anatomical structures used to provide a consistent reference point on the human body."
+          },
+          "annotations" : {
+            "comment" : "Vanligt förekommande anatomiska linjer finns inkluderade som en värdemängd som kan utökas över tid, plus möjlighet till fritext."
+          },
+          "aqlPath" : "/content[openEHR-EHR-EVALUATION.problem_diagnosis.v1]/data[at0001]/items[openEHR-EHR-CLUSTER.anatomical_location.v1]/items[at0055]/value",
+          "inputs" : [ {
+            "suffix" : "code",
+            "type" : "CODED_TEXT",
+            "list" : [ {
+              "value" : "at0062",
+              "label" : "Mittlinje",
+              "localizedLabels" : {
+                "de" : "Mittellinie",
+                "sv" : "Mittlinje",
+                "en" : "Midline"
+              },
+              "localizedDescriptions" : {
+                "de" : "Vertikal verlaufende Linie, die den Körper in eine linke und rechte Seite teilt und durch den Kopf, das Rückenmark und den Nabel verläuft. Alternativ kann es sich auf eine Linie beziehen, die ein Körperteil in zwei gleiche Teile teilt, zum Beispiel einen Zeh/Finger.",
+                "sv" : "En vertikal linje som delar in kroppen i vänster och höger halva. Den går genom huvud, ryggmärg och navel. Alternativt åsyftas en linje som delar in en kroppsdel i två lika stora delar, exempelvis en tå eller ett finger.",
+                "en" : "Line running vertically which divides the body into left and right portions, passing through the head, spinal cord, and umbilicus. Alternatively it can refer to a line dividing a body part into two equal portions, for example a digit."
+              }
+            }, {
+              "value" : "at0056",
+              "label" : "Mellersta axillarlinjen",
+              "localizedLabels" : {
+                "de" : "mittlere Axillarlinie",
+                "sv" : "Mellersta axillarlinjen",
+                "en" : "Midaxillary line"
+              },
+              "localizedDescriptions" : {
+                "de" : "Linie, die senkrecht zur Körperoberfläche verläuft und durch den Scheitelpunkt der Achselhöhle geht.",
+                "sv" : "En vertikal linje som går över kroppsytan genom axillspetsen.",
+                "en" : "Line running vertically down the surface of the body, passing through the apex of the axilla."
+              }
+            }, {
+              "value" : "at0057",
+              "label" : "Främre axillarlinjen",
+              "localizedLabels" : {
+                "de" : "vordere Axillarlinie",
+                "sv" : "Främre axillarlinjen",
+                "en" : "Anterior axillary line"
+              },
+              "localizedDescriptions" : {
+                "de" : "Die Linie verläuft senkrecht über die Körperoberfläche und verläuft durch die vordere Hautfalte der Achselhöhle.",
+                "sv" : "*Line running vertically down the surface of the body, passing through the anterior axillary skinfold.(en)",
+                "en" : "Line running vertically down the surface of the body, passing through the anterior axillary skinfold."
+              }
+            }, {
+              "value" : "at0058",
+              "label" : "Bakre axillarlinjen",
+              "localizedLabels" : {
+                "de" : "hintere Axillarlinie",
+                "sv" : "Bakre axillarlinjen",
+                "en" : "Posterior axillary line"
+              },
+              "localizedDescriptions" : {
+                "de" : "Linie, die senkrecht über die Körperoberfläche verläuft und durch die hintere Achselhaut führt.",
+                "sv" : "*Line running vertically down the surface of the body, passing through the posterior axillary skinfold.(en)",
+                "en" : "Line running vertically down the surface of the body, passing through the posterior axillary skinfold."
+              }
+            }, {
+              "value" : "at0059",
+              "label" : "Mellersta klavikulärlinjen",
+              "localizedLabels" : {
+                "de" : "Medioklavikularlinie",
+                "sv" : "Mellersta klavikulärlinjen",
+                "en" : "Mid-clavicular line"
+              },
+              "localizedDescriptions" : {
+                "de" : "Linie, die senkrecht über die Körperoberfläche verläuft, parallel zur Mittellinie und durch den Mittelpunkt der Klavikula führt.",
+                "sv" : "*Line running vertically down the surface of the body, parallel to the midline and passing through the midpoint of the clavicle.(en)",
+                "en" : "Line running vertically down the surface of the body, parallel to the midline and passing through the midpoint of the clavicle."
+              }
+            }, {
+              "value" : "at0060",
+              "label" : "Mellersta pupillinjen",
+              "localizedLabels" : {
+                "de" : "Mittelere Pupillarlinie",
+                "sv" : "Mellersta pupillinjen",
+                "en" : "Mid-pupillary line"
+              },
+              "localizedDescriptions" : {
+                "de" : "Die Linie verläuft vertikal durch den Mittelpunkt der Pupille, wenn man direkt nach vorne schaut.",
+                "sv" : "*Line running vertically down the face through the midpoint of the pupil when looking directly forward.(en)",
+                "en" : "Line running vertically down the face through the midpoint of the pupil when looking directly forward."
+              }
+            }, {
+              "value" : "at0063",
+              "label" : "Mellersta skapularlinjen",
+              "localizedLabels" : {
+                "de" : "Mittlere Skapularlinie",
+                "sv" : "Mellersta skapularlinjen",
+                "en" : "Mid-scapular line"
+              },
+              "localizedDescriptions" : {
+                "de" : "Die Linie verläuft senkrecht über die hintere Körperoberfläche, parallel zur Mittellinie und verläuft durch den unteren Punkt des Schulterblattes.",
+                "sv" : "*Line running vertically down the posterior surface of the body, parallel to the midline and passing through the inferior point of the scapula.(en)",
+                "en" : "Line running vertically down the posterior surface of the body, parallel to the midline and passing through the inferior point of the scapula."
+              }
+            } ],
+            "listOpen" : true
+          }, {
+            "suffix" : "other",
+            "type" : "TEXT"
+          } ]
+        }, {
           "id" : "beskrivning",
           "name" : "Beskrivning",
           "localizedName" : "Beskrivning",
@@ -2529,16 +2890,16 @@
             } ]
           } ]
         }, {
-          "id" : "total_score_en",
-          "name" : "*Total score (en)",
-          "localizedName" : "*Total score (en)",
+          "id" : "totalpoäng",
+          "name" : "Totalpoäng",
+          "localizedName" : "Totalpoäng",
           "rmType" : "DV_COUNT",
           "nodeId" : "at0028",
           "min" : 0,
           "max" : 1,
           "localizedNames" : {
             "de" : "Gesamtsumme",
-            "sv" : "*Total score (en)",
+            "sv" : "Totalpoäng",
             "en" : "Total score"
           },
           "localizedDescriptions" : {
@@ -2549,7 +2910,7 @@
           "annotations" : {
             "comment" : "*The total score may be generated at run-time. (en)"
           },
-          "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Beräkningar']/items[openEHR-EHR-OBSERVATION.news2.v1]/data[at0001]/events[at0002]/data[at0003]/items[at0028]/value",
+          "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Beräkningar']/items[openEHR-EHR-OBSERVATION.news2.v1]/data[at0001]/events[at0002]/data[at0003]/items[at0028,'Totalpoäng']/value",
           "inputs" : [ {
             "type" : "INTEGER",
             "validation" : {
