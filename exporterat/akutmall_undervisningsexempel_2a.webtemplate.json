@@ -727,7 +727,7 @@
         },
         "localizedDescriptions" : {
           "de" : "Die Charakteristiken der Spontanatmung einer Person.",
-          "sv" : "De observerade egenskaperna i spontanandning som vanligen skulle registreras som en del av en undersökning av \"vitalparametrar\".",
+          "sv" : "De observerade egenskaperna i spontanandning.",
           "en" : "The characteristics of spontaneous breathing by an individual."
         },
         "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Vitalparametrar']/items[openEHR-EHR-OBSERVATION.respiration.v2]",
@@ -746,30 +746,30 @@
           },
           "localizedDescriptions" : {
             "de" : "Standardmäßiger, nicht näher beschriebener Zeitpunkt oder Intervall Ereignis welches in einem Template oder bei der Anwendung genauer definiert werden kann.",
-            "sv" : "*Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time. (en)",
+            "sv" : "Ospecificerad standardhändelse vid en tidpunkt eller inom ett tidsintervall som explicit kan definieras i en mall eller genereras automatiskt av vissa IT-system.",
             "en" : "Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time."
           },
           "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Vitalparametrar']/items[openEHR-EHR-OBSERVATION.respiration.v2]/data[at0001]/events[at0002]",
           "children" : [ {
-            "id" : "presence_en",
-            "name" : "*Presence (en)",
-            "localizedName" : "*Presence (en)",
+            "id" : "förekomst",
+            "name" : "Förekomst",
+            "localizedName" : "Förekomst",
             "rmType" : "DV_CODED_TEXT",
             "nodeId" : "at0062",
             "min" : 0,
             "max" : 1,
             "localizedNames" : {
               "de" : "Präsenz",
-              "sv" : "*Presence (en)",
+              "sv" : "Förekomst",
               "en" : "Presence"
             },
             "localizedDescriptions" : {
               "de" : "Die Beobachtung der Spontanatmung.",
-              "sv" : "*Observation of spontaneous respiration. (en)",
+              "sv" : "Observation av spontanandning.",
               "en" : "Observation of spontaneous respiration."
             },
             "annotations" : {
-              "comment" : "*This data element may be useful in extreme situations where a formal measurement of respiration rate is not possible. For example: a subject is unconscious and distant to the observer, such as trapped in a car or has fallen down a cliff. Presence of respiration can be implied if the 'Rate' >0 breaths/min. (en)"
+              "comment" : "Det här fältet kan vara användbart i extrema situationer där formell mätning av andning ej är möjlig. Exempelvis om patienten är medvetslös och befinner sig på annan plats, såsom fast i en bil eller har fallit utför en klippa. Förekomst av andning kan antas om adningsfrekvensen är högre än 0 andetag per minut."
             },
             "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Vitalparametrar']/items[openEHR-EHR-OBSERVATION.respiration.v2]/data[at0001]/events[at0002]/data[at0003]/items[at0062]/value",
             "inputs" : [ {
@@ -777,28 +777,28 @@
               "type" : "CODED_TEXT",
               "list" : [ {
                 "value" : "at0063",
-                "label" : "*Present (en)",
+                "label" : "Förekommer",
                 "localizedLabels" : {
                   "de" : "Vorhanden",
-                  "sv" : "*Present (en)",
+                  "sv" : "Förekommer",
                   "en" : "Present"
                 },
                 "localizedDescriptions" : {
                   "de" : "Es werden die Atmungsbewegungen beobachtet.",
-                  "sv" : "*Respiratory movements are observed. (en)",
+                  "sv" : "Andningsrörelser observeras.",
                   "en" : "Respiratory movements are observed."
                 }
               }, {
                 "value" : "at0064",
-                "label" : "*Not detected (en)",
+                "label" : "Ej möjlig att upptäcka",
                 "localizedLabels" : {
                   "de" : "Nicht nachgewiesen",
-                  "sv" : "*Not detected (en)",
+                  "sv" : "Ej möjlig att upptäcka",
                   "en" : "Not detected"
                 },
                 "localizedDescriptions" : {
                   "de" : "Bei der Beobachtung werden keine Atembewegungen festgestellt.",
-                  "sv" : "*Respiratory movements are not detected on observation. (en)",
+                  "sv" : "Andningsrörelser kan inte upptäckas genom observation.",
                   "en" : "Respiratory movements are not detected on observation."
                 }
               } ]
@@ -818,7 +818,7 @@
             },
             "localizedDescriptions" : {
               "de" : "Die Frequenz der Spontanatmung.",
-              "sv" : "*The rate of spontaneous breathing. (en)",
+              "sv" : "Spontanandningens frekvens.",
               "en" : "The frequency of spontaneous breathing."
             },
             "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Vitalparametrar']/items[openEHR-EHR-OBSERVATION.respiration.v2]/data[at0001]/events[at0002]/data[at0003]/items[at0004]/value",
@@ -862,21 +862,21 @@
               } ]
             } ]
           }, {
-            "id" : "regularity_en",
-            "name" : "*Regularity (en)",
-            "localizedName" : "*Regularity (en)",
+            "id" : "regelbundenhet",
+            "name" : "Regelbundenhet",
+            "localizedName" : "Regelbundenhet",
             "rmType" : "DV_CODED_TEXT",
             "nodeId" : "at0005",
             "min" : 0,
             "max" : 1,
             "localizedNames" : {
               "de" : "Regelmäßigkeit",
-              "sv" : "*Regularity (en)",
+              "sv" : "Regelbundenhet",
               "en" : "Regularity"
             },
             "localizedDescriptions" : {
               "de" : "Die Regelmäßigkeit der Spontanatmung.",
-              "sv" : "*The pattern of spontaneous breathing. (en)",
+              "sv" : "Spontanandningens regelbundenhet.",
               "en" : "The regularity of spontaneous breathing."
             },
             "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Vitalparametrar']/items[openEHR-EHR-OBSERVATION.respiration.v2]/data[at0001]/events[at0002]/data[at0003]/items[at0005]/value",
@@ -926,7 +926,7 @@
             },
             "localizedDescriptions" : {
               "de" : "Die Tiefe der Spontanatmung.",
-              "sv" : "*The depth of spontaneous breathing. (en)",
+              "sv" : "Spontanandningens djup.",
               "en" : "The depth of spontaneous breathing."
             },
             "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Vitalparametrar']/items[openEHR-EHR-OBSERVATION.respiration.v2]/data[at0001]/events[at0002]/data[at0003]/items[at0016]/value",
@@ -935,10 +935,10 @@
               "type" : "CODED_TEXT",
               "list" : [ {
                 "value" : "at0017",
-                "label" : "Normalt",
+                "label" : "Normal",
                 "localizedLabels" : {
                   "de" : "Normal",
-                  "sv" : "Normalt",
+                  "sv" : "Normal",
                   "en" : "Normal"
                 },
                 "localizedDescriptions" : {
@@ -948,10 +948,10 @@
                 }
               }, {
                 "value" : "at0018",
-                "label" : "Ytligt",
+                "label" : "Ytlig",
                 "localizedLabels" : {
                   "de" : "Schwach",
-                  "sv" : "Ytligt",
+                  "sv" : "Ytlig",
                   "en" : "Shallow"
                 },
                 "localizedDescriptions" : {
@@ -969,15 +969,15 @@
                 },
                 "localizedDescriptions" : {
                   "de" : "Tiefes Einatmen.",
-                  "sv" : "Djupandning",
+                  "sv" : "Djupandning.",
                   "en" : "Deep breathing."
                 }
               }, {
                 "value" : "at0025",
-                "label" : "Ojämnt",
+                "label" : "Ojämn",
                 "localizedLabels" : {
                   "de" : "Veränderung",
-                  "sv" : "Ojämnt",
+                  "sv" : "Ojämn",
                   "en" : "Variable"
                 },
                 "localizedDescriptions" : {
@@ -988,25 +988,25 @@
               } ]
             } ]
           }, {
-            "id" : "onormalt_andningsmönster",
-            "name" : "Onormalt andningsmönster",
-            "localizedName" : "Onormalt andningsmönster",
+            "id" : "klinisk_tolkning",
+            "name" : "Klinisk tolkning",
+            "localizedName" : "Klinisk tolkning",
             "rmType" : "DV_TEXT",
             "nodeId" : "at0009",
             "min" : 0,
             "max" : -1,
             "localizedNames" : {
               "de" : "Klinische Auswertung",
-              "sv" : "Onormalt andningsmönster",
+              "sv" : "Klinisk tolkning",
               "en" : "Clinical interpretation"
             },
             "localizedDescriptions" : {
               "de" : "Einzelwort, Satz oder Kurzbeschreibung, die die klinische Bedeutung und den Stellenwert der Atmungsbefunde repräsentiert.",
-              "sv" : "*Respiratory pattern as a single word, phrase or brief description which represents the clinical meaning and significance of the observations. (en)",
+              "sv" : "Ord, fras eller kort beskrivning som fångar den kliniska betydelsen hos andningsfynden.",
               "en" : "Single word, phrase or brief description which represents the clinical meaning and significance of the respiration findings."
             },
             "annotations" : {
-              "comment" : "*Coding with a terminology is preferred, where possible. For example: Normal breathing; Evidence of respiratory distress; Kussmaul's respiration; Cheyne-Stokes respiration; or Apnoeic episodes. Multiple statements are allowed.  (en)"
+              "comment" : "Kodning med en terminologi rekommenderas där så är möjligt. Exempelvis normal andning, tecken på ansträngd andning, Kussmauls andning, Cheyne-Stokes andning, återkommande apné. Flera val är tillåtet."
             },
             "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Vitalparametrar']/items[openEHR-EHR-OBSERVATION.respiration.v2]/data[at0001]/events[at0002]/data[at0003]/items[at0009]/value",
             "inputs" : [ {
@@ -1020,7 +1020,7 @@
             "nodeId" : "openEHR-EHR-CLUSTER.inspired_oxygen.v1",
             "min" : 0,
             "max" : 1,
-            "dependsOn" : [ "frekvens", "regularity_en", "andningsdjup", "presence_en", "onormalt_andningsmönster" ],
+            "dependsOn" : [ "frekvens", "andningsdjup", "förekomst", "regelbundenhet", "klinisk_tolkning" ],
             "localizedNames" : {
               "de" : "Eingeatmeter Sauerstoff",
               "sv" : "Inandad syrgas",
@@ -1174,7 +1174,7 @@
         },
         "localizedDescriptions" : {
           "de" : "Die Frequenz und zugehörige Attribute für die Puls- oder Herzfrequenz.",
-          "sv" : "*The rate and associated attributes for a pulse or heart beat. (en)",
+          "sv" : "Hjärtslagens eller pulsens frekvens och tillhörande attribut.",
           "en" : "The rate and associated attributes for a pulse or heart beat."
         },
         "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Vitalparametrar']/items[openEHR-EHR-OBSERVATION.pulse.v2]",
@@ -1216,7 +1216,7 @@
               "en" : "Presence of a pulse or heart beat."
             },
             "annotations" : {
-              "comment" : "*It can be implied that the pulse or heart beat is present if Rate >0 /min. (en)"
+              "comment" : "Puls eller hjärt"
             },
             "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Vitalparametrar']/items[openEHR-EHR-OBSERVATION.pulse.v2]/data[at0002]/events[at0003]/data[at0001]/items[at1005]/value",
             "inputs" : [ {
@@ -1265,7 +1265,7 @@
             },
             "localizedDescriptions" : {
               "de" : "Die Frequenz, gemessen in Schlägen pro Minute.",
-              "sv" : "*The rate of the pulse or heart beat, measured in beats per minute. (en)",
+              "sv" : "Puls eller hjärtfrekvens, mätt i slag per minut.",
               "en" : "The rate of the pulse or heart beat, measured in beats per minute."
             },
             "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Vitalparametrar']/items[openEHR-EHR-OBSERVATION.pulse.v2]/data[at0002]/events[at0003]/data[at0001]/items[at0004]/value",
@@ -1849,7 +1849,7 @@
           },
           "localizedDescriptions" : {
             "de" : "Kategorie für die Messung der Atemfrequenz.",
-            "sv" : "*Range category for the respiratory rate measurement.(en)",
+            "sv" : "Kategori för uppmätt andningsfrekvens.",
             "en" : "Category for the respiratory rate measurement."
           },
           "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Beräkningar']/items[openEHR-EHR-OBSERVATION.news2.v1]/data[at0001]/events[at0002]/data[at0003]/items[at0006]/value",
@@ -1857,72 +1857,72 @@
             "type" : "CODED_TEXT",
             "list" : [ {
               "value" : "at0021",
-              "label" : "*<=8 or >=25(en)",
+              "label" : "<=8",
               "localizedLabels" : {
                 "de" : "≤8",
                 "en" : "≤8",
-                "sv" : "*<=8 or >=25(en)"
+                "sv" : "<=8"
               },
               "localizedDescriptions" : {
                 "de" : "Die Atemfrequenz ist kleiner/gleich 8 Atemzüge/min.",
                 "en" : "The respiratory rate measurement is less than/equal to 8 breaths/min.",
-                "sv" : "*The respiratory rate measurement is less than/equal to 8 breaths/min or greater than/equal to 25 breaths/min; scored as 3 points.(en)"
+                "sv" : "*Borde det stå \"den uppmätta andningsfrekvensen\"?\r\nAndningsfrekvensen är mindre än eller lika med 8 andetag per minut."
               },
               "ordinal" : 3
             }, {
               "value" : "at0019",
-              "label" : "*9-11(en)",
+              "label" : "9-11",
               "localizedLabels" : {
                 "de" : "9-11",
                 "en" : "9-11",
-                "sv" : "*9-11(en)"
+                "sv" : "9-11"
               },
               "localizedDescriptions" : {
                 "de" : "Die Atemfrequenz liegt zwischen 9 und 11 Atemzüge/min.",
                 "en" : "The respiratory rate measurement is between 9 and 11 breaths/min.",
-                "sv" : "*The respiratory rate measurement is between 9 and 11 breaths/min; scored as 1 point.(en)"
+                "sv" : "*Är \"fr.om. och t.o.m\" bättre än \"mellan?\r\nAndningsfrekvensen är mellan 9 till 11 andetag per minut."
               },
               "ordinal" : 1
             }, {
               "value" : "at0018",
-              "label" : "*12-20(en)",
+              "label" : "12-20",
               "localizedLabels" : {
                 "de" : "12-20",
                 "en" : "12-20",
-                "sv" : "*12-20(en)"
+                "sv" : "12-20"
               },
               "localizedDescriptions" : {
                 "de" : "Die Atemfrequenz liegt zwischen 12 und 20 Atemzüge/min.",
                 "en" : "The respiratory rate measurement is between 12 and 20 breaths/min.",
-                "sv" : "*The respiratory rate measurement is between 12 and 20 breaths/min; scored as 0 points.(en)"
+                "sv" : "Andningsfrekvensen är mellan 12 till 20 andetag per minut."
               },
               "ordinal" : 0
             }, {
               "value" : "at0020",
-              "label" : "*21-24(en)",
+              "label" : "21-24",
               "localizedLabels" : {
                 "de" : "21-24",
                 "en" : "21-24",
-                "sv" : "*21-24(en)"
+                "sv" : "21-24"
               },
               "localizedDescriptions" : {
                 "de" : "Die Atemfrequenz liegt zwischen 21 und 24 Atemzüge/min.",
                 "en" : "The respiratory rate measurement is between 21 and 24 breaths/min.",
-                "sv" : "*The respiratory rate measurement is between 21 and 24 breaths/min; scored as 2 points.(en)"
+                "sv" : "Andningsfrekvensen är mellan 21 till 24 andetag per minut."
               },
               "ordinal" : 2
             }, {
               "value" : "at0064",
-              "label" : "*>=25 (en)",
+              "label" : ">=25",
               "localizedLabels" : {
                 "de" : "≥25",
                 "en" : "≥25",
-                "sv" : "*>=25 (en)"
+                "sv" : ">=25"
               },
               "localizedDescriptions" : {
                 "de" : "Die Atemfrequenz ist größer/gleich 25 Atemzüge/min.",
                 "en" : "The respiratory rate measurement is greater than/equal to 25 breaths/min.",
-                "sv" : "*or greater than/equal to 25 breaths/min (en)"
+                "sv" : "Andningsfrekvensen är lika med eller högre än 25 andetag per minut"
               },
               "ordinal" : 3
             } ]
@@ -1942,69 +1942,69 @@
           },
           "localizedDescriptions" : {
             "de" : "Kategorie für die Messung der Sauerstoffsättigung.",
-            "sv" : "*Range category for the oxygen saturation measurement.(en)",
+            "sv" : "Kategori för uppmätt syremättnad.",
             "en" : "Category for the oxygen saturation measurement."
           },
           "annotations" : {
-            "comment" : "*'SpO₂ Scale 1' and 'SpO₂ Scale 2' are variations of the same physiological variable to be used in different clinical scenarios. Scale 1 will be used for most patients, with the exception of patients with an oxygen saturation target range of 88–92%, such as patients with hypercapnic respiratory failure. (en)"
+            "comment" : "Syremättnad skala 1 och syremättnad skala 2 bedömer samma fysiologiska variabel men ska användas i olika kliniska scenarier. Skala 1 används för de flesta patienter, med undantag för patienter som optimalt ska ha en syremättnad på 88-92%, till exempel patienter med hyperkapnisk andningssvikt."
           },
           "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Beräkningar']/items[openEHR-EHR-OBSERVATION.news2.v1]/data[at0001]/events[at0002]/data[at0003]/items[at0029]/value",
           "inputs" : [ {
             "type" : "CODED_TEXT",
             "list" : [ {
               "value" : "at0033",
-              "label" : "*<=91(en)",
+              "label" : "<=91",
               "localizedLabels" : {
                 "de" : "≤91",
                 "en" : "≤91",
-                "sv" : "*<=91(en)"
+                "sv" : "<=91"
               },
               "localizedDescriptions" : {
                 "de" : "Der Sauerstoffsättigungsgrad ist kleiner/gleich 91%.",
                 "en" : "The oxygen saturation level is less than/equal to 91%.",
-                "sv" : "*The oxygen saturation level is less than/equal to 91%; scored as 3 points.(en)"
+                "sv" : "Syremättnaden är mindre än eller lika med 91%."
               },
               "ordinal" : 3
             }, {
               "value" : "at0032",
-              "label" : "*92-93(en)",
+              "label" : "92-93",
               "localizedLabels" : {
                 "de" : "92-93",
                 "en" : "92-93",
-                "sv" : "*92-93(en)"
+                "sv" : "92-93"
               },
               "localizedDescriptions" : {
                 "de" : "Der Sauerstoffsättigungsgrad liegt zwischen 92% und 93%.",
                 "en" : "The oxygen saturation level is between 92% and 93%.",
-                "sv" : "*The oxygen saturation level is between 92% and 93%; scored as 2 points.(en)"
+                "sv" : "Syremättnaden är mellan 92% och 95%."
               },
               "ordinal" : 2
             }, {
               "value" : "at0031",
-              "label" : "*94-95(en)",
+              "label" : "94-95",
               "localizedLabels" : {
                 "de" : "94-95",
                 "en" : "94-95",
-                "sv" : "*94-95(en)"
+                "sv" : "94-95"
               },
               "localizedDescriptions" : {
                 "de" : "Der Sauerstoffsättigungsgrad liegt zwischen 94% und 95%.",
                 "en" : "The oxygen saturation level is between 94% and 95%.",
-                "sv" : "*The oxygen saturation level is between 94% and 95%; scored as 1 point.(en)"
+                "sv" : "Syremättnaden är mellan 94% och 95%."
               },
               "ordinal" : 1
             }, {
               "value" : "at0030",
-              "label" : "*>= 96(en)",
+              "label" : ">= 96",
               "localizedLabels" : {
                 "de" : "≥96",
                 "en" : "≥96",
-                "sv" : "*>= 96(en)"
+                "sv" : ">= 96"
               },
               "localizedDescriptions" : {
                 "de" : "Der Sauerstoffsättigungsgrad ist größer/gleich 96%.",
                 "en" : "The oxygen saturation level is greater than/equal to 96%.",
-                "sv" : "*The oxygen saturation level is greater than/equal to 96%; scored as 0 points.(en)"
+                "sv" : "Syremättnaden är lika med, eller högre än 96%."
               },
               "ordinal" : 0
             } ]
@@ -2024,111 +2024,111 @@
           },
           "localizedDescriptions" : {
             "de" : "Kategorie für die Messung der Sauerstoffsättigung bei Patienten mit einem Zielsauerstoffsättigungsbereich von 88-92%'.",
-            "sv" : "*Range category for the oxygen saturation measurement only for use in patients with a prescribed oxygen saturation requirement of 88–92%, such as hypercapnic respiratory failure.(en)",
+            "sv" : "Kategori för uppmätt syremättnad, används bara för patienter som optimalt ska ha en syremättnad på 88-92%, till exempel patienter med hyperkapnisk andningssvikt",
             "en" : "Category for the oxygen saturation measurement in patients with a target oxygen saturation range of 88–92%."
           },
           "annotations" : {
-            "comment" : "*'SpO₂ Scale 1' and 'SpO₂ Scale 2' are variations of the same physiological variable to be used in different clinical scenarios. Scale 2 will be used only in patients with an oxygen saturation target range of 88–92%, such as patients with hypercapnic respiratory failure. Otherwise use Scale 1. (en)"
+            "comment" : "Syremättnad skala 1 och syremättnad skala 2 bedömer samma fysiologiska variabel men ska användas i olika kliniska scenarier. Skala 2 används bara för patienter som optimalt ska ha en syremättnad på 88-92%, till exempel patienter med hyperkapnisk andningssvikt. För alla andra patienter används skala 1.\r\n"
           },
           "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Beräkningar']/items[openEHR-EHR-OBSERVATION.news2.v1]/data[at0001]/events[at0002]/data[at0003]/items[at0047]/value",
           "inputs" : [ {
             "type" : "CODED_TEXT",
             "list" : [ {
               "value" : "at0061",
-              "label" : "*<=83 (en)",
+              "label" : "≤83",
               "localizedLabels" : {
                 "de" : "≤83",
                 "en" : "≤83",
-                "sv" : "*<=83 (en)"
+                "sv" : "≤83"
               },
               "localizedDescriptions" : {
                 "de" : "Der Sauerstoffsättigungsgrad ist kleiner/gleich 83%.",
                 "en" : "The oxygen saturation level is less/equal to 83%.",
-                "sv" : "*The oxygen saturation level is less or equal 83%; scored as 3 points. (en)"
+                "sv" : "Syremättnaden är mindre än eller lika med 83%."
               },
               "ordinal" : 3
             }, {
               "value" : "at0050",
-              "label" : "*84-85 or 95-96 on O₂(en)",
+              "label" : "84-85",
               "localizedLabels" : {
                 "de" : "84-85",
                 "en" : "84-85",
-                "sv" : "*84-85 or 95-96 on O₂(en)"
+                "sv" : "84-85"
               },
               "localizedDescriptions" : {
                 "de" : "Der Sauerstoffsättigungsgrad liegt zwischen 84% und 85%.",
                 "en" : "The oxygen saturation level is between 84% and 85%.",
-                "sv" : "*The oxygen saturation level is between 84% and 85% or between 95% and 96% on supplemental oxygen; scored as 2 points.(en)"
+                "sv" : "Syremättnaden är mellan 84 % och 85%."
               },
               "ordinal" : 2
             }, {
               "value" : "at0049",
-              "label" : "*86-87 or 93-94 on O₂(en)",
+              "label" : "86-87",
               "localizedLabels" : {
                 "de" : "86-87",
                 "en" : "86-87",
-                "sv" : "*86-87 or 93-94 on O₂(en)"
+                "sv" : "86-87"
               },
               "localizedDescriptions" : {
                 "de" : "Der Sauerstoffsättigungsgrad liegt zwischen 86% und 87%.",
                 "en" : "The oxygen saturation level is between 86% and 87%.",
-                "sv" : "*The oxygen saturation level is between 86% and 87% or between 93% and 94% on supplemental oxygen; scored as 1 point.(en)"
+                "sv" : "Syremättnaden är mellan 86% och 87%."
               },
               "ordinal" : 1
             }, {
               "value" : "at0048",
-              "label" : "*88-92 or >=93 on air(en)",
+              "label" : "88-92 eller ≥93",
               "localizedLabels" : {
                 "de" : "88-92 oder ≥93 on air",
                 "en" : "88-92 or ≥93 on air",
-                "sv" : "*88-92 or >=93 on air(en)"
+                "sv" : "88-92 eller ≥93"
               },
               "localizedDescriptions" : {
                 "de" : "Der Sauerstoffsättigungsgrad liegt zwischen 88% und 92% oder mehr als/gleich 93% on air.",
                 "en" : "The oxygen saturation level is between 88% and 92% or greater than/equal to 93% on air.",
-                "sv" : "*The oxygen saturation level is between 88% and 92% or greater than/equal to 93% on air; scored as 0 points.(en)"
+                "sv" : "Syremättnaden är mellan 88% och 92% eller lika med eller större än 93% på luft."
               },
               "ordinal" : 0
             }, {
               "value" : "at0062",
-              "label" : "*93-94 on O₂ (en)",
+              "label" : "93-94 on O₂",
               "localizedLabels" : {
                 "de" : "93-94 über Sauerstoff",
                 "en" : "93-94 on oxygen",
-                "sv" : "*93-94 on O₂ (en)"
+                "sv" : "93-94 on O₂"
               },
               "localizedDescriptions" : {
                 "de" : "Der Sauerstoffsättigungsgrad liegt zwischen 93% und 94% bei zusätzlichem Sauerstoff.",
                 "en" : "The oxygen saturation level is between 93% and 94% on supplemental oxygen.",
-                "sv" : "*The oxygen saturation level is between 93% and 94% on supplemental oxygen; scored as 1 point. (en)"
+                "sv" : "Syremättnaden är mellan 93% och 94% med syrgas."
               },
               "ordinal" : 1
             }, {
               "value" : "at0063",
-              "label" : "*95-96 on O₂ (en)",
+              "label" : "95-96 on O₂",
               "localizedLabels" : {
                 "de" : "95-96 über Sauerstoff",
                 "en" : "95-96 on oxygen",
-                "sv" : "*95-96 on O₂ (en)"
+                "sv" : "95-96 on O₂"
               },
               "localizedDescriptions" : {
                 "de" : "Der Sauerstoffsättigungsgrad liegt zwischen 95% und 96% bei zusätzlichem Sauerstoff.",
                 "en" : "The oxygen saturation level is between 95% and 96% on supplemental oxygen.",
-                "sv" : "*The oxygen saturation level is between 95% and 96% on supplemental oxygen; scored as 2 points. (en)"
+                "sv" : "Syremättnaden är mellan 95% och 96% med syrgas."
               },
               "ordinal" : 2
             }, {
               "value" : "at0051",
-              "label" : "*<=83 or >=97 on O₂(en)",
+              "label" : "≥97 on O₂",
               "localizedLabels" : {
                 "de" : "≥97 über Sauerstoff",
                 "en" : "≥97 on oxygen",
-                "sv" : "*<=83 or >=97 on O₂(en)"
+                "sv" : "≥97 on O₂"
               },
               "localizedDescriptions" : {
                 "de" : "Der Sauerstoffsättigungsgrad ist größer/gleich 97% bei zusätzlichem Sauerstoff.",
                 "en" : "The oxygen saturation level is greater than/equal to 97% on supplemental oxygen.",
-                "sv" : "*The oxygen saturation level is less or equal 83% or between >=97% on supplemental oxygen; scored as 3 points.(en)"
+                "sv" : "Syremättnaden är lika med, eller större än 97%, med syrgas."
               },
               "ordinal" : 3
             } ]
@@ -2148,7 +2148,7 @@
           },
           "localizedDescriptions" : {
             "de" : "Erhält der Patient zusätzlichen Sauerstoff?",
-            "sv" : "*Assessment carried out breathing air or supplemental oxygen.(en)\r\nFår patienten syrgasbehandling?",
+            "sv" : "Får patienten syrgasbehandling?",
             "en" : "Is the patient receiving supplemental oxygen?"
           },
           "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Beräkningar']/items[openEHR-EHR-OBSERVATION.news2.v1]/data[at0001]/events[at0002]/data[at0003]/items[at0034]/value",
@@ -2156,16 +2156,16 @@
             "type" : "CODED_TEXT",
             "list" : [ {
               "value" : "at0036",
-              "label" : "*Air(en)",
+              "label" : "Luft",
               "localizedLabels" : {
                 "de" : "Luft",
                 "en" : "Air",
-                "sv" : "*Air(en)"
+                "sv" : "Luft"
               },
               "localizedDescriptions" : {
                 "de" : "Der Patient atmet Raumluft; er erhält keinen zusätzlichen Sauerstoff.",
                 "en" : "The patient is breathing room air; not receiving supplemental oxygen.",
-                "sv" : "*The patient is not receiving supplemental oxygen; scored as 0 points.(en)\r\nPatienten får inte syrgasbehandling."
+                "sv" : "Patienten andas rumsluft, får inte syrgasbehandling."
               },
               "ordinal" : 0
             }, {
@@ -2179,7 +2179,7 @@
               "localizedDescriptions" : {
                 "de" : "Der Patient erhält zusätzlichen Sauerstoff.",
                 "en" : "The patient is receiving supplemental oxygen.",
-                "sv" : "*The patient is receiving supplemental oxygen; scored as 2 points.(en)\r\nPatienten får syrgasbehandling."
+                "sv" : "Patienten får syrgasbehandling."
               },
               "ordinal" : 2
             } ]
@@ -2199,7 +2199,7 @@
           },
           "localizedDescriptions" : {
             "de" : "Kategorie für die Messung des Systolischen Blutdrucks.",
-            "sv" : "*Range category for the systolic blood pressure measurement.(en)",
+            "sv" : "Kategori för uppmätt systoliskt blodtryck.",
             "en" : "Category for the systolic blood pressure measurement."
           },
           "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Beräkningar']/items[openEHR-EHR-OBSERVATION.news2.v1]/data[at0001]/events[at0002]/data[at0003]/items[at0004]/value",
@@ -2207,72 +2207,72 @@
             "type" : "CODED_TEXT",
             "list" : [ {
               "value" : "at0017",
-              "label" : "*<=90 or >= 220(en)",
+              "label" : "<=90",
               "localizedLabels" : {
                 "de" : "≤90",
                 "en" : "≤90",
-                "sv" : "*<=90 or >= 220(en)"
+                "sv" : "<=90"
               },
               "localizedDescriptions" : {
                 "de" : "Der systolische Blutdruck ist kleiner/gleich 90 mmHg.",
                 "en" : "The systolic blood pressure measurement is less than/equal to 90 mmHg.",
-                "sv" : "*The systolic blood pressure measurement is less than/equal to 90 mmHg or greater than/equal to 220 mmHg; scored as 3 points.(en)"
+                "sv" : "Det systoliska blodtrycket är mindre än eller lika med 90 mmHg."
               },
               "ordinal" : 3
             }, {
               "value" : "at0016",
-              "label" : "*91-100(en)",
+              "label" : "91-100",
               "localizedLabels" : {
                 "de" : "91-100",
                 "en" : "91-100",
-                "sv" : "*91-100(en)"
+                "sv" : "91-100"
               },
               "localizedDescriptions" : {
                 "de" : "Der systolische Blutdruck liegt zwischen 91 und 100 mmHg.",
                 "en" : "The systolic blood pressure measurement is between 91 and 100 mmHg.",
-                "sv" : "*The systolic blood pressure measurement is between 91 and 100 mmHg; scored as 2 points.(en)"
+                "sv" : "Det systoliska blodtrycket är mellan 91 och 100 mmHg."
               },
               "ordinal" : 2
             }, {
               "value" : "at0015",
-              "label" : "*101-110(en)",
+              "label" : "101-110",
               "localizedLabels" : {
                 "de" : "101-110",
                 "en" : "101-110",
-                "sv" : "*101-110(en)"
+                "sv" : "101-110"
               },
               "localizedDescriptions" : {
                 "de" : "Der systolische Blutdruck liegt zwischen 101 und 110 mmHg.",
                 "en" : "The systolic blood pressure measurement is between 101 and 110 mmHg.",
-                "sv" : "*The systolic blood pressure measurement is between 101 and 110 mmHg; scored as 1 point.(en)"
+                "sv" : "Det systoliska blodtrycket är mellan 101 och 110 mmHg."
               },
               "ordinal" : 1
             }, {
               "value" : "at0014",
-              "label" : "*111-219(en)",
+              "label" : "111-219",
               "localizedLabels" : {
                 "de" : "111-219",
                 "en" : "111-219",
-                "sv" : "*111-219(en)"
+                "sv" : "111-219"
               },
               "localizedDescriptions" : {
                 "de" : "Der systolische Blutdruck liegt zwischen 111 und 219 mmHg.",
                 "en" : "The systolic blood pressure measurement is between 111 and 219 mmHg.",
-                "sv" : "*The systolic blood pressure measurement is between 111 and 219 mmHg; scored as 0 points.(en)"
+                "sv" : "Det systoliska blodtrycket är mellan 111 och 219 mmHg."
               },
               "ordinal" : 0
             }, {
               "value" : "at0067",
-              "label" : "*≥220 (en)",
+              "label" : "≥220",
               "localizedLabels" : {
                 "de" : "≥220",
                 "en" : "≥220",
-                "sv" : "*≥220 (en)"
+                "sv" : "≥220"
               },
               "localizedDescriptions" : {
                 "de" : "Der systolische Blutdruck ist größer/gleich 220 mmHg.",
                 "en" : "The systolic blood pressure measurement is greater than/equal to 220 mmHg.",
-                "sv" : "*The systolic blood pressure measurement is greater than/equal to 220 mmHg; scored as 3 points. (en)"
+                "sv" : "Det systoliska blodtrycket är lika med eller större än 220 mmHg."
               },
               "ordinal" : 3
             } ]
@@ -2292,7 +2292,7 @@
           },
           "localizedDescriptions" : {
             "de" : "Kategorie für die Messung des Puls.",
-            "sv" : "*Range category for the pulse measurement.(en)",
+            "sv" : "Kategori för uppmätt puls.",
             "en" : "Category for the pulse measurement."
           },
           "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Beräkningar']/items[openEHR-EHR-OBSERVATION.news2.v1]/data[at0001]/events[at0002]/data[at0003]/items[at0005]/value",
@@ -2300,86 +2300,86 @@
             "type" : "CODED_TEXT",
             "list" : [ {
               "value" : "at0010",
-              "label" : "*<=40 or >=131(en)",
+              "label" : "<=40",
               "localizedLabels" : {
                 "de" : "≤40",
                 "en" : "≤40",
-                "sv" : "*<=40 or >=131(en)"
+                "sv" : "<=40"
               },
               "localizedDescriptions" : {
                 "de" : "Der Puls ist kleiner/gleich 40 Schläge/Min.",
                 "en" : "The pulse measurement is less than/equal to 40 beats/min.",
-                "sv" : "*The pulse measurement is less than/equal to 40 beats/min or greater than/equal to 131 beats/min; scored as 3 points.(en)"
+                "sv" : "Pulsen är mindre än eller lika med 40 slag i per minut."
               },
               "ordinal" : 3
             }, {
               "value" : "at0012",
-              "label" : "*41-50 or 91-110(en)",
+              "label" : "41-50",
               "localizedLabels" : {
                 "de" : "41-50",
                 "en" : "41-50",
-                "sv" : "*41-50 or 91-110(en)"
+                "sv" : "41-50"
               },
               "localizedDescriptions" : {
                 "de" : "Der Puls liegt zwischen 41 und 50 Schlägen/Min.",
                 "en" : "The pulse measurement is between 41 and 50 beats/min.",
-                "sv" : "*The pulse measurement is between 41 and 50 beats/min or between 91 and 110 beats/min; scored as 1 point.(en)"
+                "sv" : "Pulsen är mellan 41 och 50 slag per minut."
               },
               "ordinal" : 1
             }, {
               "value" : "at0013",
-              "label" : "*51-90(en)",
+              "label" : "51-90",
               "localizedLabels" : {
                 "de" : "51-90",
                 "en" : "51-90",
-                "sv" : "*51-90(en)"
+                "sv" : "51-90"
               },
               "localizedDescriptions" : {
                 "de" : "Der Puls liegt zwischen 51 und 90 Schlägen/Min.",
                 "en" : "The pulse measurement is between 51 and 90 beats/min.",
-                "sv" : "*The pulse measurement is between 51 and 90 beats/min; scored as 0 points.(en)"
+                "sv" : "Pulsen är mellan 51 och 90 slag per minut."
               },
               "ordinal" : 0
             }, {
               "value" : "at0068",
-              "label" : "*91-110 (en)",
+              "label" : "91-110",
               "localizedLabels" : {
                 "de" : "91-110",
                 "en" : "91-110",
-                "sv" : "*91-110 (en)"
+                "sv" : "91-110"
               },
               "localizedDescriptions" : {
                 "de" : "Der Puls liegt zwischen 91 und 110 Schlägen/Min.",
                 "en" : "The pulse measurement is between 91 and 110 beats/min.",
-                "sv" : "*The pulse measurement is between 91 and 110 beats/min; scored as 1 point. (en)"
+                "sv" : "Pulsen är mellan 91 och 110 slag per minut."
               },
               "ordinal" : 1
             }, {
               "value" : "at0011",
-              "label" : "*111-130(en)",
+              "label" : "111-130",
               "localizedLabels" : {
                 "de" : "111-130",
                 "en" : "111-130",
-                "sv" : "*111-130(en)"
+                "sv" : "111-130"
               },
               "localizedDescriptions" : {
                 "de" : "Der Puls liegt zwischen 111 und 130 Schlägen/Min.",
                 "en" : "The pulse measurement is between 111 and 130 beats/min.",
-                "sv" : "*The pulse measurement is between 111 and 130 beats/min; scored as 2 points.(en)"
+                "sv" : "Pulsen är mellan 111 och 130 slag per minut."
               },
               "ordinal" : 2
             }, {
               "value" : "at0065",
-              "label" : "*>=131 (en)",
+              "label" : ">=131",
               "localizedLabels" : {
                 "de" : "≥131",
                 "en" : "≥131",
-                "sv" : "*>=131 (en)"
+                "sv" : ">=131"
               },
               "localizedDescriptions" : {
                 "de" : "Der Puls ist größer/gleich 131 Schlägen/Min.",
                 "en" : "The pulse measurement is greater than/equal to 131 beats/min.",
-                "sv" : "*greater than/equal to 131 beats/min (en)"
+                "sv" : "Pulsen är lika med eller större än 131 slag per minut."
               },
               "ordinal" : 3
             } ]
@@ -2399,7 +2399,7 @@
           },
           "localizedDescriptions" : {
             "de" : "Kategorie für den beobachteten Bewusstseinszustand, unter Verwendung der ACVPU-Skala.",
-            "sv" : "*Observed category for the ACVPU scale rating of conscious state.(en)",
+            "sv" : "Kategori för medvetandegrad, bedöms med ACVPU-skalan.",
             "en" : "Category for the observed conscious state, using the ACVPU scale."
           },
           "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Beräkningar']/items[openEHR-EHR-OBSERVATION.news2.v1]/data[at0001]/events[at0002]/data[at0003]/items[at0008]/value",
@@ -2407,30 +2407,30 @@
             "type" : "CODED_TEXT",
             "list" : [ {
               "value" : "at0024",
-              "label" : "*Alert(en)",
+              "label" : "Alert",
               "localizedLabels" : {
                 "de" : "Wach",
                 "en" : "Alert",
-                "sv" : "*Alert(en)"
+                "sv" : "Alert"
               },
               "localizedDescriptions" : {
                 "de" : "Der Patient ist wach oder aufmerksam; die Bewertung erfolgt mit 0 Punkten.",
                 "en" : "The patient is alert or awake; scored as 0 points.",
-                "sv" : "*The patient is alert or awake; scored as 0 points.(en)"
+                "sv" : "Patienten är helt vaken och alert."
               },
               "ordinal" : 0
             }, {
               "value" : "at0025",
-              "label" : "*Confusion, V, P or U(en)",
+              "label" : "Confusion, V, P eller U",
               "localizedLabels" : {
                 "de" : "C, V, P or U",
                 "en" : "C, V, P or U",
-                "sv" : "*Confusion, V, P or U(en)"
+                "sv" : "Confusion, V, P eller U"
               },
               "localizedDescriptions" : {
                 "de" : "Der Patient ist seit kurzem verwirrt, reagiert nur auf Stimme oder Schmerz oder ist nicht ansprechbar; bewertet mit 3 Punkten.",
                 "en" : "The patient is newly confused, responds only to voice or pain, or is unresponsive; scored as 3 points.",
-                "sv" : "*The patient is newly confused, responds only to voice or pain, or is unresponsive; scored as 3 points.(en)"
+                "sv" : "Patienten har nytillkommen eller förvärrad förvirring, reagerar enbart på röst eller smärta, eller är medvetandesänkt och reagerar inte på röst eller smärta."
               },
               "ordinal" : 3
             } ]
@@ -2450,7 +2450,7 @@
           },
           "localizedDescriptions" : {
             "de" : "Bereichskategorie für die Messung der Körpertemperatur.",
-            "sv" : "*Range category for the body temperature measurement.(en)",
+            "sv" : "Kategori för den uppmätta kroppstemperaturen.",
             "en" : "Range category for the body temperature measurement."
           },
           "aqlPath" : "/content[openEHR-EHR-SECTION.adhoc.v1,'Beräkningar']/items[openEHR-EHR-OBSERVATION.news2.v1]/data[at0001]/events[at0002]/data[at0003]/items[at0007]/value",
@@ -2458,72 +2458,72 @@
             "type" : "CODED_TEXT",
             "list" : [ {
               "value" : "at0039",
-              "label" : "*<=35.0(en)",
+              "label" : "<=35.0",
               "localizedLabels" : {
                 "de" : "≤35.0",
                 "en" : "≤35.0",
-                "sv" : "*<=35.0(en)"
+                "sv" : "<=35.0"
               },
               "localizedDescriptions" : {
                 "de" : "Die Körpertemperatur ist kleiner/gleich 35 Grad Celcius.",
                 "en" : "The body temperature is less than/equal to 35 degrees Celcius.",
-                "sv" : "*The body temperature is less than/equal to 35 degrees Celcius ; scored as 3 points.(en)"
+                "sv" : "Kroppstemperaturen är mindre än eller lika med 35 grade Celsius."
               },
               "ordinal" : 3
             }, {
               "value" : "at0023",
-              "label" : "*35.1-36.0 or 38.1-39.0(en)",
+              "label" : "35.1-36.0",
               "localizedLabels" : {
                 "de" : "35.1-36.0",
                 "en" : "35.1-36.0",
-                "sv" : "*35.1-36.0 or 38.1-39.0(en)"
+                "sv" : "35.1-36.0"
               },
               "localizedDescriptions" : {
                 "de" : "Die Körpertemperatur liegt zwischen 35.1 und 36.0 Grad Celcius.",
                 "en" : "The body temperature measurement is between 35.1 and 36.0 degrees Celsius.",
-                "sv" : "*The body temperature measurement is between 35.1 and 36.0 degrees Celsius or between 38.1 and 39.0 degrees Celsius; scored as 1 point.(en)"
+                "sv" : "Kroppstemperaturen är mellan 35.1 och 36.0 grader Celsius."
               },
               "ordinal" : 1
             }, {
               "value" : "at0022",
-              "label" : "*36.1-38.0(en)",
+              "label" : "36.1-38.0",
               "localizedLabels" : {
                 "de" : "36.1-38.0",
                 "en" : "36.1-38.0",
-                "sv" : "*36.1-38.0(en)"
+                "sv" : "36.1-38.0"
               },
               "localizedDescriptions" : {
                 "de" : "Die Körpertemperatur liegt zwischen 36.1 und 38.0 Grad Celcius.\r\n",
                 "en" : "The body temperature measurement is between 36.1 and 38.0 degrees Celsius.",
-                "sv" : "*The body temperature measurement is between 36.1 and 38.0 degrees Celsius; scored as 0 points.(en)"
+                "sv" : "Kroppstemperaturen är mellan 36.1 och 38.0 grader Celsius."
               },
               "ordinal" : 0
             }, {
               "value" : "at0066",
-              "label" : "*38.1-39.0 (en)",
+              "label" : "38.1-39.0",
               "localizedLabels" : {
                 "de" : "38.1-39.0",
                 "en" : "38.1-39.0",
-                "sv" : "*38.1-39.0 (en)"
+                "sv" : "38.1-39.0"
               },
               "localizedDescriptions" : {
                 "de" : "Die Körpertemperatur liegt zwischen 38.1 und 39.0 Grad Celcius.\r\n",
                 "en" : "The body temperature measurement is between 38.1 and 39.0 degrees Celsius.",
-                "sv" : "*or between 38.1 and 39.0 degrees Celsius (en)"
+                "sv" : "Kroppstemperaturen är mellan 38.1 och 39.0 grader Celsius."
               },
               "ordinal" : 1
             }, {
               "value" : "at0038",
-              "label" : "*>=39.1(en)",
+              "label" : ">=39.1",
               "localizedLabels" : {
                 "de" : "≥39.1",
                 "en" : "≥39.1",
-                "sv" : "*>=39.1(en)"
+                "sv" : ">=39.1"
               },
               "localizedDescriptions" : {
                 "de" : "Die Körpertemperatur ist größer/gleich 39.1 Grad Celcius.",
                 "en" : "The body temperature is greater than/equal to 39.1 degrees Celcius.",
-                "sv" : "*The body temperature is greater than/equal to 39.1 degrees Celcius; scored as 2 points.(en)"
+                "sv" : "Kroppstemperaturen är större än eller lika med 39.1 grader Celcius."
               },
               "ordinal" : 2
             } ]
