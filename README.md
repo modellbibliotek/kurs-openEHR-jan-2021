@@ -51,16 +51,28 @@ Vi låtsas nu att vi ska hjälpa ett forskningsprojekt att fånga mer detaljerad
 ### 3b. Skapa och justera NN_akutmall_undervisningsexempel_3b
 1. Kopiera exempel-mallen från förra undervisningstillfället, "akutmall_undervisningsexempel_2a" genom att ställa pekaren över mallen  i listar av mallar och arketyper så att tre prickar dyker upp på raden i listan, tryck på dem så kommer kopieringsmöjligheten upp, se [copy_template.png](https://github.com/modellbibliotek/kurs-openEHR-jan-2021/blob/main/images/copy_template.png?raw=true). Spara då kopian ett nytt namn i stil med NN_akutmall_undervisningsexempel_3a (där NN är dina initialer eller annan unik text så att vi inte senare krockar med namn i vår gemensamma labbmiljö för formulär)
 1. Koppla in vår nytillverkade arketyp om motionslopp i mallens fält `Specifika detaljer` (som finns under `Problem/Diagnosis`) 
-1. I mallens fält `Loppets namn` vill vi lista de olika varianterna på vätternrundan så att det blir smidigt för personalen. Välj "Free text" sedan "Edit values" kopiera hela listan nedan och när du tryckt "add" klistra in den och tryck "Save"
-   Vätternrundan
-   Halvvättern 150 km
-   Tjejvättern 100 km
-   Vätternrundan 100 km
-   MTB-Vättern
-   Minivättern
- 1....  
+1. I mallens fält `Loppets namn` vill vi lista de olika varianterna på vätternrundan så att det blir smidigt för personalen. Välj "Free text" sedan "Edit values" kopiera hela listan nedan och när du tryckt "add" klistra in den och tryck "Save". Se till att "Limit to list" *inte* är förbockat, annars kan man inte skriva in andra motionslopp. Som "Default Value" välj Vätternrundan.
+   * Vätternrundan
+   * Halvvättern 150 km
+   * Tjejvättern 100 km
+   * Vätternrundan 100 km
+   * MTB-Vättern
+   * Minivättern
+ 1. Terminologibind fältet 'Onormalt andningsmönster' till listan med alla barn till snomedbegreppet  85617008 | onormal andningsrytm |
+   * I https://browser.ihtsdotools.org/ välj fliken `Expression Constraint-sökning` och skriv in `<< 85617008 | onormal andningsrytm |` se bilden [snomed_andningsrytm.png](https://github.com/modellbibliotek/kurs-openEHR-jan-2021/blob/main/images/snomed_andningsrytm.png?raw=true)
+   * Kopiera ut resultatlistan från sökverktyget och klistra in i ett kalkylark, byt plats på kolumner så att sifferkoder står till vänster om de beskrivningar du vill ha
+   * I inställningarna för mallens fält 'Onormalt andningsmönster' välj "External Coded", 
+       * under `terminology` skriv `SNOMED-CT`
+       * under `Uri` skriv `http://snomed.info/sct/`
+   * Bocka för "Add valueset"
+   * Tryck på "Edit valueset"
+   * Kopiera från ditt kalkylark ut de två spalterna med kod och text, och klistra in dem i den tomma "Edit valueset"-listan och tryck sedan "Save"
+1. Exportera din mall som en "Operational template" (OPT)
+   * Klicka på Export, en ruta kommer upp
+   * Klicka på den blå "Export"-knappen och välj "Export to OPT"
+   * Kom ihåg var du sparar den exporterade filen på din dator, du behöver den i nästa övning
 
-### 3b. Skapa och justera ett formulär
+### 3c. Skapa och justera ett formulär
 
 
 ## Exempelpatienter (till övningar m.m.)
