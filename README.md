@@ -58,8 +58,8 @@ Vi låtsas nu att vi ska hjälpa ett forskningsprojekt att fånga mer detaljerad
    * Vätternrundan 100 km
    * MTB-Vättern
    * Minivättern
- 1. Terminologibind fältet 'Onormalt andningsmönster' till listan med alla barn till snomedbegreppet  85617008 | onormal andningsrytm |
-   * I https://browser.ihtsdotools.org/ välj fliken `Expression Constraint-sökning` och skriv in `<< 85617008 | onormal andningsrytm |` se bilden [snomed_andningsrytm.png](https://github.com/modellbibliotek/kurs-openEHR-jan-2021/blob/main/images/snomed_andningsrytm.png?raw=true)
+1. Terminologibind fältet 'Onormalt andningsmönster' till listan med alla barn till snomedbegreppet  85617008 (onormal andningsrytm). Detaljer:
+   * I https://browser.ihtsdotools.org/ välj fliken `Expression Constraint-sökning` och skriv in `<< 85617008 | onormal andningsrytm |` se bilden [snomed_andningsrytm.png](https://github.com/modellbibliotek/kurs-openEHR-jan-2021/blob/main/images/snomed_andningsrytm.png?raw=true).
    * Kopiera ut resultatlistan från sökverktyget och klistra in i ett kalkylark, byt plats på kolumner så att sifferkoder står till vänster om de beskrivningar du vill ha
    * I inställningarna för mallens fält 'Onormalt andningsmönster' välj "External Coded", 
        * under `terminology` skriv `SNOMED-CT`
@@ -67,7 +67,7 @@ Vi låtsas nu att vi ska hjälpa ett forskningsprojekt att fånga mer detaljerad
    * Bocka för "Add valueset"
    * Tryck på "Edit valueset"
    * Kopiera från ditt kalkylark ut de två spalterna med kod och text, och klistra in dem i den tomma "Edit valueset"-listan och tryck sedan "Save"
-1. Exportera din mall som en "Operational template" (OPT)
+1. Exportera din mall som en "Operational template" (OPT). Detaljer:
    * Klicka på Export, en ruta kommer upp
    * Klicka på den blå "Export"-knappen och välj "Export to OPT"
    * Kom ihåg var du sparar den exporterade filen på din dator, du behöver den i nästa övning
