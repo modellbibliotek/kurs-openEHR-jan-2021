@@ -30,18 +30,28 @@ Template/mallen akutmall_undervisningsexempel_2a som användes vid andra undervi
 
 ## Undervisningstillfälle 3 (18 Jan)
 
-### Skapa och terminologibind arketyp för motionslopp
+### 3a. Skapa och terminologibind arketyp för motionslopp
 Vi låtsas nu att vi ska hjälpa ett forskningsprojekt att fånga mer detaljerade data kring olyckor vid Vätternrundan som kräver vårdsinsatser, de av Region Östergötlands mottagningar som brukar hantera flest skador från Vätternrundan har gått med på att utöka sitt olycksfomulär. Vi hittar ingen lämplig färdig arketyp utan bestämmer oss för att författa en egen. Men att göra en särskild vätternrunde-arketyp verkar lite väl specifikt så vi beslutar göra en mer generell om händelser vid motionslopp.
 
 1. Starta Archetype Designer (https://tools.openehr.org/designer) och logga in med ditt personliga konto (som du skapat själv tidigare, se ovan)
-1. Inspektera den befintliga arketypen `Problem/Diagnosis`, leta upp och läs beskrivning/metadata för fältet `Specifika detaljer`` som är ett "SLOT" - där funderar vi på att senare i templaten stoppa in vår nya motionslopps-arketyp.
-1. Skapa en ny arketyp "Motionslopp_NN" där NN är dina initialer (så att vi inte senare krockar med namn i vår gemensamma labbminlö för formulär). Den ska vara av type CLUSTER och vi kan köra med svenska som originalspråk (om vi inte tror att den kommer spridas internationellt).
-1. Skapa ett träd (ungefär) som det i bilden [motionslopp.png](https://github.com/modellbibliotek/kurs-openEHR-jan-2021/blob/main/images/motionslopp.png?raw=true)
+1. Inspektera den befintliga arketypen `Problem/Diagnosis`, leta upp och läs beskrivning/metadata för fältet `Specifika detaljer` som är av typen "SLOT" - där funderar vi på att senare i templaten stoppa in vår nya motionslopps-arketyp.
+1. Skapa en ny arketyp "Motionslopp_NN" där NN är dina initialer ellar annan unik text (så att vi inte senare krockar med namn i vår gemensamma labbmiljö för formulär). Den ska vara av typen CLUSTER och vi kan köra med svenska som originalspråk om vi inte tror att den kommer spridas internationellt.
+1. Skapa ett träd (ungefär) som det i bilden [motionslopp.png](https://github.com/modellbibliotek/kurs-openEHR-jan-2021/blob/main/images/motionslopp.png?raw=true) med följande tips i åtanke för att testa olika funktioner i verktyget.
+   * Det går att duplicera fält så att alla inställningar följer med, gör det t.ex. för att kopiera mellan fälten `Latitud` och `Longitud`.
+   * För värden i `Typ av motion` välj "Internal Coded", tryck sedan den blå knappen "Edit" och skapa en lista med t.ex. de fyra raderna Cykling, Löpning, Skidåkning, Simning.
+   * För värden i `Träningsvana` välj "Internal Coded", tryck sedan den blå knappen "Edit" och skapa en lista med t.ex. raderna Nybörjare, Motionsidrottare, Elitnivå.
+   * För inställningarna i fältet `Deltagit tidigare i detta lopp, antal gånger` ta bort bocken framför "unboud" under rubriken "Range". Då kommer ny val, sätt/behåll 0 som minimumgräns (för att förbjuda negativa värden) och ta bort bocken framför "Max" så att det inte finns någon övre gräns.
+   * För fältet `Tid efter start` skulle vi vilja använda datatypen "Duration", men den finns inte som knapp i vänsterkanten. Man kan då välja någon annan datatyp (t.ex. "Any") och genom att klicka i rutan bredvid "Available types" få fram en bläddringslista där bl.a. "Duration" finns.
+   * I fält av typen "Quantity" kan man välja att tillåta (flera) olika enheter
+      * För `Sträcka från start` välj at tillåta både meter och kilometer
+      * För `Longitud` och för `Latitud` välj grader (degrees) som enhet
+1. Terminologibind åtminstone "skidåkning" i fältet `Typ av motion` till Snomed CT (Lämpligt snomedbegrepp: 45033006). *Se beskrivning av hur på t.ex. https://youtu.be/BqUWVpnFXiw om du inte sett annan demo.*
+1. Spara ditt arbete ofta, och åtminstone nu.
+       
+### 3b. Skapa och justera NN_akutmall_undervisningsexempel_3b
+1. Kopiera exempel-mallen från förra undervisningstillfället, "akutmall_undervisningsexempel_2a" genom att ställa pekaren över mallen  i listar av mallar och arketyper så att tre prickar dyker upp på raden i listan, tryck på dem så kommer kopieringsmöjligheten upp, se [copy_template.png](https://github.com/modellbibliotek/kurs-openEHR-jan-2021/blob/main/images/copy_template.png?raw=true). Spara då kopian ett nytt namn i stil med NN_akutmall_undervisningsexempel_3a (där NN är dina initialer eller annan unik text så att vi inte senare krockar med namn i vår gemensamma labbmiljö för formulär)
+2. ...
 
-
-
-### Namn_Ns_akutmall_undervisningsexempel_3a
-* Kopiera akutmall_undervisningsexempel_2a
 ## Exempelpatienter (till övningar m.m.)
 |Field|Patient One|Patient Two|Patient Three|Patient Four|
 |---|---|---|---|---|
