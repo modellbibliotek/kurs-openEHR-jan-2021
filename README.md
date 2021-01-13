@@ -1,4 +1,4 @@
-# kurs-openEHR-jan-2021
+# Övningsmaterial för SFMIs openEHR-kurs (Januari 2021)
 
 Se https://discourse.openehr.org/t/digital-utbildningsserie-om-openehr-nov-2020-jan-2021/1105 och https://www.sfmi.se/ för detaljer om kursen.
 
@@ -20,15 +20,28 @@ Kom ihåg att du kan spana in, översätta och ladda ner arketyper även via htt
 1. Klicka på "Import" längst upp i archetype designer. Då visas en dialog som har bl.a. har en ruta med texten "Drop here"; dra dit och släpp av filerna från underbiblioteket "local" som du packade upp i förra steget. Klicka sedan en gröna knappen "Upload all" och när allt sedan laddats upp, klicka då close.
 1. Nu kan du öppna akutmall_undervisningsexempel_2a eller de ingående arketyperna
 
-## akutmall_undervisningsexempel_2a
-Template/mallen akutmall_undervisningsexempel_2a är en förenklad (inte helt realistisk) delmängd av saker som kan vara intressanta vid akut omhändertagande av vissa skador. 
-Den är utformad för att visa olika användbara egenskaper hos modeller baserade på en kombination av openEHR och Snomed CT.
-
 ## Valfria extrasteg senare:
 1. Följ den fjärde lathunden `Koppla Archetype Designer till arbetsytan på GitHub` 
 1. Om du vill koppla in fler repositories upprepa lathund 4 med olika innehåll i "Repository". CKM-mirror kan t.ex. vara kul att koppla in och utforska, men tar en del tid att ladda in med sina över 500 arketyper.
 1. Skicka ett mail till asa.skagerhult@regionostergotland.se och erik.sundvall@regionostergotland.se där du berättar ditt GitHub-användarnamn (men _inte_ ditt lösenord) om du vill kunna spara (inte bara läsa) i repository/arbetsytor som använs i nationellt samarbete.
 
+## akutmall_undervisningsexempel_2a
+Template/mallen akutmall_undervisningsexempel_2a som användes vid andra undervisningstillfället (13 Jan) är en förenklad (inte helt realistisk) delmängd av saker som kan vara intressanta vid akut omhändertagande av vissa skador. Den är utformad för att visa olika användbara egenskaper hos modeller baserade på en kombination av openEHR och Snomed CT.
+
+## Undervisningstillfälle 3 (18 Jan)
+
+### Skapa och terminologibind arketyp för motionslopp
+Vi låtsas nu att vi ska hjälpa ett forskningsprojekt att fånga mer detaljerade data kring olyckor vid Vätternrundan som kräver vårdsinsatser, de av Region Östergötlands mottagningar som brukar hantera flest skador från Vätternrundan har gått med på att utöka sitt olycksfomulär. Vi hittar ingen lämplig färdig arketyp utan bestämmer oss för att författa en egen. Men att göra en särskild vätternrunde-arketyp verkar lite väl specifikt så vi beslutar göra en mer generell om händelser vid motionslopp.
+
+1. Starta Archetype Designer (https://tools.openehr.org/designer) och logga in med ditt personliga konto (som du skapat själv tidigare, se ovan)
+1. Inspektera den befintliga arketypen `Problem/Diagnosis`, leta upp och läs beskrivning/metadata för fältet `Specifika detaljer`` som är ett "SLOT" - där funderar vi på att senare i templaten stoppa in vår nya motionslopps-arketyp.
+1. Skapa en ny arketyp "Motionslopp_NN" där NN är dina initialer (så att vi inte senare krockar med namn i vår gemensamma labbminlö för formulär). Den ska vara av type CLUSTER och vi kan köra med svenska som originalspråk (om vi inte tror att den kommer spridas internationellt).
+1. Skapa ett träd (ungefär) som det i bilden motionslopp.png
+
+
+
+### Namn_Ns_akutmall_undervisningsexempel_3a
+* Kopiera akutmall_undervisningsexempel_2a
 ## Exempelpatienter (till övningar m.m.)
 |Field|Patient One|Patient Two|Patient Three|Patient Four|
 |---|---|---|---|---|
