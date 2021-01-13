@@ -36,7 +36,7 @@ Vi låtsas nu att vi ska hjälpa ett forskningsprojekt att fånga mer detaljerad
 1. Starta Archetype Designer (https://tools.openehr.org/designer) och logga in med ditt personliga konto (som du skapat själv tidigare, se ovan)
 1. Inspektera den befintliga arketypen `Problem/Diagnosis`, leta upp och läs beskrivning/metadata för fältet `Specifika detaljer`` som är ett "SLOT" - där funderar vi på att senare i templaten stoppa in vår nya motionslopps-arketyp.
 1. Skapa en ny arketyp "Motionslopp_NN" där NN är dina initialer (så att vi inte senare krockar med namn i vår gemensamma labbminlö för formulär). Den ska vara av type CLUSTER och vi kan köra med svenska som originalspråk (om vi inte tror att den kommer spridas internationellt).
-1. Skapa ett träd (ungefär) som det i bilden motionslopp.png
+1. Skapa ett träd (ungefär) som det i bilden [motionslopp.png](https://github.com/modellbibliotek/kurs-openEHR-jan-2021/blob/main/images/motionslopp.png?raw=true)
 
 
 
