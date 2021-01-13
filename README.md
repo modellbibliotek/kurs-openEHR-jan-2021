@@ -31,7 +31,7 @@ Template/mallen akutmall_undervisningsexempel_2a som användes vid andra undervi
 ## Undervisningstillfälle 3 (18 Jan)
 
 ### 3a. Skapa och terminologibind arketyp för motionslopp
-Vi låtsas nu att vi ska hjälpa ett forskningsprojekt att fånga mer detaljerade data kring olyckor vid Vätternrundan som kräver vårdsinsatser, de av Region Östergötlands mottagningar som brukar hantera flest skador från Vätternrundan har gått med på att utöka sitt olycksfomulär. Vi hittar ingen lämplig färdig arketyp utan bestämmer oss för att författa en egen. Men att göra en särskild vätternrunde-arketyp verkar lite väl specifikt så vi beslutar göra en mer generell om händelser vid motionslopp.
+Vi låtsas nu att vi ska hjälpa ett forskningsprojekt att fånga mer detaljerade data kring olyckor vid Vätternrundan som kräver vårdsinsatser, de av Region Östergötlands mottagningar som brukar hantera flest skador från Vätternrundan är med i studien och har gått med på att utöka sitt olycksfomulär. Vi hittar ingen lämplig färdig arketyp utan bestämmer oss för att författa en egen. Men att göra en särskild vätternrunde-arketyp verkar lite väl specifikt så vi beslutar göra en mer generell om händelser vid motionslopp.
 
 1. Starta Archetype Designer (https://tools.openehr.org/designer) och logga in med ditt personliga konto (som du skapat själv tidigare, se ovan)
 1. Inspektera den befintliga arketypen `Problem/Diagnosis`, leta upp och läs beskrivning/metadata för fältet `Specifika detaljer` som är av typen "SLOT" - där funderar vi på att senare i templaten stoppa in vår nya motionslopps-arketyp.
@@ -40,17 +40,28 @@ Vi låtsas nu att vi ska hjälpa ett forskningsprojekt att fånga mer detaljerad
    * Det går att duplicera fält så att alla inställningar följer med, gör det t.ex. för att kopiera mellan fälten `Latitud` och `Longitud`.
    * För värden i `Typ av motion` välj "Internal Coded", tryck sedan den blå knappen "Edit" och skapa en lista med t.ex. de fyra raderna Cykling, Löpning, Skidåkning, Simning.
    * För värden i `Träningsvana` välj "Internal Coded", tryck sedan den blå knappen "Edit" och skapa en lista med t.ex. raderna Nybörjare, Motionsidrottare, Elitnivå.
-   * För inställningarna i fältet `Deltagit tidigare i detta lopp, antal gånger` ta bort bocken framför "unboud" under rubriken "Range". Då kommer ny val, sätt/behåll 0 som minimumgräns (för att förbjuda negativa värden) och ta bort bocken framför "Max" så att det inte finns någon övre gräns.
+   * För inställningarna i fältet `Deltagit tidigare i detta lopp, antal gånger` ta bort bocken framför "unboud" under rubriken "Range". Då kommer nya val fram, sätt/behåll 0 som minimumgräns (för att förbjuda negativa värden) och ta bort bocken framför "Max" så att det inte finns någon övre gräns.
    * För fältet `Tid efter start` skulle vi vilja använda datatypen "Duration", men den finns inte som knapp i vänsterkanten. Man kan då välja någon annan datatyp (t.ex. "Any") och genom att klicka i rutan bredvid "Available types" få fram en bläddringslista där bl.a. "Duration" finns.
    * I fält av typen "Quantity" kan man välja att tillåta (flera) olika enheter
-      * För `Sträcka från start` välj at tillåta både meter och kilometer
-      * För `Longitud` och för `Latitud` välj grader (degrees) som enhet
+       * För `Sträcka från start` välj at tillåta både meter och kilometer
+       * För `Longitud` och för `Latitud` välj grader (degrees) som enhet
 1. Terminologibind åtminstone "skidåkning" i fältet `Typ av motion` till Snomed CT (Lämpligt snomedbegrepp: 45033006). *Se beskrivning av hur på t.ex. https://youtu.be/BqUWVpnFXiw om du inte sett annan demo.*
 1. Spara ditt arbete ofta, och åtminstone nu.
        
 ### 3b. Skapa och justera NN_akutmall_undervisningsexempel_3b
 1. Kopiera exempel-mallen från förra undervisningstillfället, "akutmall_undervisningsexempel_2a" genom att ställa pekaren över mallen  i listar av mallar och arketyper så att tre prickar dyker upp på raden i listan, tryck på dem så kommer kopieringsmöjligheten upp, se [copy_template.png](https://github.com/modellbibliotek/kurs-openEHR-jan-2021/blob/main/images/copy_template.png?raw=true). Spara då kopian ett nytt namn i stil med NN_akutmall_undervisningsexempel_3a (där NN är dina initialer eller annan unik text så att vi inte senare krockar med namn i vår gemensamma labbmiljö för formulär)
-2. ...
+1. Koppla in vår nytillverkade arketyp om motionslopp i mallens fält `Specifika detaljer` (som finns under `Problem/Diagnosis`) 
+1. I mallens fält `Loppets namn` vill vi lista de olika varianterna på vätternrundan så att det blir smidigt för personalen. Välj "Free text" sedan "Edit values" kopiera hela listan nedan och när du tryckt "add" klistra in den och tryck "Save"
+   Vätternrundan
+   Halvvättern 150 km
+   Tjejvättern 100 km
+   Vätternrundan 100 km
+   MTB-Vättern
+   Minivättern
+ 1....  
+
+### 3b. Skapa och justera ett formulär
+
 
 ## Exempelpatienter (till övningar m.m.)
 |Field|Patient One|Patient Two|Patient Three|Patient Four|
