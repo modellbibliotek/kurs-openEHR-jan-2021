@@ -36,11 +36,11 @@ Vi låtsas nu att vi ska hjälpa ett forskningsprojekt att fånga mer detaljerad
 1. Starta Archetype Designer (https://tools.openehr.org/designer) och logga in med ditt personliga konto (som du skapat själv tidigare, se ovan)
 1. Inspektera den befintliga arketypen `Problem/Diagnosis` (den öppnas då som en till flik längst upp, till höger om fliken för ditt skapade repository), leta upp och läs beskrivning/metadata för fältet `Specifika detaljer` som är av typen "SLOT" - där funderar vi på att senare i templaten stoppa in vår nya motionslopps-arketyp. Använd drop-down-menyn uppe i högra hörnet för att byta språk till svenska.
 1. Gå tillbaks till fliken för ditt skapade repository och skapa en ny arketyp genom att klicka på den stora gröna knappen "New" och välja "Archetype". 
-  * I Rm Type, välj CLUSTER
-  * I Concept ange "Motionslopp_NN" där NN är dina initialer (OBS: inga ÅÄÖ eller bindestreck) ellar annan unik text (så att vi inte senare krockar med namn i vår gemensamma labbmiljö för formulär).
-  * I fälten Concept och Version ska inget fyllas i/ändras.
-  * I fältet Original Language, välj Swedish (sv) (Det är ok att använda svenska som originalspråk om vi inte tror att den kommer spridas internationellt, vilket vi i detta fall inte tror.)
-  * Klicka på knappen Create.(Om inget händer kan det ha smugit sig in något icke tillåtet tecken i namnet. Testa då att ändra namnet och klicka igen.)
+   * I Rm Type, välj CLUSTER
+   * I Concept ange "Motionslopp_NN" där NN är dina initialer (OBS: inga ÅÄÖ eller bindestreck) eller annan unik text (så att vi inte senare krockar med namn i vår gemensamma labbmiljö för formulär).
+   * I fälten Concept och Version ska inget fyllas i/ändras.
+   * I fältet Original Language, välj Swedish (sv) (Det är ok att använda svenska som originalspråk om vi inte tror att den kommer spridas internationellt, vilket vi i detta fall inte tror.)
+   * Klicka på knappen Create.(Om inget händer kan det ha smugit sig in något icke tillåtet tecken i namnet. Testa då att ändra namnet och klicka igen.)
   
 1. Skapa ett träd (ungefär) som det i bilden [motionslopp.png](https://github.com/modellbibliotek/kurs-openEHR-jan-2021/blob/main/images/motionslopp.png?raw=true) med följande tips i åtanke för att testa olika funktioner i verktyget.
    * Det går att duplicera fält så att alla inställningar följer med, gör det t.ex. för att kopiera mellan fälten `Latitud` och `Longitud`.
