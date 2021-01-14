@@ -38,21 +38,21 @@ Vi låtsas nu att vi ska hjälpa ett forskningsprojekt att fånga mer detaljerad
 1. Gå tillbaks till fliken för ditt skapade repository och skapa en ny arketyp genom att klicka på den stora gröna knappen "New" och välja "Archetype". 
    * I Rm Type, välj CLUSTER
    * I Concept ange "Motionslopp_NN" där NN är dina initialer (OBS: inga ÅÄÖ eller bindestreck) eller annan unik text (så att vi inte senare krockar med namn i vår gemensamma labbmiljö för formulär).
-   * I fälten Concept och Version ska inget fyllas i/ändras.
-   * I fältet Original Language, välj Swedish (sv) (Det är ok att använda svenska som originalspråk om vi inte tror att den kommer spridas internationellt, vilket vi i detta fall inte tror.)
+   * I fältet Version ska inget fyllas i/ändras.
+   * I fältet Original Language, välj Swedish (sv) (Det är ok att använda svenska som originalspråk om vi inte tror att den kommer spridas internationellt, vilket vi i detta fall låtsas att vi inte tror.)
    * Klicka på knappen Create.(Om inget händer kan det ha smugit sig in något icke tillåtet tecken i namnet. Testa då att ändra namnet och klicka igen.)
   
-1. Skapa ett träd (ungefär) som det i bilden [motionslopp.png](https://github.com/modellbibliotek/kurs-openEHR-jan-2021/blob/main/images/motionslopp.png?raw=true) genom att klicka på motsvarande symbol i vänsterkanten och ange namn. 
+1. Skapa ett träd (ungefär) som det i bilden [motionslopp.png](https://github.com/modellbibliotek/kurs-openEHR-jan-2021/blob/main/images/motionslopp.png?raw=true) genom att för varje fält/rad klicka på motsvarande symbol i vänsterkanten och ange namn. 
 Ha följande tips i åtanke för att testa olika funktioner i verktyget.
    * Det går att duplicera fält så att alla inställningar följer med, gör det t.ex. för att kopiera mellan fälten `Latitud` och `Longitud`.
    * För värden i `Typ av motion` välj "Internal Coded", tryck sedan den blå knappen "Edit" och skapa en lista med t.ex. de fyra raderna Cykling, Löpning, Skidåkning, Simning.
    * För värden i `Träningsvana` välj "Internal Coded", tryck sedan den blå knappen "Edit" och skapa en lista med t.ex. raderna Nybörjare, Motionsidrottare, Elitnivå.
    * För inställningarna i fältet `Deltagit tidigare i detta lopp, antal gånger` ta bort bocken framför "unboud" under rubriken "Range". Då kommer nya val fram, sätt/behåll 0 som minimumgräns (för att förbjuda negativa värden) och ta bort bocken framför "Max" så att det inte finns någon övre gräns.
    * För fältet `Tid efter start` skulle vi vilja använda datatypen "Duration", men den finns inte som knapp i vänsterkanten. Man kan då välja någon annan datatyp (t.ex. "Any") och genom att klicka i rutan bredvid "Available types" få fram en bläddringslista där bl.a. "Duration" finns.
-   * I fält av typen "Quantity" kan man välja att tillåta (flera) olika enheter
-       * För `Sträcka från start` välj at tillåta både meter och kilometer
-       * För `Longitud` och för `Latitud` välj grader (degrees) som enhet
-1. Terminologibind åtminstone "skidåkning" i fältet `Typ av motion` till Snomed CT (Lämpligt snomedbegrepp: 45033006). *Se beskrivning av hur på t.ex. https://youtu.be/BqUWVpnFXiw om du inte sett annan demo.*
+   * I fält av typen "Quantity" kan man välja att tillåta (flera) olika enheter genom att vid etiketten "Units" trycka på ´+´-knappen. Då kommer det upp en ruta med sökfält för "Category" och "Units" genom att klicka i fältet kommer en bläddringslista upp, men man kan även börja skriva det man söter efter. I Category kan man söka storhet/typ, t.ex "length", och när man valt storhet/typ så kan man klicka i sökfältet "unit" och får då bara upp enheter som passar storheten.
+       * För `Sträcka från start` välj att tillåta både meter och kilometer
+       * För `Longitud` och för `Latitud` välj "degree (deg)" som enhet (som är av kategorin "Angle, plane")
+1. Terminologibind åtminstone "skidåkning" i fältet `Typ av motion` till Snomed CT (Lämpligt snomedbegrepp: 45033006). *Se beskrivning av hur på t.ex. https://youtu.be/BqUWVpnFXiw om du inte redan sett annan demo.*
 1. Spara ditt arbete ofta, och åtminstone nu.
        
 ### 3b. Skapa och justera NN_akutmall_undervisningsexempel_3b
