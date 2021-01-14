@@ -19,10 +19,10 @@ Kom ihåg att du kan spana in, översätta och ladda ner arketyper även via htt
    a. Klicka på https://github.com/modellbibliotek/kurs-openEHR-jan-2021/archive/main.zip
    a. Packa upp zip-filen på din dator.
 1. I Archetype Designer:
-   a. Klicka på det repository som du skapade. Observerade att det kan ta en stund att öppna det.
-   a. Klicka på "Import" längst upp i fönstret. 
-   a. Markera filerna från underbiblioteket "local" som du packade upp i förra steget och dra och släpp dem i rutan med texten "Drop here" i dialogfönstret.    
-   a. Klicka på den gröna knappen "Upload all", vänta tills allt laddats upp och klicka då på "Close".
+   A. Klicka på det repository som du skapade. Observerade att det kan ta en stund att öppna det.
+   A. Klicka på "Import" längst upp i fönstret. 
+   A. Markera filerna från underbiblioteket "local" som du packade upp i förra steget och dra och släpp dem i rutan med texten "Drop here" i dialogfönstret.    
+   A. Klicka på den gröna knappen "Upload all", vänta tills allt laddats upp och klicka då på "Close".
 1. Nu kan du öppna mallen "akutmall_undervisningsexempel_2a" eller de ingående arketyperna genom att klicka på dem.
 
 ## akutmall_undervisningsexempel_2a
