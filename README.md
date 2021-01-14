@@ -34,7 +34,7 @@ Template/mallen akutmall_undervisningsexempel_2a som användes vid andra undervi
 Vi låtsas nu att vi ska hjälpa ett forskningsprojekt att fånga mer detaljerade data kring olyckor vid Vätternrundan som kräver vårdsinsatser, de av Region Östergötlands mottagningar som brukar hantera flest skador från Vätternrundan är med i studien och har gått med på att utöka sitt olycksfomulär. Vi hittar ingen lämplig färdig arketyp utan bestämmer oss för att författa en egen. Men att göra en särskild vätternrunde-arketyp verkar lite väl specifikt så vi beslutar göra en mer generell om händelser vid motionslopp.
 
 1. Starta Archetype Designer (https://tools.openehr.org/designer) och logga in med ditt personliga konto (som du skapat själv tidigare, se ovan)
-1. Inspektera den befintliga arketypen `Problem/Diagnosis` (den öppnas då som en till flik längst upp, till höger om fliken för ditt skapade repository), leta upp och läs beskrivning/metadata för fältet `Specifika detaljer` som är av typen "SLOT" - där funderar vi på att senare i templaten stoppa in vår nya motionslopps-arketyp. Använd drop-down-menyn uppe i högra hörnet för att byta språk till svenska.
+1. Inspektera den befintliga arketypen `Problem/Diagnosis` (den öppnas då som en till flik längst upp, till höger om fliken för ditt skapade repository), leta upp och läs beskrivning/metadata för fältet `Extra information` som är av typen "SLOT" - där funderar vi på att senare i templaten stoppa in vår nya motionslopps-arketyp. Använd drop-down-menyn uppe i högra hörnet för att byta språk till svenska.
 1. Gå tillbaks till fliken för ditt skapade repository och skapa en ny arketyp genom att klicka på den stora gröna knappen "New" och välja "Archetype". 
    * I Rm Type, välj CLUSTER
    * I Concept ange "Motionslopp_NN" där NN är dina initialer (OBS: inga ÅÄÖ eller bindestreck) eller annan unik text (så att vi inte senare krockar med namn i vår gemensamma labbmiljö för formulär).
@@ -57,7 +57,7 @@ Ha följande tips i åtanke för att testa olika funktioner i verktyget.
        
 ### 3b. Skapa och justera NN_akutmall_undervisningsexempel_3b
 1. Kopiera exempel-mallen från förra undervisningstillfället, "akutmall_undervisningsexempel_2a" genom att ställa pekaren över mallen i listan av mallar och arketyper så att tre prickar dyker upp på raden i listan, tryck på dem så kommer kopieringsmöjligheten upp, se [copy_template.png](https://github.com/modellbibliotek/kurs-openEHR-jan-2021/blob/main/images/copy_template.png?raw=true). Spara då kopian med ett nytt namn i stil med NN_akutmall_undervisningsexempel_3a (där NN är dina initialer eller annan unik text så att vi inte senare krockar med namn i vår gemensamma labbmiljö för formulär. Undvik åäö i filnamn.)
-1. Koppla in vår nytillverkade arketyp om motionslopp i mallens fält `Specifika detaljer` (som finns under `Problem/Diagnosis`) 
+1. Koppla in vår nytillverkade arketyp om motionslopp i mallens fält `Extra information` (som finns under `Problem/Diagnosis`) 
 1. I mallens fält `Loppets namn` vill vi lista de olika varianterna på vätternrundan så att det blir smidigt för personalen. Välj "Free text" sedan "Edit values" kopiera hela listan nedan och när du tryckt "add" klistra in den och tryck "Save". Se till att "Limit to list" *inte* är förbockat, annars kan man inte skriva in andra motionslopp. Som "Default Value" välj Vätternrundan.
    * Vätternrundan
    * Halvvättern 150 km
