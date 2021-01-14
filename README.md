@@ -73,6 +73,8 @@ Vi låtsas nu att vi ska hjälpa ett forskningsprojekt att fånga mer detaljerad
    * Kom ihåg var du sparar den exporterade filen på din dator, du behöver den i nästa övning
 
 ### 3c. Skapa och justera ett formulär
+1. Nu byter vi verktyg. Logga in i https://tools.better.care/studio/ med användarnamn `sfmi` och lösenordet ni fått via epost, välj längst ner domänen ehrscape.com.
+1. ...mer info kommer
 
 
 ## Exempelpatienter (till övningar m.m.)
