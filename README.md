@@ -15,9 +15,12 @@ Kom ihåg att du kan spana in, översätta och ladda ner arketyper även via htt
     * Klicka på gröna knappen "+ New repository"
     * Välj: Repository type = Local Folder
     * Hitta på valftitt namn och fyll i under "Repository name"
-1. Ladda ner exempelfilerna för kursen från det här GitHub-projektet (i valfritt bibliotek på din dator) genom att klicka på https://github.com/modellbibliotek/kurs-openEHR-jan-2021/archive/main.zip
-1. Packa upp zip-filen och gå in i underbiblioteket "local"
-1. Klicka på "Import" längst upp i archetype designer. Då visas en dialog som har bl.a. har en ruta med texten "Drop here"; dra dit och släpp av filerna från underbiblioteket "local" som du packade upp i förra steget. Klicka sedan en gröna knappen "Upload all" och när allt sedan laddats upp, klicka då close.
+1. Ladda ner exempelfilerna för kursen från det här GitHub-projektet genom att 
+   * Klicka på https://github.com/modellbibliotek/kurs-openEHR-jan-2021/archive/main.zip
+   * Spara på lämplig plats på din dator.
+   * Packa upp zip-filen.
+   * Öppna underbiblioteket som heter "local"
+1. I Archetype Designer, klicka på "Import" längst upp i fönstret. Då visas en dialog som har bl.a. har en ruta med texten "Drop here"; dra dit och släpp av filerna från underbiblioteket "local" som du packade upp i förra steget. Klicka sedan en gröna knappen "Upload all" och när allt sedan laddats upp, klicka då close.
 1. Nu kan du öppna akutmall_undervisningsexempel_2a eller de ingående arketyperna
 
 ## Valfria extrasteg senare:
