@@ -41,7 +41,6 @@ Vi låtsas nu att vi ska hjälpa ett forskningsprojekt att fånga mer detaljerad
    * I fältet Version ska inget fyllas i/ändras.
    * I fältet Original Language, välj Swedish (sv) (Det är ok att använda svenska som originalspråk om vi inte tror att den kommer spridas internationellt, vilket vi i detta fall låtsas att vi inte tror.)
    * Klicka på knappen Create.(Om inget händer kan det ha smugit sig in något icke tillåtet tecken i namnet. Testa då att ändra namnet och klicka igen.)
-  
 1. Skapa ett träd (ungefär) som det i bilden [motionslopp.png](https://github.com/modellbibliotek/kurs-openEHR-jan-2021/blob/main/images/motionslopp.png?raw=true) genom att för varje fält/rad klicka på motsvarande symbol i vänsterkanten och ange namn. 
 Ha följande tips i åtanke för att testa olika funktioner i verktyget.
    * Det går att duplicera fält så att alla inställningar följer med, gör det t.ex. för att kopiera mellan fälten `Latitud` och `Longitud`.
@@ -52,6 +51,7 @@ Ha följande tips i åtanke för att testa olika funktioner i verktyget.
    * I fält av typen "Quantity" kan man välja att tillåta (flera) olika enheter genom att vid etiketten "Units" trycka på ´+´-knappen. Då kommer det upp en ruta med sökfält för "Category" och "Units" genom att klicka i fältet kommer en bläddringslista upp, men man kan även börja skriva det man söter efter. I Category kan man söka storhet/typ, t.ex "length", och när man valt storhet/typ så kan man klicka i sökfältet "unit" och får då bara upp enheter som passar storheten.
        * För `Sträcka från start` välj att tillåta både meter och kilometer
        * För `Longitud` och för `Latitud` välj "degree (deg)" som enhet (som är av kategorin "Angle, plane")
+1. Spara ditt arbete ofta, och åtminstone nu.
 1. Terminologibind åtminstone "skidåkning" i fältet `Typ av motion` till Snomed CT (Lämpligt snomedbegrepp: 45033006). *Se beskrivning av hur på t.ex. https://youtu.be/BqUWVpnFXiw om du inte redan sett annan demo.* Den som har tid över kan börja leda i begreppen under [415577004 | idrott |](https://browser.ihtsdotools.org/?perspective=full&conceptId1=415577004&edition=MAIN/SNOMEDCT-SE/2020-11-30&release=&languages=sv,en) i Snomed CT och försöka terminologibinda fler saker.
 1. Spara ditt arbete ofta, och åtminstone nu.
        
@@ -76,6 +76,7 @@ Ha följande tips i åtanke för att testa olika funktioner i verktyget.
    * Bocka för "Add valueset"
    * Tryck på "Edit valueset"
    * Kopiera från ditt kalkylark ut de två spalterna med kod och text, och klistra in dem i den tomma "Edit valueset"-listan och tryck sedan "Save"
+1. Spara ditt arbete ofta, och åtminstone nu.
 1. Vi låtsas att det är 31-Aug-2020 och vi behöver ladda ner och inkludera den uppdaterade svenska översättningen av blodtrycksarketypen i Sofia Janstads "Branch" Rev 8.3 i Clinical Knowledge Manager. Den hade då inte hunnit återföras till huvudversionen ("trunk").
    * Öppna genväg till blodtrycksarketypens revisionshistorik: https://ckm.openehr.org/ckm/archetypes/1013.1.3574/revisionhistory
    * Klicka på Sofia Janstads "Branch", raden med Rev 8.3...
@@ -86,13 +87,37 @@ Ha följande tips i åtanke för att testa olika funktioner i verktyget.
    * Växla tillbaka till Archetype Designer där vi förut höll på att redigera vår template
    * Tryck på "Import" längst upp och importera Blodtrycksarketypen du nyss laddade ner (på samma sätt som du tidigare importerade arketyper i förberedelserna inför övingstillfället)
    * I mallen gå välj noden "Puls/Hjärtfrekvens" klicka sedan på Blodtryck i listan över arketyper till vänster.
+1. Akutmottagningen säger att de vill ha inskrinvningsmallen på formen ABCDE (Airway, Breathing, Circulation...) som pappers-akutjounalen, [se exempel (låtsaspatienter)](https://drive.google.com/file/d/0BwdHmPbK5e3SWjRsQzUyR243OEk/view?usp=sharing). De behöver också ett sätt att rapportera problem med luftvägar. Målbilden är en template som ser ut ungefär som på bilden [ABCDE.png](https://github.com/modellbibliotek/kurs-openEHR-jan-2021/blob/main/images/ABCDE.png?raw=true)
+   1. Få bättre överblick genom att trycka på `+` för att fälla ihop arketyperna under Rubriken vitalparametrar
+   1. Ändra namn på rubriken "Vitalparametrar" till "ABCDE"
+   1. Lägg till tre nya exemplar av arketypen Rubrik under ABCDE och namnge dem
+       * A. Fri luftväg (Airway)
+       * B. Andning (Breathing)
+       * C. Cirkulation
+   1. Under "A. Fri luftväg (Airway)" lägg till ett exemplar av arketypen "Problem/Diagnos" och justera den så här:
+      * Byt namn på detta exemplar av "Problem/Diagnos" till "Luftväg"
+      * Ändra fältet "Occurrences" (under fliken "Constraints") från `0..1` till `0..*` (för att tillåta fler exemplar av noden).
+1. Terminologibind fältet `Problem/Diagnos namn` i arketypen vi döpte om till Luftväg 
+   1. välj "External Coded", 
+       * under `terminology` skriv `SNOMED-CT`
+       * under `Uri` skriv `http://snomed.info/sct/`
+   * Bocka för "Add valueset"
+   * Tryck på "Edit valueset"
+   * Kopiera hela nedanstående tabell, och klistra in dem i den tomma "Edit valueset"-listan och tryck sedan "Save"
+      |70407001 | stridor |
+      |79688008 | andningshinder |
+      |217808004 | andningshinder orsakad av främmande kropp i matstrupen |
+      |427286007 | obstruktion av de nedre luftvägarna |
+      |68372009 | obstruktion av de övre luftvägarna |
+      |427562009 | blod i övre luftvägarna |
+1. Spara ditt arbete ofta, och åtminstone nu.
 1. Exportera din mall som en "Operational template" (OPT). Detaljer:
    * Klicka på Export, en ruta kommer upp
    * Klicka på den blå "Export"-knappen och välj "Export to OPT"
    * Kom ihåg var du sparar den exporterade filen på din dator, du behöver den i nästa övning
 
 ### 3c. Skapa och justera ett formulär
-1. Nu byter vi verktyg. Logga in i https://tools.better.care/studio/ med användarnamn `sfmi` och lösenordet ni fått via epost, välj längst ner domänen ehrscape.com.
+1. Nu byter vi verktyg. Logga in i https://tools.better.care/studio/ med användarnamn `sfmi` och lösenordet ni fått via epost i kalenderinbjudan (kan även efterfrågas i möteschatten), välj längst ner domänen ehrscape.com.
 1. ...mer info kommer
 
 
