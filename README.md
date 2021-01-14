@@ -104,12 +104,15 @@ Ha följande tips i åtanke för att testa olika funktioner i verktyget.
    * Bocka för "Add valueset"
    * Tryck på "Edit valueset"
    * Kopiera hela nedanstående tabell, och klistra in dem i den tomma "Edit valueset"-listan och tryck sedan "Save"
-      |70407001 | stridor |
-      |79688008 | andningshinder |
-      |217808004 | andningshinder orsakad av främmande kropp i matstrupen |
-      |427286007 | obstruktion av de nedre luftvägarna |
-      |68372009 | obstruktion av de övre luftvägarna |
-      |427562009 | blod i övre luftvägarna |
+
+    |SCTID|Term|
+    |---|---|
+    |70407001|stridor|
+    |79688008|andningshinder|
+    |217808004|andningshinder orsakad av främmande kropp i matstrupen|
+    |427286007|obstruktion av de nedre luftvägarna|
+    |68372009|obstruktion av de övre luftvägarna|
+    |427562009|blod i övre luftvägarna|
 1. Spara ditt arbete ofta, och åtminstone nu.
 1. Exportera din mall som en "Operational template" (OPT). Detaljer:
    * Klicka på Export, en ruta kommer upp
@@ -119,7 +122,6 @@ Ha följande tips i åtanke för att testa olika funktioner i verktyget.
 ### 3c. Skapa och justera ett formulär
 1. Nu byter vi verktyg. Logga in i https://tools.better.care/studio/ med användarnamn `sfmi` och lösenordet ni fått via epost i kalenderinbjudan (kan även efterfrågas i möteschatten), välj längst ner domänen ehrscape.com.
 1. ...mer info kommer
-
 
 ## Exempelpatienter (till övningar m.m.)
 |Field|Patient One|Patient Two|Patient Three|Patient Four|
