@@ -12,18 +12,18 @@ Kom ihåg att du kan spana in, översätta och ladda ner arketyper även via htt
 1. Skapa användare på Github och i Archetype Designer enligt instruktioner i de två första lathundarna på https://openehr.atlassian.net/wiki/spaces/healthmod/pages/966295553/Snabbstartsguide+f+r+modelleringsverktyg
 1. Om du inte redan är inloggad i Archetype Designer följ tredje lathunden (om inloggning)
 1. För att riskfritt kunna experimentera och spara, skapa ett eget repository genom att:
-    * Klicka på gröna knappen "+ New repository"
+    * Klicka på den gröna knappen "+ New repository"
     * Välj: Repository type = Local Folder
     * Hitta på valftitt namn och fyll i under "Repository name"
-1. Ladda ner exempelfilerna för kursen från det här GitHub-projektet (i valfritt bibliotek på din dator) genom att klicka på https://github.com/modellbibliotek/kurs-openEHR-jan-2021/archive/main.zip
-1. Packa upp zip-filen på din dator.
-1. Klicka på "Import" längst upp i Archetype Designer. Då visas en dialog som har bl.a. har en ruta med texten "Drop here"; dra dit och släpp filerna från underbiblioteket "local" som du packade upp i förra steget. Klicka sedan på den gröna knappen "Upload all" och när allt sedan laddats upp, klicka då "Close".
-1. Nu kan du öppna "akutmall_undervisningsexempel_2a" eller de ingående arketyperna.
-
-## Valfria extrasteg senare:
-1. Följ lathund 4 `Koppla Archetype Designer till arbetsytan på GitHub` 
-1. Om du vill koppla in fler repositories upprepa lathund 4 med olika innehåll i "Repository". CKM-mirror kan t.ex. vara kul att koppla in och utforska, men tar en del tid att ladda in med sina över 500 arketyper.
-1. Skicka ett mail till asa.skagerhult@regionostergotland.se och erik.sundvall@regionostergotland.se där du berättar ditt GitHub-användarnamn (men _inte_ ditt lösenord) om du vill kunna spara (inte bara läsa) i repository/arbetsytor som använs i nationellt samarbete.
+1. Ladda ner exempelfilerna för kursen från det här GitHub-projektet (i valfritt bibliotek på din dator) genom att:
+   a. Klicka på https://github.com/modellbibliotek/kurs-openEHR-jan-2021/archive/main.zip
+   a. Packa upp zip-filen på din dator.
+1. I Archetype Designer:
+   a. Klicka på det repository som du skapade. Observerade att det kan ta en stund att öppna det.
+   a. Klicka på "Import" längst upp i fönstret. 
+   a. Markera filerna från underbiblioteket "local" som du packade upp i förra steget och dra och släpp dem i rutan med texten "Drop here" i dialogfönstret.    
+   a. Klicka på den gröna knappen "Upload all", vänta tills allt laddats upp och klicka då på "Close".
+1. Nu kan du öppna mallen "akutmall_undervisningsexempel_2a" eller de ingående arketyperna genom att klicka på dem.
 
 ## akutmall_undervisningsexempel_2a
 Template/mallen akutmall_undervisningsexempel_2a som användes vid andra undervisningstillfället (13 Jan) är en förenklad (inte helt realistisk) delmängd av saker som kan vara intressanta vid akut omhändertagande av vissa skador. Den är utformad för att visa olika användbara egenskaper hos modeller baserade på en kombination av openEHR och Snomed CT.
@@ -104,3 +104,8 @@ Vi låtsas nu att vi ska hjälpa ett forskningsprojekt att fånga mer detaljerad
 
 Det är inte självklart vilka Snomedbegrepp som vore lämpliga "föräldrabegrepp" till en fältet "Skada" ovan. 417163006 | traumatisk och/eller icke-traumatisk skada | är ett förslag som ändå inte täcker in alla ovanstående exempel. Man får gå högre i hierarkierna.
 Sannolikt skulle man behöva använda/göra termonologiurval för akutvård. (Kanske kopplat till akutmotagningarnas RETTS-koder m.m.?)
+
+## Valfria extrasteg senare:
+1. Följ lathund 4 `Koppla Archetype Designer till arbetsytan på GitHub` 
+1. Om du vill koppla in fler repositories upprepa lathund 4 med olika innehåll i "Repository". CKM-mirror kan t.ex. vara kul att koppla in och utforska, men tar en del tid att ladda in med sina över 500 arketyper.
+1. Skicka ett mail till asa.skagerhult@regionostergotland.se och erik.sundvall@regionostergotland.se där du berättar ditt GitHub-användarnamn (men _inte_ ditt lösenord) om du vill kunna spara (inte bara läsa) i repository/arbetsytor som använs i nationellt samarbete.
