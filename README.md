@@ -12,17 +12,17 @@ Kom ihåg att du kan spana in, översätta och ladda ner arketyper även via htt
 1. Skapa användare på Github och i Archetype Designer enligt instruktioner i de två första lathundarna på https://openehr.atlassian.net/wiki/spaces/healthmod/pages/966295553/Snabbstartsguide+f+r+modelleringsverktyg
 1. Om du inte redan är inloggad i Archetype Designer följ tredje lathunden (om inloggning)
 1. För att riskfritt kunna experimentera och spara, skapa ett eget repository genom att:
-    * Klicka på den gröna knappen "+ New repository"
-    * Välj: Repository type = Local Folder
-    * Hitta på valftitt namn och fyll i under "Repository name"
+    1. Klicka på den gröna knappen "+ New repository"
+    1. Välj: Repository type = Local Folder
+    1. Hitta på valftitt namn och fyll i under "Repository name"
 1. Ladda ner exempelfilerna för kursen från det här GitHub-projektet (i valfritt bibliotek på din dator) genom att:
-   a. Klicka på https://github.com/modellbibliotek/kurs-openEHR-jan-2021/archive/main.zip
-   a. Packa upp zip-filen på din dator.
+   1. Klicka på https://github.com/modellbibliotek/kurs-openEHR-jan-2021/archive/main.zip
+   1. Packa upp zip-filen på din dator.
 1. I Archetype Designer:
-   A. Klicka på det repository som du skapade. Observerade att det kan ta en stund att öppna det.
-   A. Klicka på "Import" längst upp i fönstret. 
-   A. Markera filerna från underbiblioteket "local" som du packade upp i förra steget och dra och släpp dem i rutan med texten "Drop here" i dialogfönstret.    
-   A. Klicka på den gröna knappen "Upload all", vänta tills allt laddats upp och klicka då på "Close".
+   1. Klicka på det repository som du skapade. Observerade att det kan ta en stund att öppna det.
+   1. Klicka på "Import" längst upp i fönstret. 
+   1. Markera filerna från underbiblioteket "local" som du packade upp i förra steget och dra och släpp dem i rutan med texten "Drop here" i dialogfönstret.    
+   1. Klicka på den gröna knappen "Upload all", vänta tills allt laddats upp och klicka då på "Close".
 1. Nu kan du öppna mallen "akutmall_undervisningsexempel_2a" eller de ingående arketyperna genom att klicka på dem.
 
 ## akutmall_undervisningsexempel_2a
