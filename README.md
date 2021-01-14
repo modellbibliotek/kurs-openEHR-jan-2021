@@ -8,7 +8,7 @@ Vi rekommenderar att du använder Google Chrome för Archetype Designer, men vis
 
 Kom ihåg att du kan spana in, översätta och ladda ner arketyper även via https://ckm.openehr.org/ckm/
 
-## Förberedelser
+## Förberedelser att göra innan undervisningstillfälle 3 (18 Januari)
 1. Skapa användare på Github och i Archetype Designer enligt instruktioner i de två första lathundarna på https://openehr.atlassian.net/wiki/spaces/healthmod/pages/966295553/Snabbstartsguide+f+r+modelleringsverktyg
 1. Om du inte redan är inloggad i Archetype Designer följ lathund 3 (om inloggning)
 1. För att riskfritt kunna experimentera och spara, skapa ett eget repository genom att:
@@ -16,19 +16,19 @@ Kom ihåg att du kan spana in, översätta och ladda ner arketyper även via htt
     1. Välj: Repository type = Local Folder
     1. Hitta på valftitt namn och fyll i under "Repository name"
 1. Ladda ner exempelfilerna för kursen från det här GitHub-projektet (i valfritt bibliotek på din dator):
-   1. Klicka på https://github.com/modellbibliotek/kurs-openEHR-jan-2021/archive/main.zip
+   1. Klicka på https://github.com/modellbibliotek/kurs-openEHR-jan-2021/archive/main.zip och ladda ner filen
    1. Packa upp zip-filen på din dator.
 1. I Archetype Designer:
-   1. Klicka på det repository som du skapade. Observera att det kan ta en stund att öppna det.
+   1. Klicka på det repository som du skapade. Observera att det kan ta en stund (upp till en minut) att öppna det.
    1. Klicka på "Import" längst upp i fönstret. 
-   1. Markera filerna från underbiblioteket "local" som du packade upp i förra steget och dra-och-släpp dem i rutan med texten "Drop here" i dialogfönstret.    
+   1. Markera filerna från underbiblioteket "local" bland de filer som du packade upp i förra steget och dra-och-släpp dem i rutan med texten "Drop here" i dialogfönstret.    
    1. Klicka på den gröna knappen "Upload all", vänta tills allt laddats upp och klicka då på "Close".
 1. Nu kan du öppna mallen "akutmall_undervisningsexempel_2a" eller de ingående arketyperna genom att klicka på dem.
 
-## akutmall_undervisningsexempel_2a (kommer att användas i övning 3B)
+### Info om akutmall_undervisningsexempel_2a (kommer att användas i övning 3b)
 Template/mallen akutmall_undervisningsexempel_2a som användes vid andra undervisningstillfället (13 Jan) är en förenklad (inte helt realistisk) delmängd av saker som kan vara intressanta vid akut omhändertagande av vissa skador. Den är utformad för att visa olika användbara egenskaper hos modeller baserade på en kombination av openEHR och Snomed CT.
 
-## Övningar vid undervisningstillfälle 3 (18 Jan)
+## Övningar vid undervisningstillfälle 3 (18 Januari)
 
 ### 3a. Skapa och terminologibind arketyp för motionslopp
 Vi låtsas nu att vi ska hjälpa ett forskningsprojekt att fånga mer detaljerade data kring olyckor vid Vätternrundan som kräver vårdsinsatser, de av Region Östergötlands mottagningar som brukar hantera flest skador från Vätternrundan är med i studien och har gått med på att utöka sitt olycksfomulär. Vi hittar ingen lämplig färdig arketyp utan bestämmer oss för att författa en egen. Men att göra en särskild vätternrunde-arketyp verkar lite väl specifikt så vi beslutar göra en mer generell om händelser vid motionslopp.
@@ -56,7 +56,7 @@ Ha följande tips i åtanke för att testa olika funktioner i verktyget.
 1. Spara ditt arbete ofta, och åtminstone nu.
        
 ### 3b. Skapa och justera NN_akutmall_undervisningsexempel_3b
-1. Kopiera exempel-mallen från förra undervisningstillfället, "akutmall_undervisningsexempel_2a" genom att ställa pekaren över mallen  i listar av mallar och arketyper så att tre prickar dyker upp på raden i listan, tryck på dem så kommer kopieringsmöjligheten upp, se [copy_template.png](https://github.com/modellbibliotek/kurs-openEHR-jan-2021/blob/main/images/copy_template.png?raw=true). Spara då kopian ett nytt namn i stil med NN_akutmall_undervisningsexempel_3a (där NN är dina initialer eller annan unik text så att vi inte senare krockar med namn i vår gemensamma labbmiljö för formulär)
+1. Kopiera exempel-mallen från förra undervisningstillfället, "akutmall_undervisningsexempel_2a" genom att ställa pekaren över mallen i listan av mallar och arketyper så att tre prickar dyker upp på raden i listan, tryck på dem så kommer kopieringsmöjligheten upp, se [copy_template.png](https://github.com/modellbibliotek/kurs-openEHR-jan-2021/blob/main/images/copy_template.png?raw=true). Spara då kopian med ett nytt namn i stil med NN_akutmall_undervisningsexempel_3a (där NN är dina initialer eller annan unik text så att vi inte senare krockar med namn i vår gemensamma labbmiljö för formulär. Undvik åäö i filnamn.)
 1. Koppla in vår nytillverkade arketyp om motionslopp i mallens fält `Specifika detaljer` (som finns under `Problem/Diagnosis`) 
 1. I mallens fält `Loppets namn` vill vi lista de olika varianterna på vätternrundan så att det blir smidigt för personalen. Välj "Free text" sedan "Edit values" kopiera hela listan nedan och när du tryckt "add" klistra in den och tryck "Save". Se till att "Limit to list" *inte* är förbockat, annars kan man inte skriva in andra motionslopp. Som "Default Value" välj Vätternrundan.
    * Vätternrundan
