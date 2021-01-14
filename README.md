@@ -10,7 +10,7 @@ Kom ihåg att du kan spana in, översätta och ladda ner arketyper även via htt
 
 ## Förberedelser
 1. Skapa användare på Github och i Archetype Designer enligt instruktioner i de två första lathundarna på https://openehr.atlassian.net/wiki/spaces/healthmod/pages/966295553/Snabbstartsguide+f+r+modelleringsverktyg
-1. Om du inte redan är inloggad i Archetype Designer följ tredje lathunden (om inloggning)
+1. Om du inte redan är inloggad i Archetype Designer följ lathund 3 (om inloggning)
 1. För att riskfritt kunna experimentera och spara, skapa ett eget repository genom att:
     1. Klicka på den gröna knappen "+ New repository"
     1. Välj: Repository type = Local Folder
@@ -25,7 +25,7 @@ Kom ihåg att du kan spana in, översätta och ladda ner arketyper även via htt
    1. Klicka på den gröna knappen "Upload all", vänta tills allt laddats upp och klicka då på "Close".
 1. Nu kan du öppna mallen "akutmall_undervisningsexempel_2a" eller de ingående arketyperna genom att klicka på dem.
 
-## akutmall_undervisningsexempel_2a
+## akutmall_undervisningsexempel_2a (kommer att användas i övning 3B)
 Template/mallen akutmall_undervisningsexempel_2a som användes vid andra undervisningstillfället (13 Jan) är en förenklad (inte helt realistisk) delmängd av saker som kan vara intressanta vid akut omhändertagande av vissa skador. Den är utformad för att visa olika användbara egenskaper hos modeller baserade på en kombination av openEHR och Snomed CT.
 
 ## Övningar vid undervisningstillfälle 3 (18 Jan)
