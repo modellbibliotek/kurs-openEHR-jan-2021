@@ -57,9 +57,10 @@ Ha följande tips i åtanke för att testa olika funktioner i verktyget.
        
 ### 3b. Skapa och justera NN_akutmall_undervisningsexempel_3b
 1. Kopiera exempel-mallen från förra undervisningstillfället, "akutmall_undervisningsexempel_2a" genom att ställa pekaren över mallen i listan av mallar och arketyper så att tre prickar dyker upp på raden i listan, tryck på dem så kommer kopieringsmöjligheten upp, se [copy_template.png](https://github.com/modellbibliotek/kurs-openEHR-jan-2021/blob/main/images/copy_template.png?raw=true). Spara då kopian med ett nytt namn i stil med NN_akutmall_undervisningsexempel_3a (där NN är dina initialer eller annan unik text så att vi inte senare krockar med namn i vår gemensamma labbmiljö för formulär. Undvik åäö i filnamn.)
-1. Om du tittar i listan över mallar så ser du att namnet i liten text underst på en av mallarna har ändrats till det du valde i förra steget, men namnet i störst text på den raden är oförändrat från originalet. Öppna mallen ändra den översta nodens namn i mallen till det namn du gav kopian, om du tycker det är snyggare så kan du här ersätta understrecken `_` med riktiga mellanslag (men behåll dina initialer för att undvika sammanblandning senare). Spara mallen. Gå tillbaka till (gröna) fliken med listan över arketyper och mallar och kolla om ändringen slagit igenom. växla sedan tillnaka till fliken med mallen.
-1. Koppla in vår nytillverkade arketyp om motionslopp i mallens fält `Extra information` (som finns under `Problem/Diagnosis`) 
-1. I mallens fält `Loppets namn` vill vi lista de olika varianterna på vätternrundan så att det blir smidigt för personalen. Välj "Free text" sedan "Edit values" kopiera hela listan nedan och när du tryckt "add" klistra in den och tryck "Save". Se till att "Limit to list" *inte* är förbockat, annars kan man inte skriva in andra motionslopp. Som "Default Value" välj Vätternrundan.
+1. Om du tittar i listan över mallar så ser du att namnet i liten text underst på en av mallarna har ändrats till det du valde i förra steget, men namnet i störst text på den raden är oförändrat från originalet. Öppna mallen ändra den översta nodens namn i mallen till det namn du gav kopian, om du tycker det är snyggare så kan du här ersätta understrecken `_` med riktiga mellanslag (men behåll dina initialer för att undvika sammanblandning senare). Spara mallen. Gå tillbaka till (gröna) fliken med listan över arketyper och mallar och kolla om ändringen slagit igenom. 
+1. Växla tillbaka till fliken med mallen. Kola att svenska (Sv) är valt (uppe till höger)
+1. Koppla in vår nytillverkade arketyp om motionslopp i mallens fält `Extra information` (som finns under `Problem/Diagnosis`). Notera att det nu inte går att titta på mallen på engelska och tyska längre, eftersom vårt tillagda arketyp bara finns på svenska.
+1. I mallens fält `Loppets namn` vill vi lista de olika varianterna på vätternrundan så att det blir smidigt för personalen. Välj "Free text" sedan "Edit values" kopiera hela listan nedan och när du tryckt "add" klistra in den och tryck "Save". Se sedan till att "Limit to list" *inte* är förbockat, annars kan man inte skriva in namn på andra motionslopp när man använder mallen. Som "Default Value" välj Vätternrundan.
    * Vätternrundan
    * Halvvättern 150 km
    * Tjejvättern 100 km
@@ -75,6 +76,16 @@ Ha följande tips i åtanke för att testa olika funktioner i verktyget.
    * Bocka för "Add valueset"
    * Tryck på "Edit valueset"
    * Kopiera från ditt kalkylark ut de två spalterna med kod och text, och klistra in dem i den tomma "Edit valueset"-listan och tryck sedan "Save"
+1. Vi låtsas att det är 31-Aug-2020 och vi behöver ladda ner och inkludera den uppdaterade svenska översättningen av blodtrycksarketypen i Sofia Janstads "Branch" Rev 8.3 i Clinical Knowledge Manager. Den hade då inte hunnit återföras till huvudversionen ("trunk").
+   * Öppna genväg till blodtrycksarketypens revisionshistorik: https://ckm.openehr.org/ckm/archetypes/1013.1.3574/revisionhistory
+   * Klicka på Sofia Janstads "Branch", raden med Rev 8.3...
+   * ...då öppnad en ruta med beskrivning och direkt under den en knapp "Details", tryck på den knappen.
+   * I menyn som då dyker upp välj "Export Archetype"
+   * Nu öppnas en ny flik för just denna version och tre knappar för export visas, välj "Export ADL"
+   * Spara ner filen lokalt på din dator (kom ihåg var)
+   * Växla tillbaka till Archetype Designer där vi förut höll på att redigera vår template
+   * Tryck på "Import" längst upp och importera Blodtrycksarketypen du nyss laddade ner (på samma sätt som du tidigare importerade arketyper i förberedelserna inför övingstillfället)
+   * I mallen gå välj noden "Puls/Hjärtfrekvens" klicka sedan på Blodtryck i listan över arketyper till vänster.
 1. Exportera din mall som en "Operational template" (OPT). Detaljer:
    * Klicka på Export, en ruta kommer upp
    * Klicka på den blå "Export"-knappen och välj "Export to OPT"
