@@ -129,7 +129,7 @@ Ha följande tips i åtanke för att testa olika funktioner i verktyget.
 ### 3c. Skapa och justera formulär
 1. Nu byter vi verktyg. Logga in i https://tools.better.care/studio/ med användarnamn `sfmi` och lösenordet ni fått via epost i kalenderinbjudan (kan även efterfrågas i möteschatten), välj längst ner domänen ehrscape.com.
 1. Välj Form Builder
-1. Längst ner till vänster finns grå ikoner. Klicka på ikonen med pil uppåt inuti en ruta.
+1. Längst ner till vänster finns grå ikoner. Klicka på ikonen för import, den med pil uppåt inuti en ruta.
 1. Det dyker nu upp ett import-fönster, dra-och-släpp din Operational Template (OPT), som du exporterade i förra övningen, dit. (Importen kan ta lite tid.)
 1. Du bör nu ha fått upp en lista där din mall finns med någonsttans, klicka på den.
 1. Nu öppnas "editor" för formulär, innehållet från din template ska synas i vänsterspalten, dra in den översta noden från din template till den stora vita redigeringsytan i mitten av skärmen. Formuläret blir ganska stort med många ramar i ramar.
