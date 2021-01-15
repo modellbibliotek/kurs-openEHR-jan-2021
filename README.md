@@ -67,6 +67,7 @@ Ha följande tips i åtanke för att testa olika funktioner i verktyget.
    * Vätternrundan 100 km
    * MTB-Vättern
    * Minivättern
+1. I inställningarna för fältet `Tid efter start` ta bort bocken framför "Allow all time units" och välj sedan bort "Years", "Months" och "Weeks".
 1. Terminologibind fältet 'Onormalt andningsmönster' till listan med alla barn till snomedbegreppet  85617008 (onormal andningsrytm). Detaljer:
    * I https://browser.ihtsdotools.org/ välj fliken `Expression Constraint-sökning` och skriv in `<< 85617008 | onormal andningsrytm |` se bilden [snomed_andningsrytm.png](https://github.com/modellbibliotek/kurs-openEHR-jan-2021/blob/main/images/snomed_andningsrytm.png?raw=true).
    * Kopiera ut resultatlistan från sökverktyget och klistra in i ett kalkylark, byt plats på kolumner så att sifferkoder står till vänster om de beskrivningar du vill ha
@@ -87,6 +88,11 @@ Ha följande tips i åtanke för att testa olika funktioner i verktyget.
    * Växla tillbaka till Archetype Designer där vi förut höll på att redigera vår template
    * Tryck på "Import" längst upp och importera Blodtrycksarketypen du nyss laddade ner (på samma sätt som du tidigare importerade arketyper i förberedelserna inför övingstillfället)
    * I mallen gå välj noden "Puls/Hjärtfrekvens" klicka sedan på Blodtryck i listan över arketyper till vänster.
+1. Släck ut delar av blodtrycksarketypen
+    1. Välj `24 timmars blodtrycksmätning` och tryck den gula `0..0`
+    1. Under "Ospecificerad händelse", välj fältet "Medelartärtryck", håll inne skift-tangenten på tangentbordet samtidigt som du markerar "kommentar" fyra rader längre ner. Nu ska alla fyra rader vara markerade och ute till höger dyker knappen "Prohibit all" upp. Tryck på den för att släcka ut de fyra raderna i ett svep.
+    1. Släck på liknande sätt ut allt utom "ställning" under "state"
+    1. Släck på liknande sätt ut allt under "protocol"
 1. Akutmottagningen säger att de vill ha inskrinvningsmallen på formen ABCDE (Airway, Breathing, Circulation...) som pappers-akutjounalen, [se exempel (låtsaspatienter)](https://drive.google.com/file/d/0BwdHmPbK5e3SWjRsQzUyR243OEk/view?usp=sharing). De behöver också ett sätt att rapportera problem med luftvägar. Målbilden är en template som ser ut ungefär som på bilden [ABCDE.png](https://github.com/modellbibliotek/kurs-openEHR-jan-2021/blob/main/images/ABCDE.png?raw=true)
    1. Få bättre överblick genom att trycka på `+` för att fälla ihop arketyperna under Rubriken vitalparametrar
    1. Ändra namn på rubriken "Vitalparametrar" till "ABCDE"
@@ -97,13 +103,14 @@ Ha följande tips i åtanke för att testa olika funktioner i verktyget.
    1. Under "A. Fri luftväg (Airway)" lägg till ett exemplar av arketypen "Problem/Diagnos" och justera den så här:
       * Byt namn på detta exemplar av "Problem/Diagnos" till "Luftväg"
       * Ändra fältet "Occurrences" (under fliken "Constraints") från `0..1` till `0..*` (för att tillåta fler exemplar av noden).
-1. Terminologibind fältet `Problem/Diagnos namn` i arketypen vi döpte om till Luftväg 
+1. Släck ut allt utom `Problem/Diagnos namn` och `Klinisk Beskrivning` i arketypen vi döpte om till "Luftväg".
+1. Terminologibind fältet `Problem/Diagnos namn` i arketypen vi döpte om till "Luftväg" 
    1. välj "External Coded", 
        * under `terminology` skriv `SNOMED-CT`
        * under `Uri` skriv `http://snomed.info/sct/`
    * Bocka för "Add valueset"
    * Tryck på "Edit valueset"
-   * Kopiera hela nedanstående tabell, och klistra in dem i den tomma "Edit valueset"-listan och tryck sedan "Save"
+   * Kopiera alla koder och termer (samtidigt) ur nedanstående tabell, och klistra in dem i den tomma "Edit valueset"-listan och tryck sedan "Save"
 
     |SCTID|Term|
     |---|---|
@@ -119,11 +126,50 @@ Ha följande tips i åtanke för att testa olika funktioner i verktyget.
    * Klicka på den blå "Export"-knappen och välj "Export to OPT"
    * Kom ihåg var du sparar den exporterade filen på din dator, du behöver den i nästa övning
 
-### 3c. Skapa och justera ett formulär
+### 3c. Skapa och justera formulär
 1. Nu byter vi verktyg. Logga in i https://tools.better.care/studio/ med användarnamn `sfmi` och lösenordet ni fått via epost i kalenderinbjudan (kan även efterfrågas i möteschatten), välj längst ner domänen ehrscape.com.
-1. ...mer info kommer
+1. Välj Form Builder
+1. Längst ner till vänster finns grå ikoner. Klicka på ikonen med pil uppåt inuti en ruta.
+1. Det dyker nu upp ett import-fönster, dra-och-släpp din Operational Template (OPT), som du exporterade i förra övningen, dit. (Importen kan ta lite tid.)
+1. Du bör nu ha fått upp en lista där din mall finns med någonsttans, klicka på den.
+1. Nu öppnas "editor" för formulär, innehållet från din template ska synas i vänsterspalten, dra in den översta noden från din template till den stora vita redigeringsytan i mitten av skärmen. Formuläret blir ganska stort med många ramar i ramar.
+1. Ta bort den yttersta/översta ramen genom att gå upp till översta (grå) kanten (där ditt mallnamn sannolikt står), det dyker då upp nya ikoner. Klicka på den röda ikonen som ser ut som ett kryss omringat av fyra hörn = "Remove frame". 
+1. Välj nu ramen "Skada", i högerspalten under rubriken "Presentation" ändra från "Container" till "Collapsible title".
+1. Välj ramen "Problem/Diagnos" och klicka på röda "Remove frame"
+1. Byt plats på "Klinisk Beskrivning" och "Anatomisk plats"
+1. Välj "Klinisk Beskrivning", ändra i högerspalten "Display in" till 5 lines.
+1. Nu betämmer vi att i detta formulär ska vi inte ta med det detaljerade sättet att ange lokalisation, så välj ramen "Anatomisk lokalisation" och tryck på den röda soptunnan. Notera i vänsterspalten att de datafält vi tog bort nu markerats i svart och finns där för att kunna dra in i andra delar av formuläret oom man skulle vilja.
+1. I ramen motionslopp, klicka på "Loppets namn" i drop-down menyn välj vätternrundan (så blir den "default" om man inte väljer annat) och för "Typ av motion" välj "Cykling".
+1. Nu är det dags att testköra en första gång, välj "preview" ovanför formuläret.
+    * Testa attkoppla om mellan, "Desktop", "Tablet" och "Mobile"
+    * Notera att man för "anatomisk plats" kan välja flera alternativ samtidigt
+    * Notera att man under sträcka från start måste välja meter eller kilometer, default saknas (det kan du åtgärda senare i editor-läget om du vill)
+    * Om inte vänsterspalten är öppen, öppna den med `>>` nära övre vänstra hörnet- Inspektera hur data ändras när du gör val i formuläret.
+    * Välj "Stridor" under luftväg. Tryck sedan på "+ Add another Luftväg" och i den nya rutan som dyker upp nedanför välj något ytterligare luftvägsbekymmer (detta är önskad funktionalitet).
+    * Notera att det även går att lägga till fler exemplar av "Ospecificerad händelse" inuti observationerna "Andning", "Puls/Hjärtfrekvens" och "Blodtryck". Templaten vi gjort tillåter det, men för vårt inskrivningsformulär vill vi bara tillåte en av varje sort, så...
+1.  ...avsluta "Preview" genom att växla över till "Editor".
+1. Under "Andning" välj ramen "Ospecificerad händelse" och ändra i inställningarna (högerspalten) fältet "max" under "MULTIPLICITY" från 100 till 1. Gör samma sak för "Ospecificerad händelse" under "Puls/Hjärtfrekvens"  och "Blodtryck". Klicka även den röda "remove frame" på alla "Ospecificerad händelse"
+1. Testkör igen med "preview"
+1. Publicera en första version av ditt formulär genom att klicjka på "Publish" övert på skärmen (så att det kan användas i journalsystemet)
+1. Nu vill vi ha motionslopp dolt tills man väljer att öppna det med en liten switch.
+    * i vänstra kanten, välj "Generics" (liknar legobit)
+    * Drag sedan "Boolean" till precis ovanför "motionslopp" och släpp den där och döp om etiketten till "Motionslopp?".
+    * Under "Design"-fliken till höger ändra presentation till "toggle switch"
+    * Under "Interactions"-fliken till höger, under "When" klicka först på "Select field" och sedan på Motionslopp-switchen du nyss redigerade. i menyn som då dyker upp välj "is" ich sedan "true".
+    * Under "Interactions"-fliken till höger igen, under "Then" klicka först på "Select field" och sedan på Motionslopp-ramen. I menyn som då dyker upp välj "is shown"
+    * Klicka på "Otherwise" och klicka på "Select field" och sedan på Motionslopp-ramen igen. I menyn som då dyker upp välj "is hidden"
+1. Testkör logiken du nyss byggde via Preview
 
-## Exempelpatienter (till övningar m.m.)
+    
+    
+
+
+    
+
+
+
+
+## Exempelpatienter (till AQL-exempel m.m. vid senare tillfälle)
 |Field|Patient One|Patient Two|Patient Three|Patient Four|
 |---|---|---|---|---|
 |**Problem/Diagnos**|||||
