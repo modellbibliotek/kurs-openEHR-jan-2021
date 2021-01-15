@@ -155,19 +155,28 @@ Ha följande tips i åtanke för att testa olika funktioner i verktyget.
     * i vänstra kanten, välj "Generics" (liknar legobit)
     * Drag sedan "Boolean" till precis ovanför "motionslopp" och släpp den där och döp om etiketten till "Motionslopp?".
     * Under "Design"-fliken till höger ändra presentation till "toggle switch"
-    * Under "Interactions"-fliken till höger, under "When" klicka först på "Select field" och sedan på Motionslopp-switchen du nyss redigerade. i menyn som då dyker upp välj "is" ich sedan "true".
+    * Under "Interactions"-fliken till höger, under "When" klicka först på "Select field" och sedan på Motionslopp-switchen du nyss redigerade. i menyn som då dyker upp välj "is" och sedan "true".
     * Under "Interactions"-fliken till höger igen, under "Then" klicka först på "Select field" och sedan på Motionslopp-ramen. I menyn som då dyker upp välj "is shown"
     * Klicka på "Otherwise" och klicka på "Select field" och sedan på Motionslopp-ramen igen. I menyn som då dyker upp välj "is hidden"
-1. Testkör logiken du nyss byggde via Preview
-
+    * Det skulle kunna se ut ungefär så här nu: [motionslopp-switch.png](https://github.com/modellbibliotek/kurs-openEHR-jan-2021/blob/main/images/motionslopp-switch.png)
+1. Testkör, via Preview, logiken/vilkorsstyrningen du nyss byggde 
+1. Snygga till under rubriken "B. Andning (Breathing)"
+    * Klicka röda "Remove frame" för "Pulsoximetri"
+    * Klicka röda "Remove frame" för "Inandad syrgas"
+    * Inom den inre ramen "Andning" gör följande:
+        * Välj "*Precence(en)" som visst har missats i översättning för den version vi importerat, men vi kan snygga till det på formulärnivå utifall vi inte skulle ha möjlihget att rätta i arketyp/template.
+            * I fliken "Design" i högra spalten ändra "Presentation" till "button group", slå sedan på switcharna "hide label" och Show in columns. Sätt Number of columns till 2.
+            * I fliken "Content" i högra spalten, under "Selection values" ändra "*Present (en)" till "Andas"
+            * I fliken "Content" i högra spalten, under "Selection values" ändra "*Not detected (en)" till "Andning ej detekterad"
+        * Välj "*Regularity (en)" som också har missats i översättning 
+            * I fliken "Design" i högra spalten ändra "Presentation" till "button group", slå sedan på switcharna "hide label" och Show in columns. Sätt Number of columns till 2.
+1. Överkurs:
+    * Koppla med when+then+otherwise-regler:
+        * pulsoximetrins "På luft"-checkbox till motsvarande för andning och till "Luft eller syrgas?" i NEWS2.
+        * pulsoximetrins "Syrgasflöde" (både värde och enhet) till motsvarande fält för andning
+    * Markera andningens hela ram kring "inandad syrgas" som "hidden"
     
-    
-
-
-    
-
-
-
+--- Slut på övningar för undervisningstillfälle 3 (18 Januari) ---
 
 ## Exempelpatienter (till AQL-exempel m.m. vid senare tillfälle)
 |Field|Patient One|Patient Two|Patient Three|Patient Four|
