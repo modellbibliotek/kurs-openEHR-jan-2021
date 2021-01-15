@@ -87,7 +87,7 @@ Ha följande tips i åtanke för att testa olika funktioner i verktyget.
    * Spara ner filen lokalt på din dator (kom ihåg var)
    * Växla tillbaka till Archetype Designer där vi förut höll på att redigera vår template
    * Tryck på "Import" längst upp och importera Blodtrycksarketypen du nyss laddade ner (på samma sätt som du tidigare importerade arketyper i förberedelserna inför övingstillfället)
-   * I mallen gå välj noden "Puls/Hjärtfrekvens" klicka sedan på Blodtryck i listan över arketyper till vänster.
+   * I mallen välj noden "Puls/Hjärtfrekvens" klicka sedan på Blodtryck i listan över arketyper till vänster.
 1. Släck ut delar av blodtrycksarketypen
     1. Välj `24 timmars blodtrycksmätning` och tryck den gula `0..0`
     1. Under "Ospecificerad händelse", välj fältet "Medelartärtryck", håll inne skift-tangenten på tangentbordet samtidigt som du markerar "kommentar" fyra rader längre ner. Nu ska alla fyra rader vara markerade och ute till höger dyker knappen "Prohibit all" upp. Tryck på den för att släcka ut de fyra raderna i ett svep.
