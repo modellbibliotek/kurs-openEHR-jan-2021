@@ -45,11 +45,13 @@ Vi låtsas nu att vi ska hjälpa ett forskningsprojekt att fånga mer detaljerad
 Ha följande tips i åtanke för att testa olika funktioner i verktyget.
    * Det går att duplicera fält så att alla inställningar följer med, gör det t.ex. för att kopiera mellan fälten `Latitud` och `Longitud`.
    * För värden i `Typ av motion` välj "Internal Coded", tryck sedan den blå knappen "Edit" och skapa en lista med t.ex. de fyra raderna Cykling, Löpning, Skidåkning, Simning.
-   * För värden i `Träningsvana` välj "Internal Coded", tryck sedan den blå knappen "Edit" och skapa en lista med t.ex. raderna nedan. (För att spara tid kan du markera och kopiera hela listan nedan och när du står på fösta tomma fältet i kolumnent "Text" klistra in hela urklippet så skapas ala tre rader, tryck sedan "Save")
-        * Nybörjare
-        * Motionsidrottare
-        * Elitnivå.
-   * För inställningarna i fältet `Antal tidigare deltaganden i detta lopp` ta bort bocken framför "unbound" under rubriken "Range". Då kommer nya val fram, sätt/behåll 0 som minimumgräns (för att förbjuda negativa värden) och ta bort bocken framför "Max" så att det inte finns någon övre gräns.
+   * För värden i `Träningsvana` välj "Internal Coded", tryck sedan den blå knappen "Edit" och skapa en lista med t.ex. raderna nedan. (För att spara tid kan du markera och kopiera hela listan nedan och när du står på första tomma fältet i kolumnen "Text" klistra in hela urklippet så skapas alla tre rader, tryck sedan "Save")
+
+Nybörjare
+Motionsidrottare
+Elitnivå.
+
+    * För inställningarna i fältet `Antal tidigare deltaganden i detta lopp` ta bort bocken framför "unbound" under rubriken "Range". Då kommer nya val fram, sätt/behåll 0 som minimumgräns (för att förbjuda negativa värden) och ta bort bocken framför "Max" så att det inte finns någon övre gräns.
    * För fältet `Tid efter start` skulle vi vilja använda datatypen "Duration". Istället för att använda knappen i vänsterkanten kan man välja någon annan datatyp (t.ex. "Any") och genom att klicka i rutan bredvid "Available types" få fram en bläddringslista där bl.a. "Duration" finns.
    * I fält av typen "Quantity" kan man välja att tillåta (flera) olika enheter genom att vid etiketten "Units" trycka på ´+´-knappen. Då kommer det upp en ruta med sökfält för "Category" och "Units" genom att klicka i fältet kommer en bläddringslista upp, men man kan även börja skriva det man söker efter. I Category kan man söka storhet/typ, t.ex "length", och när man valt storhet/typ så kan man klicka i sökfältet "unit" och får då bara upp enheter som passar storheten.
        * För `Sträcka från start` välj att tillåta både meter och kilometer
