@@ -72,25 +72,25 @@ Ha följande tips i åtanke för att testa olika funktioner i verktyget.
    * Minivättern
 1. I inställningarna för fältet `Tid efter start` ta bort bocken framför "Allow all time units" och välj sedan bort "Years", "Months" och "Weeks".
 1. Terminologibind fältet 'Klinisk tolkning', under Andning, till listan med alla barn till snomedbegreppet  85617008 (onormal andningsrytm). Detaljer:
-   * I https://browser.ihtsdotools.org/ välj fliken `Expression Constraint-sökning` och skriv in `<< 85617008 | onormal andningsrytm |` se bilden [snomed_andningsrytm.png](https://github.com/modellbibliotek/kurs-openEHR-jan-2021/blob/main/images/snomed_andningsrytm.png?raw=true).
-   * Kopiera ut resultatlistan från sökverktyget och klistra in i ett kalkylark, byt plats på kolumner så att sifferkoder står till vänster om de beskrivningar du vill ha
-   * I inställningarna för mallens fält 'Onormalt andningsmönster' välj "External Coded", 
+   * I https://browser.ihtsdotools.org/ se till att svenska versionen "Release: Swedish Editioin..." är vald välj sedan fliken `Expression Constraint-sökning` och skriv in `<< 85617008 | onormal andningsrytm |` se bilden [snomed_andningsrytm.png](https://github.com/modellbibliotek/kurs-openEHR-jan-2021/blob/main/images/snomed_andningsrytm.png?raw=true).
+   * Kopiera ut resultatlistan från sökverktyget och klistra in i ett kalkylark, byt plats på kolumner så att sifferkoder står till vänster om de beskrivningar du vill ha. (Vi brukar använda Google Sheets, t.ex. Excel funkar också men man kan då behöva ändra sifferformat för att få tillbaka heltal när Excel automatiskt bakar om stora tal till annan form.) 
+   * I inställningarna för mallens fält 'Klinisk tolkning' välj "External Coded", 
        * under `terminology` skriv `SNOMED-CT`
        * under `Uri` skriv `http://snomed.info/sct/`
    * Bocka för "Add valueset"
    * Tryck på "Edit valueset"
-   * Kopiera från ditt kalkylark ut de två spalterna med kod och text, och klistra in dem i den tomma "Edit valueset"-listan och tryck sedan "Save"
+   * Kopiera från ditt kalkylark ut de två spalterna med kod och text, klistra in dem i den tomma "Edit valueset"-listan (när markören står i det översta tomma fältet i kolumnen code) och tryck sedan "Save"
 1. Spara ditt arbete ofta, och åtminstone nu.
 1. Vi låtsas att det är 31-Aug-2020 och vi behöver ladda ner och inkludera den uppdaterade svenska översättningen av blodtrycksarketypen i Sofia Janstads "Branch" Rev 8.3 i Clinical Knowledge Manager. Den hade då inte hunnit återföras till huvudversionen ("trunk").
-   * Öppna genväg till blodtrycksarketypens revisionshistorik: https://ckm.openehr.org/ckm/archetypes/1013.1.3574/revisionhistory
+   * Öppna genväg till blodtrycksarketypens revisionshistorik: https://ckm.openehr.org/ckm/archetypes/1013.1.3574/revisionhistory (det tar lite tid innan historiken äär inladdad)
    * Klicka på Sofia Janstads "Branch", raden med Rev 8.3...
-   * ...då öppnad en ruta med beskrivning och direkt under den en knapp "Details", tryck på den knappen.
+   * ...då öppnas en ruta med beskrivning och direkt under den en knapp "Details", tryck på den knappen.
    * I menyn som då dyker upp välj "Export Archetype"
    * Nu öppnas en ny flik för just denna version och tre knappar för export visas, välj "Export ADL"
    * Spara ner filen lokalt på din dator (kom ihåg var)
    * Växla tillbaka till Archetype Designer där vi förut höll på att redigera vår template
    * Tryck på "Import" längst upp och importera Blodtrycksarketypen du nyss laddade ner (på samma sätt som du tidigare importerade arketyper i förberedelserna inför övingstillfället)
-   * I mallen välj noden "Puls/Hjärtfrekvens" klicka sedan på Blodtryck i listan över arketyper till vänster.
+   * I mallen välj noden "Puls/Hjärtfrekvens" klicka sedan på Blodtryck i listan över arketyper till vänster, den kommer då importeras  nedanför "Puls/Hjärtfrekvens"-arketypen
 1. Släck ut delar av blodtrycksarketypen
     1. Välj `24 timmars blodtrycksmätning` och tryck den gula `0..0`
     1. Under "Ospecificerad händelse", välj fältet "Medelartärtryck", håll inne skift-tangenten på tangentbordet samtidigt som du markerar "kommentar" fyra rader längre ner. Nu ska alla fyra rader vara markerade och ute till höger dyker knappen "Prohibit all" upp. Tryck på den för att släcka ut de fyra raderna i ett svep.
@@ -99,11 +99,11 @@ Ha följande tips i åtanke för att testa olika funktioner i verktyget.
 1. Akutmottagningen säger att de vill ha inskrinvningsmallen på formen ABCDE (Airway, Breathing, Circulation...) som pappers-akutjounalen, [se exempel (låtsaspatienter)](https://drive.google.com/file/d/0BwdHmPbK5e3SWjRsQzUyR243OEk/view?usp=sharing). De behöver också ett sätt att rapportera problem med luftvägar. Målbilden är en template som ser ut ungefär som på bilden [ABCDE.png](https://github.com/modellbibliotek/kurs-openEHR-jan-2021/blob/main/images/ABCDE.png?raw=true)
    1. Få bättre överblick genom att trycka på `+` för att fälla ihop arketyperna under Rubriken vitalparametrar
    1. Ändra namn på rubriken "Vitalparametrar" till "ABCDE"
-   1. Lägg till tre nya exemplar av arketypen Rubrik under ABCDE och namnge dem
+   1. Lägg till tre nya exemplar av SECTION-arketypen "Rubrik" (eng. Ad Hoc Heading) under ABCDE och namnge dem
        * A. Fri luftväg (Airway)
        * B. Andning (Breathing)
        * C. Cirkulation
-   1. Under "A. Fri luftväg (Airway)" lägg till ett exemplar av arketypen "Problem/Diagnos" och justera den så här:
+   1. Under "items" under "A. Fri luftväg (Airway)" lägg till ett exemplar av arketypen "Problem/Diagnos" och justera den så här:
       * Byt namn på detta exemplar av "Problem/Diagnos" till "Luftväg"
       * Ändra fältet "Occurrences" (under fliken "Constraints") från `0..1` till `0..*` (för att tillåta fler exemplar av noden).
 1. Släck ut allt utom `Problem/Diagnos namn` och `Klinisk Beskrivning` i arketypen vi döpte om till "Luftväg".
@@ -126,7 +126,7 @@ Ha följande tips i åtanke för att testa olika funktioner i verktyget.
 1. Spara ditt arbete ofta, och åtminstone nu.
 1. Exportera din mall som en "Operational template" (OPT). Detaljer:
    * Klicka på Export, en ruta kommer upp
-   * Klicka på den blå "Export"-knappen och välj "Export to OPT"
+   * Klicka på den blåvita "Export"-knappen och välj "Export to OPT"
    * Kom ihåg var du sparar den exporterade filen på din dator, du behöver den i nästa övning
 
 ### 3c. Skapa och justera formulär
