@@ -159,7 +159,7 @@ Ha följande tips i åtanke för att testa olika funktioner i verktyget.
     * Notera att det även går att lägga till fler exemplar av "Ospecificerad händelse" inuti observationerna "Andning", "Puls/Hjärtfrekvens" och "Blodtryck". Templaten vi gjort tillåter det, men för vårt inskrivningsformulär vill vi bara tillåte en av varje sort, så...
 1.  ...avsluta "Preview" genom att växla över till "Editor".
 1. Under "Andning" välj ramen "Ospecificerad händelse" och ändra i inställningarna (högerspalten) fältet "max" under "MULTIPLICITY" från 100 till 1. Gör samma sak för "Ospecificerad händelse" under "Puls/Hjärtfrekvens"  och "Blodtryck". Klicka även den röda "remove frame" på alla "Ospecificerad händelse"
-1. Testkör igen med "preview"
+1. Testkör igen med "preview" och gå sedan tillbaks till Editor-läget.
 1. Publicera en första version av ditt formulär genom att klicka på "Publish" överst på skärmen (så att det kan användas i journalsystemet)
 1. Nu vill vi ha motionslopp dolt tills man väljer att öppna det med en liten switch.
     * i vänstra kanten, välj "Generics" (liknar legobit)
@@ -169,12 +169,12 @@ Ha följande tips i åtanke för att testa olika funktioner i verktyget.
     * Under "Interactions"-fliken till höger igen, under "Then" klicka först på "Select field" och sedan på Motionslopp-ramen. I menyn som då dyker upp välj "is shown"
     * Klicka på "Otherwise" och klicka på "Select field" och sedan på Motionslopp-ramen igen. I menyn som då dyker upp välj "is hidden"
     * Det skulle kunna se ut ungefär så här nu: [motionslopp-switch.png](https://github.com/modellbibliotek/kurs-openEHR-jan-2021/blob/main/images/motionslopp-switch.png)
-1. Testkör, via Preview, logiken/vilkorsstyrningen du nyss byggde 
+1. Testkör, via Preview, logiken/villkorsstyrningen du nyss byggde 
 1. Snygga till under rubriken "B. Andning (Breathing)"
     * Klicka röda "Remove frame" för "Pulsoximetri"
     * Klicka röda "Remove frame" för den översta "Inandad syrgas" (alltså den som hör till pulsoximetri, inte den för andning längre ner)
     * Inom den inre ramen "Andning" gör följande:
-        * Välj "Förekomst" vi kan förtdliga saker på formulärnivå utifall vi inte skulle ha möjlihget att ändra i arketyp/template.
+        * Välj "Förekomst". Vi kan förtydliga saker på formulärnivå utifall vi inte skulle ha möjlighet att ändra i arketyp/template:
             * I fliken "Design" i högra spalten ändra "Presentation" till "button group", slå sedan på switcharna "hide label" och Show in columns. Sätt Number of columns till 2.
             * I fliken "Content" i högra spalten, under "Selection values" ändra "Förekommer" till "Andas"
             * I fliken "Content" i högra spalten, under "Selection values" ändra "Ej möjlig att upptäcka" till "Andning ej upptäckt"
