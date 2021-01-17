@@ -51,13 +51,13 @@ definition
 				items cardinality matches {0..*; unordered} matches {
 					allow_archetype ENTRY[at0005] occurrences matches {0..*} matches {    -- ENTRY
 						include
-							archetype_id/value matches {/openEHR-EHR-EVALUATION\.problem_diagnosis(-[a-zA-Z0-9_]+)*\.v1/}
+							archetype_id/value matches {/openEHR-EHR-EVALUATION\.problem_diagnosis\.v1/}
 					}
 				}
 			}
 			SECTION[at0002] occurrences matches {0..1} matches {    -- B. Breathing
 				items cardinality matches {0..*; unordered} matches {
-					allow_archetype ENTRY[at0006] occurrences matches {0..*} matches {    -- ENTRY
+					allow_archetype ENTRY[at0012] occurrences matches {0..*} matches {    -- ENTRY
 						include
 							archetype_id/value matches {/openEHR-EHR-OBSERVATION\.pulse_oximetry(-[a-zA-Z0-9_]+)*\.v1|openEHR-EHR-OBSERVATION\.respiration(-[a-zA-Z0-9_]+)*\.v2/}
 					}
@@ -114,10 +114,6 @@ ontology
 					text = <"ENTRY">
 					description = <"">
 				>
-				["at0006"] = <
-					text = <"ENTRY">
-					description = <"">
-				>
 				["at0007"] = <
 					text = <"ENTRY">
 					description = <"">
@@ -135,6 +131,10 @@ ontology
 					description = <"">
 				>
 				["at0011"] = <
+					text = <"ENTRY">
+					description = <"">
+				>
+				["at0012"] = <
 					text = <"ENTRY">
 					description = <"">
 				>
@@ -162,10 +162,6 @@ ontology
 					text = <"ENTRY">
 					description = <"">
 				>
-				["at0006"] = <
-					text = <"ENTRY">
-					description = <"">
-				>
 				["at0007"] = <
 					text = <"ENTRY">
 					description = <"">
@@ -183,6 +179,10 @@ ontology
 					description = <"">
 				>
 				["at0011"] = <
+					text = <"ENTRY">
+					description = <"">
+				>
+				["at0012"] = <
 					text = <"ENTRY">
 					description = <"">
 				>
