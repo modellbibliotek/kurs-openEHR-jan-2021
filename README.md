@@ -164,11 +164,11 @@ Ha följande tips i åtanke för att testa olika funktioner i verktyget.
     * Klicka röda "Remove frame" för "Pulsoximetri"
     * Klicka röda "Remove frame" för "Inandad syrgas"
     * Inom den inre ramen "Andning" gör följande:
-        * Välj "*Precence(en)" som visst har missats i översättning för den version vi importerat, men vi kan snygga till det på formulärnivå utifall vi inte skulle ha möjlihget att rätta i arketyp/template.
+        * Välj "Förekomst" vi kan förtdliga saker på formulärnivå utifall vi inte skulle ha möjlihget att ändra i arketyp/template.
             * I fliken "Design" i högra spalten ändra "Presentation" till "button group", slå sedan på switcharna "hide label" och Show in columns. Sätt Number of columns till 2.
-            * I fliken "Content" i högra spalten, under "Selection values" ändra "*Present (en)" till "Andas"
-            * I fliken "Content" i högra spalten, under "Selection values" ändra "*Not detected (en)" till "Andning ej detekterad"
-        * Välj "*Regularity (en)" som också har missats i översättning 
+            * I fliken "Content" i högra spalten, under "Selection values" ändra "Förekommer" till "Andas"
+            * I fliken "Content" i högra spalten, under "Selection values" ändra "Ej möjlig att upptäcka" till "Andning ej upptäckt"
+        * Välj "Regelbundenhet" 
             * I fliken "Design" i högra spalten ändra "Presentation" till "button group", slå sedan på switcharna "hide label" och Show in columns. Sätt Number of columns till 2.
 1. Överkurs:
     * Koppla med when+then+otherwise-regler:
