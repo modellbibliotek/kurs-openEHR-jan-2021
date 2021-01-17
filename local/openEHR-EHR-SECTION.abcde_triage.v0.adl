@@ -1,0 +1,191 @@
+archetype (adl_version=1.4; uid=8745edc0-a5d0-414d-9cbd-ad758ea2f61c)
+	openEHR-EHR-SECTION.abcde_triage.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+	translations = <
+		["sv"] = <
+			language = <[ISO_639-1::sv]>
+			author = <
+				["name"] = <"Erik Sundvall">
+				["email"] = <"erik.sundvall@regionostergotland.se">
+				["organisation"] = <"Region Östergötland & Linköping University, Sweden">
+			>
+		>
+	>
+
+description
+	original_author = <
+		["date"] = <"2021-01-17">
+		["name"] = <"Erik Sundvall">
+		["organisation"] = <"Region Östergötland & Linköping University, Sweden">
+		["email"] = <"erik.sundvall@regionostergotland.se">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["sv"] = <
+			language = <[ISO_639-1::sv]>
+			copyright = <"© openEHR Foundation">
+		>
+		["en"] = <
+			language = <[ISO_639-1::en]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"3898ecc1e02815e18901438790d28f9b">
+		["build_uid"] = <"0faaaf73-65c0-3650-83f7-5817286fe402">
+	>
+
+definition
+	SECTION[at0000] matches {    -- ABCDE triage
+		items cardinality matches {0..*; unordered} matches {
+			SECTION[at0001] occurrences matches {0..1} matches {    -- A. Airway
+				items cardinality matches {0..*; unordered} matches {
+					allow_archetype ENTRY[at0005] occurrences matches {0..*} matches {    -- ENTRY
+						include
+							archetype_id/value matches {/openEHR-EHR-EVALUATION\.problem_diagnosis(-[a-zA-Z0-9_]+)*\.v1/}
+					}
+				}
+			}
+			SECTION[at0002] occurrences matches {0..1} matches {    -- B. Breathing
+				items cardinality matches {0..*; unordered} matches {
+					allow_archetype ENTRY[at0006] occurrences matches {0..*} matches {    -- ENTRY
+						include
+							archetype_id/value matches {/openEHR-EHR-OBSERVATION\.pulse_oximetry(-[a-zA-Z0-9_]+)*\.v1|openEHR-EHR-OBSERVATION\.respiration(-[a-zA-Z0-9_]+)*\.v2/}
+					}
+				}
+			}
+			SECTION[at0003] occurrences matches {0..1} matches {    -- C. Circulation
+				items cardinality matches {0..*; unordered} matches {
+					allow_archetype ENTRY[at0007] occurrences matches {0..*} matches {    -- ENTRY
+						include
+							archetype_id/value matches {/openEHR-EHR-OBSERVATION\.blood_pressure\.v2|openEHR-EHR-OBSERVATION\.pulse\.v2/}
+					}
+				}
+			}
+			SECTION[at0008] occurrences matches {0..1} matches {    -- D. Disability
+				items cardinality matches {0..*; unordered} matches {
+					allow_archetype ENTRY[at0009] occurrences matches {0..*} matches {    -- ENTRY
+						include
+							archetype_id/value matches {/.*/}
+					}
+				}
+			}
+			SECTION[at0010] occurrences matches {0..1} matches {    -- E. Exposure
+				items cardinality matches {0..*; unordered} matches {
+					allow_archetype ENTRY[at0011] occurrences matches {0..*} matches {    -- ENTRY
+						include
+							archetype_id/value matches {/.*/}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"ABCDE triage">
+					description = <"ABCDE triage">
+				>
+				["at0001"] = <
+					text = <"A. Airway">
+					description = <"">
+				>
+				["at0002"] = <
+					text = <"B. Breathing">
+					description = <"">
+				>
+				["at0003"] = <
+					text = <"C. Circulation">
+					description = <"">
+				>
+				["at0005"] = <
+					text = <"ENTRY">
+					description = <"">
+				>
+				["at0006"] = <
+					text = <"ENTRY">
+					description = <"">
+				>
+				["at0007"] = <
+					text = <"ENTRY">
+					description = <"">
+				>
+				["at0008"] = <
+					text = <"D. Disability">
+					description = <"">
+				>
+				["at0009"] = <
+					text = <"ENTRY">
+					description = <"">
+				>
+				["at0010"] = <
+					text = <"E. Exposure">
+					description = <"">
+				>
+				["at0011"] = <
+					text = <"ENTRY">
+					description = <"">
+				>
+			>
+		>
+		["sv"] = <
+			items = <
+				["at0000"] = <
+					text = <"ABCDE triage">
+					description = <"*ABCDE triage (en)">
+				>
+				["at0001"] = <
+					text = <"A. Fri luftväg (Airway)">
+					description = <"">
+				>
+				["at0002"] = <
+					text = <"B. Andning (Breathing)">
+					description = <"">
+				>
+				["at0003"] = <
+					text = <"C. Cirkulation">
+					description = <"">
+				>
+				["at0005"] = <
+					text = <"ENTRY">
+					description = <"">
+				>
+				["at0006"] = <
+					text = <"ENTRY">
+					description = <"">
+				>
+				["at0007"] = <
+					text = <"ENTRY">
+					description = <"">
+				>
+				["at0008"] = <
+					text = <"D. Bedömning av neurologi (Disability)">
+					description = <"">
+				>
+				["at0009"] = <
+					text = <"ENTRY">
+					description = <"">
+				>
+				["at0010"] = <
+					text = <"E. Exponering">
+					description = <"">
+				>
+				["at0011"] = <
+					text = <"ENTRY">
+					description = <"">
+				>
+			>
+		>
+	>
