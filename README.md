@@ -131,8 +131,8 @@ Ha följande tips i åtanke för att testa olika funktioner i verktyget.
 1. Välj Form Builder
 1. Längst ner till vänster finns grå ikoner. Klicka på ikonen för import, den med pil uppåt inuti en ruta.
 1. Det dyker nu upp ett import-fönster, dra-och-släpp din Operational Template (OPT), som du exporterade i förra övningen, dit. (Importen kan ta lite tid.)
-1. Du bör nu ha fått upp en lista där din mall finns med någonsttans, klicka på den.
-1. Nu öppnas "editor" för formulär, innehållet från din template ska synas i vänsterspalten, dra in den översta noden från din template till den stora vita redigeringsytan i mitten av skärmen. Formuläret blir ganska stort med många ramar i ramar.
+1. Du bör nu ha fått upp en lista där din mall finns med någonstans, klicka på den.
+1. Nu öppnas "editor" för formulär, innehållet från din template ska synas i vänsterspalten, dra in den översta noden (hela trädet följer med) från din template till den stora vita redigeringsytan i mitten av skärmen. Formuläret blir ganska stort med många ramar i ramar.
 1. Ta bort den yttersta/översta ramen genom att gå upp till översta (grå) kanten (där ditt mallnamn sannolikt står), det dyker då upp nya ikoner. Klicka på den röda ikonen som ser ut som ett kryss omringat av fyra hörn = "Remove frame". 
 1. Välj nu ramen "Skada", i högerspalten under rubriken "Presentation" ändra från "Container" till "Collapsible title".
 1. Välj ramen "Problem/Diagnos" och klicka på röda "Remove frame"
@@ -141,9 +141,9 @@ Ha följande tips i åtanke för att testa olika funktioner i verktyget.
 1. Nu betämmer vi att i detta formulär ska vi inte ta med det detaljerade sättet att ange lokalisation, så välj ramen "Anatomisk lokalisation" och tryck på den röda soptunnan. Notera i vänsterspalten att de datafält vi tog bort nu markerats i svart och finns där för att kunna dra in i andra delar av formuläret oom man skulle vilja.
 1. I ramen motionslopp, klicka på "Loppets namn" i drop-down menyn välj vätternrundan (så blir den "default" om man inte väljer annat) och för "Typ av motion" välj "Cykling".
 1. Nu är det dags att testköra en första gång, välj "preview" ovanför formuläret.
-    * Testa attkoppla om mellan, "Desktop", "Tablet" och "Mobile"
+    * Testa att koppla om mellan visningslägena, "Desktop", "Tablet" och "Mobile"
     * Notera att man för "anatomisk plats" kan välja flera alternativ samtidigt
-    * Notera att man under sträcka från start måste välja meter eller kilometer, default saknas (det kan du åtgärda senare i editor-läget om du vill)
+    * Notera att du nu under sträcka från start måste välja meter eller kilometer, default saknas (det kan du åtgärda senare i editor-läget om du vill)
     * Om inte vänsterspalten är öppen, öppna den med `>>` nära övre vänstra hörnet- Inspektera hur data ändras när du gör val i formuläret.
     * Välj "Stridor" under luftväg. Tryck sedan på "+ Add another Luftväg" och i den nya rutan som dyker upp nedanför välj något ytterligare luftvägsbekymmer (detta är önskad funktionalitet).
     * Notera att det även går att lägga till fler exemplar av "Ospecificerad händelse" inuti observationerna "Andning", "Puls/Hjärtfrekvens" och "Blodtryck". Templaten vi gjort tillåter det, men för vårt inskrivningsformulär vill vi bara tillåte en av varje sort, så...
