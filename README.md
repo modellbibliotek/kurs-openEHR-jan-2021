@@ -144,7 +144,8 @@ Ha följande tips i åtanke för att testa olika funktioner i verktyget.
 1. Byt plats på "Klinisk Beskrivning" och "Anatomisk plats"
 1. Välj "Klinisk Beskrivning", ändra i högerspalten "Display in" till 5 lines.
 1. Nu betämmer vi att i detta formulär ska vi inte ta med det detaljerade sättet att ange lokalisation, så välj ramen "Anatomisk lokalisation" och tryck på den röda soptunnan. Notera i vänsterspalten att de datafält vi tog bort nu markerats i svart och finns där för att kunna dra in i andra delar av formuläret oom man skulle vilja.
-1. I ramen motionslopp, klicka på "Loppets namn" i drop-down menyn välj vätternrundan (så blir den "default" om man inte väljer annat) och för "Typ av motion" välj "Cykling".
+1. I ramen motionslopp, titta på "Loppets namn" i är vätternrundan redan vald eftersom vi hade satt det som defaut i vår template/mall. Om du vill kan du säga att det idag är dags för Tjejvättern istället och ändra så att det blir default idag istället för Vätternrundan. 
+1. I drop-down menyn för "Typ av motion" välj "Cykling" så att det också blit default i formuläret.
 1. Nu är det dags att testköra en första gång, välj "preview" ovanför formuläret.
     * Testa att koppla om mellan visningslägena, "Desktop", "Tablet" och "Mobile"
     * Notera att man för "anatomisk plats" kan välja flera alternativ samtidigt
