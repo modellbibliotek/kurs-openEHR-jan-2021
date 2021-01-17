@@ -10,7 +10,7 @@ Kom ihåg att du kan spana in, översätta och ladda ner arketyper även via htt
 
 ## Förberedelser att göra innan undervisningstillfälle 3 (18 Januari)
 1. Skapa användare på Github och i Archetype Designer enligt instruktioner i de två första lathundarna på https://openehr.atlassian.net/wiki/spaces/healthmod/pages/966295553/Snabbstartsguide+f+r+modelleringsverktyg
-1. Om du inte redan är inloggad i Archetype Designer följ lathund 3 (om inloggning)
+1. Om du inte redan är inloggad i Archetype Designer (https://tools.openehr.org/designer/) följ lathund 3 (om inloggning)
 1. För att riskfritt kunna experimentera och spara, skapa ett eget repository genom att:
     1. Klicka på den gröna knappen "+ New repository"
     1. Välj: Repository type = Local Folder
