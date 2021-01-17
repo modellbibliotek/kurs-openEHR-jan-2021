@@ -101,9 +101,9 @@ Ha följande tips i åtanke för att testa olika funktioner i verktyget.
     1. Släck på liknande sätt ut allt utom "ställning" under "state"
     1. Släck på liknande sätt ut allt under "protocol"
 1. Akutmottagningen säger att de vill ha inskrivningsmallen på formen ABCDE (Airway, Breathing, Circulation...) som pappers-akutjournalen, [se exempel (låtsaspatienter)](https://drive.google.com/file/d/0BwdHmPbK5e3SWjRsQzUyR243OEk/view?usp=sharing). De behöver också ett sätt att rapportera problem med luftvägar. Målbilden är en template som ser ut ungefär som på bilden [ABCDE.png](https://github.com/modellbibliotek/kurs-openEHR-jan-2021/blob/main/images/ABCDE.png?raw=true)
-   1. Få bättre överblick genom att trycka på `+` för att fälla ihop arketyperna under Rubriken vitalparametrar
+   1. Få bättre överblick genom att trycka på `-` för att fälla ihop arketyperna under Rubriken vitalparametrar
    1. Ändra namn på rubriken "Vitalparametrar" till "ABCDE"
-   1. Lägg in ett nytt exemplar av SECTION-arketypen "Rubrik" (eng. Ad Hoc Heading) längst upp i mallen, direkt under "content" och namnge den "Skada". Dra sedan in den exsisterande Problem/diagnos-grenen under nya "Skada"-rubrikens "items"
+   1. Lägg in ett nytt exemplar av SECTION-arketypen "Rubrik" (eng. Ad Hoc Heading) längst upp i mallen, direkt under "content" och namnge den "Skada". Dra sedan in den existerande Problem/diagnos-grenen under nya "Skada"-rubrikens "items"
    1. Lägg till tre nya exemplar av SECTION-arketypen "Rubrik" under ABCDE och namnge dem
        * A. Fri luftväg (Airway)
        * B. Andning (Breathing)
