@@ -139,7 +139,7 @@ Ha följande tips i åtanke för att testa olika funktioner i verktyget.
 1. Du bör nu ha fått upp en lista där din mall finns med någonstans, klicka på den.
 1. Nu öppnas "editor" för formulär, innehållet från din template ska synas i vänsterspalten, dra in den översta noden (hela trädet följer med) från din template till den stora vita redigeringsytan i mitten av skärmen. Formuläret blir ganska stort med många ramar i ramar.
 1. Ta bort den yttersta/översta ramen genom att gå upp till översta (grå) kanten (där ditt mallnamn sannolikt står), det dyker då upp nya ikoner. Klicka på den röda ikonen som ser ut som ett kryss omringat av fyra hörn = "Remove frame". 
-1. Välj nu ramen "Skada" om du har en sådan (instruktioner har varierat) som bl.a. omsluter "Skada", i högerspalten under rubriken "Presentation" ändra från "Container" till "Collapsible title".
+1. Välj nu ramen "Skada" (om du har en sådan) och i högerspalten under rubriken "Presentation" ändra från "Container" till "Collapsible title".
 1. Välj ramen "Problem/Diagnos" och klicka på röda "Remove frame"
 1. Byt plats på "Klinisk Beskrivning" och "Anatomisk plats"
 1. Välj "Klinisk Beskrivning", ändra i högerspalten "Display in" till 5 lines.
