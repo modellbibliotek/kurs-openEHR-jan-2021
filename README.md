@@ -45,16 +45,12 @@ Vi låtsas nu att vi ska hjälpa ett forskningsprojekt att fånga mer detaljerad
 Ha följande tips i åtanke för att testa olika funktioner i verktyget.
    * Det går att duplicera fält så att alla inställningar följer med, gör det t.ex. för att kopiera mellan fälten `Latitud` och `Longitud`.
    * För värden i `Typ av motion` välj "Internal Coded", tryck sedan den blå knappen "Edit" och skapa en lista med t.ex. de fyra raderna Cykling, Löpning, Skidåkning, Simning.
-   * För värden i `Träningsvana` välj "Internal Coded", tryck sedan den blå knappen "Edit" och skapa en lista med t.ex. raderna nedan. (För att spara tid kan du markera och kopiera hela listan nedan och när du står på första tomma fältet i kolumnen "Text" klistra in hela urklippet så skapas alla tre rader, tryck sedan "Save")
+   * För värden i `Träningsvana` välj "Internal Coded", tryck sedan den blå knappen "Edit" och skapa en lista med t.ex. raderna nedan. (För att spara tid kan du markera och kopiera hela listan nedan, via exempelvis Anteckningar rensa listan från specialtecknen och kopiera igen, och när du står på första tomma fältet i kolumnen "Text" klistra in hela urklippet så skapas alla tre rader, tryck sedan "Save")
+   * Nybörjare
+   * Motionsidrottare
+   * Elitnivå
 
-Nybörjare
-
-Motionsidrottare
-
-Elitnivå
-
-
-    * För inställningarna i fältet `Antal tidigare deltaganden i detta lopp` ta bort bocken framför "unbound" under rubriken "Range". Då kommer nya val fram, sätt/behåll 0 som minimumgräns (för att förbjuda negativa värden) och ta bort bocken framför "Max" så att det inte finns någon övre gräns.
+   * För inställningarna i fältet `Antal tidigare deltaganden i detta lopp` ta bort bocken framför "unbound" under rubriken "Range". Då kommer nya val fram, sätt/behåll 0 som minimumgräns (för att förbjuda negativa värden) och ta bort bocken framför "Max" så att det inte finns någon övre gräns.
    * För fältet `Tid efter start` skulle vi vilja använda datatypen "Duration". Istället för att använda knappen i vänsterkanten kan man välja någon annan datatyp (t.ex. "Any") och genom att klicka i rutan bredvid "Available types" få fram en bläddringslista där bl.a. "Duration" finns.
    * I fält av typen "Quantity" kan man välja att tillåta (flera) olika enheter genom att vid etiketten "Units" trycka på ´+´-knappen. Då kommer det upp en ruta med sökfält för "Category" och "Units" genom att klicka i fältet kommer en bläddringslista upp, men man kan även börja skriva det man söker efter. I Category kan man söka storhet/typ, t.ex "length", och när man valt storhet/typ så kan man klicka i sökfältet "unit" och får då bara upp enheter som passar storheten.
        * För `Sträcka från start` välj att tillåta både meter och kilometer
@@ -68,14 +64,14 @@ Elitnivå
 1. Om du tittar i listan över mallar så ser du att namnet i liten text underst på en av mallarna har ändrats till det du valde i förra steget, men namnet i stor fet text på den raden är oförändrat från originalet. Öppna mallen och ändra den översta nodens namn i mallen till det namn du gav kopian, om du tycker det är snyggare så kan du här ersätta understrecken `_` med riktiga mellanslag (men behåll dina initialer för att undvika sammanblandning senare). Spara mallen. Gå tillbaka till (gröna) fliken med listan över arketyper och mallar och kolla om ändringen slagit igenom. 
 1. Växla tillbaka till fliken med mallen. Kolla att svenska (Sv) är valt (uppe till höger)
 1. Koppla in vår nytillverkade arketyp om motionslopp i mallens fält `Extra information` (som finns under `Problem/Diagnosis`) genom att klicka på fältet Extra information och i listan över kluster-arketyper som då dyker upp i panelen till höger välja din arketyp. Notera att det nu inte går att titta på mallen på engelska och tyska längre, eftersom vår tillagda arketyp bara finns på svenska.
-1. I mallens fält `Loppets namn` vill vi lista de olika varianterna på vätternrundan så att det blir smidigt för personalen. Välj "Free text" sedan "Edit values" kopiera hela listan nedan och när du står i översta tomma fältet klistra in det urklippta och tryck "Save". 
+1. I mallens fält `Loppets namn` vill vi lista de olika varianterna på vätternrundan så att det blir smidigt för personalen. Välj "Free text" sedan "Edit values" kopiera hela listan nedan, rensa från specialtecken, och när du står i översta tomma fältet klistra in det urklippta och tryck "Save". 
 
-Vätternrundan
-Halvvättern 150 km
-Tjejvättern 100 km
-Vätternrundan 100 km
-MTB-Vättern
-Minivättern
+   * Vätternrundan
+   * Halvvättern 150 km
+   * Tjejvättern 100 km
+   * Vätternrundan 100 km
+   * MTB-Vättern
+   * Minivättern
 
 1. Se sedan till att "Limit to list" *inte* är förbockat, annars kan man inte skriva in namn på andra motionslopp när man använder mallen. Som "Default Value" välj Vätternrundan. Spara mallen. 
 1. I inställningarna för fältet `Tid efter start` ta bort bocken framför "Allow all time units" och välj sedan bort "Years", "Months" och "Weeks".
