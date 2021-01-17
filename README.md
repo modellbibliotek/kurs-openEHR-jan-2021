@@ -45,7 +45,7 @@ Vi låtsas nu att vi ska hjälpa ett forskningsprojekt att fånga mer detaljerad
 Ha följande tips i åtanke för att testa olika funktioner i verktyget.
    * Det går att duplicera fält så att alla inställningar följer med, gör det t.ex. för att kopiera mellan fälten `Latitud` och `Longitud`.
    * För värden i `Typ av motion` välj "Internal Coded", tryck sedan den blå knappen "Edit" och skapa en lista med t.ex. de fyra raderna Cykling, Löpning, Skidåkning, Simning.
-   * För värden i `Träningsvana` välj "Internal Coded", tryck sedan den blå knappen "Edit" och skapa en lista med t.ex. raderna medan. (För att spara tid kan du markera och kopiera hela listan nedan och när du tryckt "add" och fått fram en första rad, klistra in urklippet och trycka "Save")
+   * För värden i `Träningsvana` välj "Internal Coded", tryck sedan den blå knappen "Edit" och skapa en lista med t.ex. raderna nedan. (För att spara tid kan du markera och kopiera hela listan nedan och när du står på fösta tomma fältet i kolumnent "Text" klistra in hela urklippet så skapas ala tre rader, tryck sedan "Save")
         * Nybörjare
         * Motionsidrottare
         * Elitnivå.
