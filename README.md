@@ -46,9 +46,9 @@ Ha följande tips i åtanke för att testa olika funktioner i verktyget.
    * Det går att duplicera fält så att alla inställningar följer med, gör det t.ex. för att kopiera mellan fälten `Latitud` och `Longitud`.
    * För värden i `Typ av motion` välj "Internal Coded", tryck sedan den blå knappen "Edit" och skapa en lista med t.ex. de fyra raderna Cykling, Löpning, Skidåkning, Simning.
    * För värden i `Träningsvana` välj "Internal Coded", tryck sedan den blå knappen "Edit" och skapa en lista med t.ex. raderna nedan. (För att spara tid kan du markera och kopiera hela listan nedan, via exempelvis Anteckningar rensa listan från specialtecknen och kopiera igen, och när du står på första tomma fältet i kolumnen "Text" klistra in hela urklippet så skapas alla tre rader, tryck sedan "Save")
-   * Nybörjare
-   * Motionsidrottare
-   * Elitnivå
+    * Nybörjare
+    * Motionsidrottare
+    * Elitnivå
 
    * För inställningarna i fältet `Antal tidigare deltaganden i detta lopp` ta bort bocken framför "unbound" under rubriken "Range". Då kommer nya val fram, sätt/behåll 0 som minimumgräns (för att förbjuda negativa värden) och ta bort bocken framför "Max" så att det inte finns någon övre gräns.
    * För fältet `Tid efter start` skulle vi vilja använda datatypen "Duration". Istället för att använda knappen i vänsterkanten kan man välja någon annan datatyp (t.ex. "Any") och genom att klicka i rutan bredvid "Available types" få fram en bläddringslista där bl.a. "Duration" finns.
