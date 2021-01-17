@@ -59,17 +59,20 @@ Ha följande tips i åtanke för att testa olika funktioner i verktyget.
 1. Spara ditt arbete ofta, och åtminstone nu.
        
 ### 3b. Skapa och justera NN_akutmall_undervisningsexempel_3b
-1. Kopiera exempel-mallen från förra undervisningstillfället, "akutmall_undervisningsexempel_2a" genom att ställa pekaren över mallen i listan av mallar och arketyper så att tre prickar dyker upp på raden i listan, tryck på dem så kommer kopieringsmöjligheten upp, se [copy_template.png](https://github.com/modellbibliotek/kurs-openEHR-jan-2021/blob/main/images/copy_template.png?raw=true). Spara då kopian med ett nytt namn i stil med NN_akutmall_undervisningsexempel_3b (där NN är dina initialer eller annan unik text så att vi inte senare krockar med namn i vår gemensamma labbmiljö för formulär. Undvik åäö i filnamn.)
-1. Om du tittar i listan över mallar så ser du att namnet i liten text underst på en av mallarna har ändrats till det du valde i förra steget, men namnet i stor fet text på den raden är oförändrat från originalet. Öppna mallen ändra den översta nodens namn i mallen till det namn du gav kopian, om du tycker det är snyggare så kan du här ersätta understrecken `_` med riktiga mellanslag (men behåll dina initialer för att undvika sammanblandning senare). Spara mallen. Gå tillbaka till (gröna) fliken med listan över arketyper och mallar och kolla om ändringen slagit igenom. 
+1. Kopiera exempel-mallen från förra undervisningstillfället, "akutmall_undervisningsexempel_2a" genom att ställa pekaren över mallen i listan av mallar och arketyper så att tre prickar dyker upp på raden i listan, tryck på dem så kommer kopieringsmöjligheten upp, se [copy_template.png](https://github.com/modellbibliotek/kurs-openEHR-jan-2021/blob/main/images/copy_template.png?raw=true). Spara då kopian med ett nytt namn i stil med NN_akutmall_undervisningsexempel_3b (där NN är dina initialer eller annan unik text så att vi inte senare krockar med namn i vår gemensamma labbmiljö för formulär. Undvik åäö och bindestreck i filnamn.)
+1. Om du tittar i listan över mallar så ser du att namnet i liten text underst på en av mallarna har ändrats till det du valde i förra steget, men namnet i stor fet text på den raden är oförändrat från originalet. Öppna mallen och ändra den översta nodens namn i mallen till det namn du gav kopian, om du tycker det är snyggare så kan du här ersätta understrecken `_` med riktiga mellanslag (men behåll dina initialer för att undvika sammanblandning senare). Spara mallen. Gå tillbaka till (gröna) fliken med listan över arketyper och mallar och kolla om ändringen slagit igenom. 
 1. Växla tillbaka till fliken med mallen. Kolla att svenska (Sv) är valt (uppe till höger)
-1. Koppla in vår nytillverkade arketyp om motionslopp i mallens fält `Extra information` (som finns under `Problem/Diagnosis`). Notera att det nu inte går att titta på mallen på engelska och tyska längre, eftersom vårt tillagda arketyp bara finns på svenska.
-1. I mallens fält `Loppets namn` vill vi lista de olika varianterna på vätternrundan så att det blir smidigt för personalen. Välj "Free text" sedan "Edit values" kopiera hela listan nedan och när du står i översta tomma fältet klistra in det urkippta och tryck "Save". Se sedan till att "Limit to list" *inte* är förbockat, annars kan man inte skriva in namn på andra motionslopp när man använder mallen. Som "Default Value" välj Vätternrundan.
-   * Vätternrundan
-   * Halvvättern 150 km
-   * Tjejvättern 100 km
-   * Vätternrundan 100 km
-   * MTB-Vättern
-   * Minivättern
+1. Koppla in vår nytillverkade arketyp om motionslopp i mallens fält `Extra information` (som finns under `Problem/Diagnosis`) genom att klicka på fältet Extra information och i listan över kluster-arketyper som då dyker upp i panelen till höger välja din arketyp. Notera att det nu inte går att titta på mallen på engelska och tyska längre, eftersom vår tillagda arketyp bara finns på svenska.
+1. I mallens fält `Loppets namn` vill vi lista de olika varianterna på vätternrundan så att det blir smidigt för personalen. Välj "Free text" sedan "Edit values" kopiera hela listan nedan och när du står i översta tomma fältet klistra in det urklippta och tryck "Save". 
+
+Vätternrundan
+Halvvättern 150 km
+Tjejvättern 100 km
+Vätternrundan 100 km
+MTB-Vättern
+Minivättern
+
+1. Se sedan till att "Limit to list" *inte* är förbockat, annars kan man inte skriva in namn på andra motionslopp när man använder mallen. Som "Default Value" välj Vätternrundan. Spara mallen. 
 1. I inställningarna för fältet `Tid efter start` ta bort bocken framför "Allow all time units" och välj sedan bort "Years", "Months" och "Weeks".
 1. Terminologibind fältet 'Klinisk tolkning', under Andning, till listan med alla barn till snomedbegreppet  85617008 (onormal andningsrytm). Detaljer:
    * I https://browser.ihtsdotools.org/ se till att svenska versionen "Release: Swedish Editioin..." är vald välj sedan fliken `Expression Constraint-sökning` och skriv in `<< 85617008 | onormal andningsrytm |` se bilden [snomed_andningsrytm.png](https://github.com/modellbibliotek/kurs-openEHR-jan-2021/blob/main/images/snomed_andningsrytm.png?raw=true).
