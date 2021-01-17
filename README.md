@@ -162,7 +162,7 @@ Ha följande tips i åtanke för att testa olika funktioner i verktyget.
 1. Testkör, via Preview, logiken/vilkorsstyrningen du nyss byggde 
 1. Snygga till under rubriken "B. Andning (Breathing)"
     * Klicka röda "Remove frame" för "Pulsoximetri"
-    * Klicka röda "Remove frame" för "Inandad syrgas"
+    * Klicka röda "Remove frame" för den översta "Inandad syrgas" (altså den som hör till pulsoximetri, inte den för andning längre ner)
     * Inom den inre ramen "Andning" gör följande:
         * Välj "Förekomst" vi kan förtdliga saker på formulärnivå utifall vi inte skulle ha möjlihget att ändra i arketyp/template.
             * I fliken "Design" i högra spalten ändra "Presentation" till "button group", slå sedan på switcharna "hide label" och Show in columns. Sätt Number of columns till 2.
@@ -175,7 +175,7 @@ Ha följande tips i åtanke för att testa olika funktioner i verktyget.
         * pulsoximetrins "På luft"-checkbox till motsvarande för andning och till "Luft eller syrgas?" i NEWS2.
         * pulsoximetrins "Syrgasflöde" (både värde och enhet) till motsvarande fält för andning
     * Markera andningens hela ram kring "inandad syrgas" som "hidden"
-    * Ledtråd till syrgas-delen av denna överkursuppgift: [syrgas-koppling.png](https://github.com/modellbibliotek/kurs-openEHR-jan-2021/blob/main/images/syrgas-koppling.png?raw=true) (spoiler-alert!)
+    * Ledtråd till syrgas-delen av denna överkursuppgift: [syrgas-koppling.png](https://github.com/modellbibliotek/kurs-openEHR-jan-2021/blob/main/images/syrgas-koppling.png?raw=true) (spoiler-alert!) Det är givetvis ok om ditt formulär ser annorlunda ut grafiskt.
     
 --- Slut på övningar för undervisningstillfälle 3 (18 Januari) ---
 
