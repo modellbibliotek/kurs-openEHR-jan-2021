@@ -150,7 +150,7 @@ Ha följande tips i åtanke för att testa olika funktioner i verktyget.
 1.  ...avsluta "Preview" genom att växla över till "Editor".
 1. Under "Andning" välj ramen "Ospecificerad händelse" och ändra i inställningarna (högerspalten) fältet "max" under "MULTIPLICITY" från 100 till 1. Gör samma sak för "Ospecificerad händelse" under "Puls/Hjärtfrekvens"  och "Blodtryck". Klicka även den röda "remove frame" på alla "Ospecificerad händelse"
 1. Testkör igen med "preview"
-1. Publicera en första version av ditt formulär genom att klicjka på "Publish" övert på skärmen (så att det kan användas i journalsystemet)
+1. Publicera en första version av ditt formulär genom att klicka på "Publish" överst på skärmen (så att det kan användas i journalsystemet)
 1. Nu vill vi ha motionslopp dolt tills man väljer att öppna det med en liten switch.
     * i vänstra kanten, välj "Generics" (liknar legobit)
     * Drag sedan "Boolean" till precis ovanför "motionslopp" och släpp den där och döp om etiketten till "Motionslopp?".
@@ -175,6 +175,7 @@ Ha följande tips i åtanke för att testa olika funktioner i verktyget.
         * pulsoximetrins "På luft"-checkbox till motsvarande för andning och till "Luft eller syrgas?" i NEWS2.
         * pulsoximetrins "Syrgasflöde" (både värde och enhet) till motsvarande fält för andning
     * Markera andningens hela ram kring "inandad syrgas" som "hidden"
+    * Ledtråd till syrgas-delen av denna överkursuppgift: [syrgas-koppling.png](https://github.com/modellbibliotek/kurs-openEHR-jan-2021/blob/main/images/syrgas-koppling.png?raw=true) (spoiler-alert!)
     
 --- Slut på övningar för undervisningstillfälle 3 (18 Januari) ---
 
