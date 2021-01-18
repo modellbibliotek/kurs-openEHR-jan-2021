@@ -1,12 +1,12 @@
 # Övningsmaterial för SFMIs openEHR-kurs (Januari 2021)
 
-Se https://discourse.openehr.org/t/digital-utbildningsserie-om-openehr-nov-2020-jan-2021/1105 och https://www.sfmi.se/ för detaljer om kursen.
+Se https://discourse.openehr.org/t/digital-utbildningsserie-om-openehr-nov-2020-jan-2021/1105 och https://www.sfmi.se/ för detaljer om kursen. Spana gärna in https://discourse.openehr.org/t/openehr-se-borja-lasa-har/391 för mer info om svenskt arketyparbete.
 
-Spana gärna in https://discourse.openehr.org/t/openehr-se-borja-lasa-har/391 för mer info om svenskt arketyparbete.
-
-Vi rekommenderar att du använder Google Chrome för Archetype Designer, men vissa andra moderna webbläsare kan också funka. Var beredd på att det tar tid (uppåt en halvminut) att öppna ett repository och flera sekunder att sedan öppna eller spara en enskild arketyp i verktyget.
+Vi rekommenderar att du använder Google Chrome för Archetype Designer och EHR Studio, men vissa andra moderna webbläsare kan också funka. Var beredd på att det tar tid (uppåt en halvminut) att öppna ett repository och flera sekunder att sedan öppna eller spara en enskild arketyp i verktyget.
 
 Kom ihåg att du kan spana in, översätta och ladda ner arketyper även via https://ckm.openehr.org/ckm/
+
+Hittar du fel och förbättringsmöjligheter i laborationerna nedan, rapportera dem gärna som under fliken "Issues" ovan (Direktlänk: https://github.com/modellbibliotek/kurs-openEHR-jan-2021/issues)
 
 ## Förberedelser att göra innan undervisningstillfälle 3 (18 Januari)
 1. Skapa användare på Github och i Archetype Designer enligt instruktioner i de två första lathundarna på https://openehr.atlassian.net/wiki/spaces/healthmod/pages/966295553/Snabbstartsguide+f+r+modelleringsverktyg
