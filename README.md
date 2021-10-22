@@ -218,6 +218,6 @@ Det är inte självklart vilka Snomedbegrepp som vore lämpliga "föräldrabegre
 Sannolikt skulle man behöva använda/göra terminologiurval för akutvård. (Kanske kopplat till akutmottagningarnas RETTS-koder m.m.?)
 
 ## Valfria extrasteg senare:
-1. Följ lathund 4 `Koppla Archetype Designer till arbetsytan på GitHub` 
+1. [Följ lathund 4 `Koppla Archetype Designer till arbetsytan på GitHub` ](https://openehr.atlassian.net/wiki/spaces/healthmod/pages/966295553/Verktyg+-+snabbstartsguide+f+r+modelleringsverktyg)
 1. Om du vill koppla in fler repositories upprepa lathund 4 med olika innehåll i "Repository". CKM-mirror kan t.ex. vara kul att koppla in och utforska, men tar en del tid att ladda in med sina över 500 arketyper.
 1. Skicka ett mail till asa.skagerhult@regionostergotland.se och erik.sundvall@regionostergotland.se där du berättar ditt GitHub-användarnamn (men _inte_ ditt lösenord) om du vill kunna spara (inte bara läsa) i repository/arbetsytor som använs i nationellt samarbete.
