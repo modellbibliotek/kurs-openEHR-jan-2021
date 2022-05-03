@@ -8,7 +8,7 @@ Kom ihåg att du kan spana in, översätta och ladda ner arketyper även via htt
 
 Hittar du fel och förbättringsmöjligheter i laborationerna nedan, rapportera dem gärna som under fliken "Issues" ovan (Direktlänk: https://github.com/modellbibliotek/kurs-openEHR-jan-2021/issues)
 
-## Förberedelser att göra innan undervisningstillfälle 3 (18 Januari)
+## Förberedelser att göra innan undervisningstillfälle 3
 1. Skapa användare på Github och i Archetype Designer enligt instruktioner i de två första lathundarna på https://openehr.atlassian.net/wiki/spaces/healthmod/pages/966295553/Snabbstartsguide+f+r+modelleringsverktyg
 1. Om du inte redan är inloggad i Archetype Designer (https://tools.openehr.org/designer/) följ lathund 3 (om inloggning)
 1. För att riskfritt kunna experimentera och spara, skapa ett eget repository genom att:
@@ -28,7 +28,7 @@ Hittar du fel och förbättringsmöjligheter i laborationerna nedan, rapportera 
 ### Info om akutmall_undervisningsexempel_2a (kommer att användas i övning 3b)
 Template/mallen akutmall_undervisningsexempel_2a som användes vid andra undervisningstillfället (13 Jan) är en förenklad (inte helt realistisk) delmängd av saker som kan vara intressanta vid akut omhändertagande av vissa skador. Den är utformad för att visa olika användbara egenskaper hos modeller baserade på en kombination av openEHR och Snomed CT.
 
-## Övningar vid undervisningstillfälle 3 (18 Januari)
+## Övningar vid undervisningstillfälle 3 
 
 ### 3a. Skapa och terminologibind arketyp för motionslopp
 Vi låtsas nu att vi ska hjälpa ett forskningsprojekt att fånga mer detaljerade data kring olyckor vid Vätternrundan som kräver vårdinsatser, de av Region Östergötlands mottagningar som brukar hantera flest skador från Vätternrundan är med i studien och har gått med på att utöka sitt olycksfomulär. Vi hittar ingen lämplig färdig arketyp utan bestämmer oss för att författa en egen. Men att göra en särskild vätternrunde-arketyp verkar lite väl specifikt så vi beslutar göra en mer generell om händelser vid motionslopp.
