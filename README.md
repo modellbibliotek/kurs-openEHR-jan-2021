@@ -78,7 +78,7 @@ Ha följande tips i åtanke för att testa olika funktioner i verktyget.
    * Vätternrundan
    * Halvvättern 150 km
    * Tjejvättern 100 km
-   * Vätternrundan 100 km
+   * Vätternrundan 300 km
    * MTB-Vättern
    * Minivättern
 
