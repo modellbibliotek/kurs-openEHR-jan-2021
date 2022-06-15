@@ -30,7 +30,7 @@ Template/mallen akutmall_undervisningsexempel_2a som användes vid andra undervi
 
 ## Övningar vid undervisningstillfälle 3 
 
-### 3a. Skapa och terminologibind arketyp för motionslopp
+### 3a. Arketyper - Skapa och terminologibind arketyp för motionslopp
 Vi låtsas nu att vi ska hjälpa ett forskningsprojekt att fånga mer detaljerade data kring olyckor vid Vätternrundan som kräver vårdinsatser, de av Region Östergötlands mottagningar som brukar hantera flest skador från Vätternrundan är med i studien och har gått med på att utöka sitt olycksfomulär. Vi hittar ingen lämplig färdig arketyp utan bestämmer oss för att författa en egen. Men att göra en särskild vätternrunde-arketyp verkar lite väl specifikt så vi beslutar göra en mer generell om händelser vid motionslopp.
 
 1. Starta Archetype Designer i Google Chrome (https://tools.openehr.org/designer) och logga in med ditt personliga konto (som du skapat själv tidigare, se ovan)
@@ -62,12 +62,13 @@ Ha följande tips i åtanke för att testa olika funktioner i verktyget.
 1. Spara ditt arbete ofta, och åtminstone nu.
 1. Terminologibind åtminstone "skidåkning" i fältet `Typ av motion` till Snomed CT (Lämpligt snomedbegrepp: 45033006). *Se beskrivning av hur på t.ex. https://youtu.be/BqUWVpnFXiw om du inte redan sett annan demo.* Den som har tid över kan börja leta i begreppen under [415577004 | idrott |](https://browser.ihtsdotools.org/?perspective=full&conceptId1=415577004&edition=MAIN/SNOMEDCT-SE/2020-11-30&release=&languages=sv,en) i Snomed CT och försöka terminologibinda fler saker.
 1. Spara ditt arbete ofta, och åtminstone nu.
-2. Bonusuppgift: Skapa och markera ett "Cluster" med namnet "Skyddsutrustning använd på:". Utforska sedan knappen "Paste from clipboard" genom att i det gråa fältet "Paste here" klippa in en lista som  t.ex. nedanstående och välj sedan dataatyper och eventuella värdemängder du tycker kan var lämpliga/roliga (kan modelleras på många sätt, det finns inget facit. Kom ihåg att man behöver balansera arbetssituationan för personalen som ska mata in data mot forskarna som vill använda data om de sak få någon data alls i praktiken...)
+1. Bonusuppgift 1: Skapa och markera ett "Cluster" med namnet "Skyddsutrustning använd på:". Utforska sedan knappen "Paste from clipboard" genom att i det gråa fältet "Paste here" klippa in en lista som  t.ex. nedanstående och välj sedan dataatyper och eventuella värdemängder du tycker kan var lämpliga/roliga (kan modelleras på många sätt, det finns inget facit. Kom ihåg att man behöver balansera arbetssituationan för personalen som ska mata in data mot forskarna som vill använda data om de sak få någon data alls i praktiken...)
     * Huvud 
     * Händer
     * Leder
+ 1. Bonusuppgift 2: Man kan i en arketyp tilåta ett val mellan flera datatyper på samma nod och lämna valet till template-författare att välja vad som passar användningsfallet. Testa t.ex. att genom att för "Händer" kliska i fältet "Available types" och lägga till typen "Boolean" 
        
-### 3b. Skapa och justera NN_akutmall_undervisningsexempel_3b
+### 3b. Templates - Skapa och justera NN_akutmall_undervisningsexempel_3b
 1. Kopiera exempel-mallen från förra undervisningstillfället, "akutmall_undervisningsexempel_2a" genom att ställa pekaren över mallen i listan av mallar och arketyper så att tre prickar dyker upp på raden i listan, tryck på dem så kommer kopieringsmöjligheten upp, se [copy_template.png](https://github.com/modellbibliotek/kurs-openEHR-jan-2021/blob/main/images/copy_template.png?raw=true). Spara då kopian med ett nytt namn i stil med NN_akutmall_undervisningsexempel_3b (där NN är dina initialer eller annan unik text så att vi inte senare krockar med namn i vår gemensamma labbmiljö för formulär. Undvik åäö i filnamn.)
 1. Om du tittar i listan över mallar så ser du att namnet i liten text underst på en av mallarna har ändrats till det du valde i förra steget, men namnet i stor fet text på den raden är oförändrat från originalet. Öppna mallen och ändra den översta nodens namn i mallen till det namn du gav kopian, om du tycker det är snyggare så kan du här ersätta understrecken `_` med riktiga mellanslag (men behåll dina initialer för att undvika sammanblandning senare). Spara mallen. Gå tillbaka till (gröna) fliken med listan över arketyper och mallar och kolla om ändringen slagit igenom. 
 1. Växla tillbaka till fliken med mallen. Kolla att svenska (Sv) är valt (uppe till höger)
