@@ -44,7 +44,13 @@ Vi låtsas nu att vi ska hjälpa ett forskningsprojekt att fånga mer detaljerad
 1. Skapa ett träd (ungefär) som det i bilden [motionslopp.png](https://github.com/modellbibliotek/kurs-openEHR-jan-2021/blob/main/images/motionslopp.png?raw=true) genom att för varje fält/rad klicka på motsvarande symbol i vänsterkanten och ange namn. 
 Ha följande tips i åtanke för att testa olika funktioner i verktyget.
    * Det går att duplicera fält så att alla inställningar följer med, gör det t.ex. för att kopiera mellan fälten `Latitud` och `Longitud`.
-   * För värden i `Typ av motion` välj "Internal Coded", tryck sedan den blå knappen "Edit" och skapa en lista med t.ex. de fyra raderna Cykling, Löpning, Skidåkning, Simning.
+   * För värden i `Typ av motion` välj "Internal Coded", tryck sedan den blå knappen "Edit" och skapa en lista med t.ex. de fyra raderna:
+```
+     Cykling
+     Löpning
+     Skidåkning
+     Simning.
+```
    * För värden i `Träningsvana` välj "Internal Coded", tryck sedan den blå knappen "Edit" och skapa en lista med t.ex. raderna nedan. (För att spara tid kan du markera och kopiera hela listan nedan, via exempelvis Anteckningar rensa listan från specialtecknen och kopiera igen, och när du står på första tomma fältet i kolumnen "Text" klistra in hela urklippet så skapas alla tre rader, tryck sedan "Save")
     * Nybörjare
     * Motionsidrottare
