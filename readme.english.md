@@ -42,7 +42,7 @@ We are now pretending that we are going to help a research project to capture mo
    * In the Version field, nothing should be filled in/changed.
    * In the Original Language field, select English (en) (In the original exercise we used Swedish as the original language since we didn't think it would spread internationally, but in this translated exercise we use english.)
    * Click on the Create button. (If nothing happens, an illegal character may have slipped into the name. Then try changing the name and click again.)
-1. Create a tree (roughly) like the one in the image [motionslopp.png](https://github.com/modellbibliotek/kurs-openEHR-jan-2021/blob/main/images/motionslopp.png?raw=true) by clicking on the corresponding symbol in the left edge for each field/row and entering a name.
+1. Create a tree (roughly) like the one in the image [English: recreational_race_event.png](https://raw.githubusercontent.com/modellbibliotek/kurs-openEHR-jan-2021/main/images/recreational_race_event.png) or [Swedish: motionslopp.png](https://raw.githubusercontent.com/modellbibliotek/kurs-openEHR-jan-2021/main/images/motionslopp.png)  by clicking on the corresponding symbol in the left edge for each field/row and entering a name.
 Keep the following tips in mind to test different features of the tool.
    * It is possible to duplicate fields so that all settings are included, do it e.g. to copy between the `Latitude` and `Longitude` fields.
    * For values ​​in `Type of exercise' select "Internal Coded", then press the blue button "Edit" and create a list with e.g. the four lines:
