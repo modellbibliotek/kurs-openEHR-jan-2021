@@ -227,6 +227,5 @@ It is not obvious which Snomed terms would be suitable "parent terms" for a fiel
 Probably one would have to use/make terminology selection for emergency care. (Perhaps linked to the emergency departments' RETTS codes, etc.?)
 
 ## Optional extra steps later:
-1. [Follow tip 4 `Connect Archetype Designer to workspace on GitHub` ](https://openehr.atlassian.net/wiki/spaces/healthmod/pages/966295553/Verktyg+-+quickstart+f+r+modelingswerktig)
+1. [Follow tip 4 `Connect Archetype Designer to workspace on GitHub` (Swedish)](https://openehr.atlassian.net/wiki/spaces/healthmod/pages/966295553/Verktyg+-+quickstart+f+r+modelingswerktig)
 1. If you want to connect more repositories, repeat step 4 with different contents in "Repository". CKM mirror can e.g. be fun to plug in and explore, but takes some time to load with its 500+ archetypes.
-1. Send an email to asa.skagerhult@regionostergotland.se and erik.sundvall@regionostergotland.se where you tell us your GitHub username (but _not_ your password) if you want to be able to save (not just read) in the repository/workspaces used in national collaboration.
