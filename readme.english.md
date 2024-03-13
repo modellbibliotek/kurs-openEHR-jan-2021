@@ -1,4 +1,5 @@
 # Exercise material for SFMI's openEHR course (January 2021)
+Below you find a slightly edited auto-translation of the Swedish original at https://github.com/modellbibliotek/kurs-openEHR-jan-2021/blob/main/README.md 
 
 See https://discourse.openehr.org/t/digital-utbildningsserie-om-openehr-nov-2020-jan-2021/1105 and https://www.sfmi.se/ for details about the course. Feel free to check out https://discourse.openehr.org/t/openehr-se-borja-lasa-har/391 for more info on Swedish archetype work.
 
@@ -9,12 +10,12 @@ Remember that you can scout, translate and download archetypes also via https://
 If you find errors and opportunities for improvement in the labs below, please report them as under the "Issues" tab above (Direct link: https://github.com/modellbibliotek/kurs-openEHR-jan-2021/issues)
 
 ## Preparations to be made before the teaching session 3
-1. Create users on Github and in Archetype Designer according to instructions in the first two tutorials at https://openehr.atlassian.net/wiki/spaces/healthmod/pages/966295553/Snabbstartsguide+f+r+modelleringsverketig
-1. If you are not already logged in to Archetype Designer (https://tools.openehr.org/designer/) follow tutorial 3 (about logging in)
-1. In order to be able to experiment and save risk-free, create your own repository by:
+1. Create users on Github and in Archetype Designer according to instructions in the first two instructions at https://openehr.atlassian.net/wiki/spaces/healthmod/pages/966295553/Snabbstartsguide+f+r+modelleringsverketig
+1. If you are not already logged in to Archetype Designer (https://tools.openehr.org/designer/) follow instruction 3 (about logging in)
+1. In order to be able to experiment and save withour risking destroying any body elses work, create your own repository by:
     1. Click the green "+ New repository" button
     1. Select: Repository type = Local Folder
-    1. Find a name of your choice and fill in under "Repository name"
+    1. Pick a name of your own choice and fill out under "Repository name"
 1. Download the example files for the course from this GitHub project (in any library on your computer):
    1. Click on https://github.com/modellbibliotek/kurs-openEHR-jan-2021/archive/main.zip and download the file
    1. Unzip the zip file on your computer. (Update 2022: Nowadays it is possible to upload entire ZIP files so they don't necessarily need to be unzipped locally, so in the next step below you can choose to upload the entire zip file instead)
@@ -31,16 +32,16 @@ Template/template akutumall_undervisingsexempel_2a that was used at the second t
 ## Exercises during teaching 3
 
 ### 3a. Archetypes - Create and terminology bind archetype for exercise race
-We are now pretending that we are going to help a research project to capture more detailed data about accidents at the Vätternrun that require medical interventions, those of Region Östergötland's clinics that usually deal with the most injuries from the Vätternrun are in the study and have agreed to expand their accident form. We do not find a suitable ready-made archetype, but decide to write our own. But making a special vätternrunde archetype seems a bit too specific so we decide to make a more general one about events during exercise races.
+We are now pretending that we are going to help a research project to capture more detailed data about accidents at the Vätternrundan https://vatternrundan.se/en/ that require medical interventions, those of Region Östergötland's clinics that usually deal with the most injuries from the Vätternrundan are in the study and have agreed to expand their accident form. We do not find a suitable ready-made archetype, but decide to write our own. But making a special vätternrunde archetype seems a bit too specific so we decide to make a more general one about events during recreational races.
 
 1. Start Archetype Designer in Google Chrome (https://tools.openehr.org/designer) and log in with your personal account (which you created yourself earlier, see above)
-1. Inspect the existing `Problem/Diagnosis' archetype (it will then open as another tab at the top, to the right of the tab for your created repository). Use the drop-down menu in the top right corner to change the language to Swedish. Find and read the description/metadata ("Details" tab in the right-hand column) for the field `Extra information' which is of the type "SLOT" - there we are considering inserting our new exercise race archetype later in the template.
+1. Inspect the existing `Problem/Diagnosis' archetype (it will then open as another tab at the top, to the right of the tab for your created repository). Use the drop-down menu in the top right corner to change the language to Swedish. Find and read the description/metadata ("Details" tab in the right-hand column) for the field `Extra information' which is of the type "SLOT" - there we are considering inserting our new exercise/recreational race archetype later in the template.
 1. Go back to the tab of your created repository and create a new archetype by clicking the big green "New" button and selecting "Archetype".
    * In Rm Type, select CLUSTER
-   * In Concept enter "Motionslopp_NN" where NN is your initials (NOTE: no YYYY or hyphens) or other unique text (so we don't later clash with names in our common lab environment for forms).
+   * In Concept enter "Recreational_race_event_NN" where NN is your initials (NOTE: no YYYY or hyphens) or other unique text (so we don't later clash with names in our common lab environment for forms).
    * In the Version field, nothing should be filled in/changed.
-   * In the Original Language field, select Swedish (sv) (It's ok to use Swedish as the original language if we don't think it will spread internationally, which in this case we don't think.)
-   * Click on the Create button. (If nothing happens, an illegal character may have crept into the name. Then try changing the name and click again.)
+   * In the Original Language field, select English (en) (In the original exercise we used Swedish as the original language since we didn't think it would spread internationally, but in this translated exercise we use english.)
+   * Click on the Create button. (If nothing happens, an illegal character may have slipped into the name. Then try changing the name and click again.)
 1. Create a tree (roughly) like the one in the image [motionslopp.png](https://github.com/modellbibliotek/kurs-openEHR-jan-2021/blob/main/images/motionslopp.png?raw=true) by clicking on the corresponding symbol in the left edge for each field/row and entering a name.
 Keep the following tips in mind to test different features of the tool.
    * It is possible to duplicate fields so that all settings are included, do it e.g. to copy between the `Latitude` and `Longitude` fields.
@@ -49,11 +50,10 @@ Keep the following tips in mind to test different features of the tool.
         * Running
         * Skiing
         * Swimming
-   * For values ​​in `Training habit` select "Internal Coded", then press the blue button "Edit" and create a list with e.g. the lines below. To save time, you can select and copy the entire list below and when you are on the first empty field in the "Text" column, paste the entire clipboard and all three lines will be created, then press "Save". (From some out-of-the-box sources, you may need to copy first via, for example, a text editor such as "Notes", clear the list of the special characters, and then copy again and paste into Archetype Designer)
-        * Beginners
-        * Gym athletes
-        * Elite level
-
+   * For values ​​in `Training experience level` select "Internal Coded", then press the blue button "Edit" and create a list with e.g. the lines below. To save time, you can select and copy the entire list below and when you are on the first empty field in the "Text" column, paste the entire clipboard and all three lines will be created, then press "Save". (From some out-of-the-box sources, you may need to copy first via, for example, a text editor such as "Notes", clear the list of the special characters, and then copy again and paste into Archetype Designer)
+        * Beginner
+        * Intermediate
+        * Elite
    * For the settings in the field `Number of previous participations in this race' remove the tick in front of "unbound" under the heading "Range". Then new choices appear, set/keep 0 as minimum limit (to prohibit negative values) and remove the tick in front of "Max" so there is no upper limit.
    * For the field `Time after start' we would like to use the data type "Duration". Instead of using the button on the left side, you can select another data type (e.g. "Any") and by clicking in the box next to "Available types" bring up a scrolling list where, among other things, "Duration" exists.
    * In fields of the type "Quantity" you can choose to allow (several) different units by pressing the ´+´ button at the label "Units". Then a box will appear with search fields for "Category" and "Units" by clicking in the field a scrolling list will appear, but you can also start typing what you are looking for. In Category, you can search for size/type, e.g. "length", and when you have selected size/type, you can click in the search field "unit" and only get units that fit the size.
@@ -64,23 +64,23 @@ Keep the following tips in mind to test different features of the tool.
 1. Save your work often, and at least now.
 1. Bonus task 1: Create and select a "Cluster" named "Protective equipment used on:". Then explore the button "Paste from clipboard" by cutting in the gray field "Paste here" a list such as below and then select the data types and any value sets you think might be suitable/fun (can be modeled in many ways, there is no conclusion. Remember that you need to balance the work situation for the staff who will enter the data against the researchers who want to use the data on the get any data at all in practice...)
     * Head
-    * Happens
-    * Leading
- 1. Bonus task 2: In an archetype, you can allow a choice between several data types on the same node and leave the choice to the template author to choose what suits the use case. Try e.g. that by clicking for "Hands" in the field "Available types" and adding the type "Boolean"
+    * Hands
+    * Joints (Knee, elbows etc)
+ 1. Bonus task 2: In an archetype, you can allow a choice between several data types on the same node and leave the choice to the template author to choose what suits the use case. Try e.g. that by clicking "Hands" in the field "Available types" and adding the type "Boolean"
        
 ### 3b. Templates - Create and adjust NN_akutmall_undervisningsexempel_3b
-1. Copy the example template from the last teaching session, "akutmall_undervisningsexempel_2a" by placing the pointer over the template in the list of templates and archetypes so that three dots appear on the line in the list, press them and the copy option will appear, see [copy_template.png] (https://github.com/modellbibliotek/kurs-openEHR-jan-2021/blob/main/images/copy_template.png?raw=true). Then save the copy with a new name like NN_akutmall_undervisingsexempel_3b (where NN is your initials or other unique text so that we don't later clash with names in our common lab environment for forms. Avoid ööö in file names.)
+1. Copy the example template from the last teaching session, "akutmall_undervisningsexempel_2a" by placing the pointer over the template in the list of templates and archetypes so that three dots appear on the line in the list, press them and the copy option will appear, see [copy_template.png] (https://github.com/modellbibliotek/kurs-openEHR-jan-2021/blob/main/images/copy_template.png?raw=true). Then save the copy with a new name like NN_akutmall_undervisingsexempel_3b (where NN is your initials or other unique text so that we don't later clash with names in our common lab environment for forms. Avoid åäö in file names.)
 1. If you look in the list of templates, you will see that the name in small text at the bottom of one of the templates has been changed to the one you selected in the previous step, but the name in large bold text on that row is unchanged from the original. Open the template and change the name of the top node in the template to the name you gave the copy, if you think it's nicer you can replace the underscores `_` here with real spaces (but keep your initials to avoid confusion later). Save the template. Go back to the (green) tab with the list of archetypes and templates and check if the change took effect.
 1. Switch back to the template tab. Check that Swedish (Sv) is selected (top right)
 1. Plug in our newly produced archetype about exercise race in the `Extra information' field of the template (found under `Problem/Diagnosis') by clicking on the Extra information field and in the list of cluster archetypes that then appears in the panel on the right, select your archetype. Note that it is now not possible to view the template in English and German anymore, as our added archetype is only available in Swedish.
 1. In the `Race name' field of the template, we want to list the different variants of the Vättern round so that it will be smooth for the staff. Select "Free text" then "Edit values" copy the entire list below, clear of special characters, and when you are in the top blank field paste the cut out and press "Save".
 
-   * The Vättern round
-   * Halvättern 150 km
-   * Tjejvättern 100 km
    * Vätternrundan 300 km
+   * Halvvättern 150 km
+   * Tjejvättern 100 km
+   * Vätternrundan 100 km
    * MTB-Vättern
-   * The Minivätter
+   * Minivättern
 
 1. Then make sure that "Limit to list" is *not* checked, otherwise you cannot enter names of other exercise runs when using the template. As "Default Value" select Vätternrundan. Save the template.
 1. In the settings for the `Time after start` field, remove the tick in front of "Allow all time units" and then deselect "Years", "Months" and "Weeks".
@@ -104,7 +104,7 @@ Keep the following tips in mind to test different features of the tool.
    * Switch back to the Archetype Designer where we were previously editing our template
    * Press "Import" at the top and import the Blood Pressure archetype you just downloaded (the same way you previously imported archetypes in preparation for the practice session)
    * In the template select the node "Pulse/Heart rate" then click on Blood pressure in the list of archetypes on the left, it will then be imported below the "Pulse/Heart rate" archetype
-1. Extinguish parts of the blood pressure archetype
+1. Deselect/exclude parts of the blood pressure archetype
     1. Select `24 hour blood pressure measurement` and press the yellow `0..0`
     1. Under "Unspecified Event", select the "Mean Arterial Pressure" field, hold down the shift key on your keyboard while highlighting "comment" four lines down. Now all four lines should be marked and the "Prohibit all" button appears on the right. Tap it to extinguish the four rows in one swipe.
     1. Similarly, turn off everything except "position" under "state"
@@ -132,12 +132,12 @@ Keep the following tips in mind to test different features of the tool.
 
     |SCTID|Term|
     |---|---|
-    |70407001|battles|
-    |79688008|respiratory obstruction|
-    |217808004|respiratory obstruction caused by foreign body in esophagus|
-    |427286007|obstruction of the lower airways|
-    |68372009|obstruction of the upper airways|
-    |427562009|blood in the upper respiratory tract|
+    |70407001|Stridor|
+    |79688008|Respiratory obstruction|
+    |217808004|Respiratory obstruction due to foreign body in esophagus|
+    |427286007|Obstruction of lower respiratory tract|
+    |68372009|Upper respiratory tract obstruction|
+    |427562009|Blood in upper airway|
 1. Save your work often, and at least now.
 1. Export your template as an "Operational template" (OPT). Details:
    * Click on Export, a box will appear
