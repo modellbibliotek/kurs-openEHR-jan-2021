@@ -75,10 +75,10 @@ Ha följande tips i åtanke för att testa olika funktioner i verktyget.
 1. Koppla in vår nytillverkade arketyp om motionslopp i mallens fält `Extra information` (som finns under `Problem/Diagnosis`) genom att klicka på fältet Extra information och i listan över kluster-arketyper som då dyker upp i panelen till höger välja din arketyp. Notera att det nu inte går att titta på mallen på engelska och tyska längre, eftersom vår tillagda arketyp bara finns på svenska.
 1. I mallens fält `Loppets namn` vill vi lista de olika varianterna på vätternrundan så att det blir smidigt för personalen. Välj "Free text" sedan "Edit values" kopiera hela listan nedan, rensa från specialtecken, och när du står i översta tomma fältet klistra in det urklippta och tryck "Save". 
 
-   * Vätternrundan
+   * Vätternrundan 300 km
    * Halvvättern 150 km
    * Tjejvättern 100 km
-   * Vätternrundan 300 km
+   * Vätternrundan 100 km
    * MTB-Vättern
    * Minivättern
 
