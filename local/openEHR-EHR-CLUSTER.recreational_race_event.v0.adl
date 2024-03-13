@@ -1,0 +1,214 @@
+archetype (adl_version=1.4; uid=efb2b27e-a5a9-400a-ac28-bc669a372c64)
+	openEHR-EHR-CLUSTER.recreational_race_event.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	original_author = <
+		["name"] = <"Erik Sundvall">
+		["organisation"] = <"Karolinska University hospital + Institute & Linköping University, Sweden">
+		["email"] = <"erik.sundvall@regionstockholm.se">
+		["date"] = <"2024-03-13">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["build_uid"] = <"56180b56-2426-3c4b-afb1-3f7b827f0c9f">
+	>
+
+definition
+	CLUSTER[at0000] matches {    -- recreational_race_event
+		items cardinality matches {1..*; unordered} matches {
+			ELEMENT[at0003] occurrences matches {0..1} matches {    -- Name of race
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0004] occurrences matches {0..1} matches {    -- Type of race/exercise
+				value matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0021,    -- Cycling
+							at0022,    -- Running
+							at0023,    -- Skiing
+							at0024]    -- Swimming
+						}
+					}
+				}
+			}
+			ELEMENT[at0013] occurrences matches {0..1} matches {    -- Number of times participated in this race
+				value matches {
+					DV_COUNT matches {
+						magnitude matches {|>=0|}
+					}
+				}
+			}
+			ELEMENT[at0014] occurrences matches {0..1} matches {    -- Time after start
+				value matches {
+					DV_DURATION matches {*}
+				}
+			}
+			CLUSTER[at0015] occurrences matches {0..1} matches {    -- Place
+				items cardinality matches {1..*; unordered} matches {
+					ELEMENT[at0016] occurrences matches {0..1} matches {    -- Distance from start
+						value matches {
+							C_DV_QUANTITY <
+								property = <[openehr::122]>
+								list = <
+									["1"] = <
+										units = <"m">
+									>
+									["2"] = <
+										units = <"km">
+									>
+								>
+							>
+						}
+					}
+					ELEMENT[at0017] occurrences matches {0..1} matches {    -- Address or description
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					CLUSTER[at0018] occurrences matches {0..1} matches {    -- Position
+						items cardinality matches {1..*; unordered} matches {
+							ELEMENT[at0019] occurrences matches {0..1} matches {    -- Longitude
+								value matches {
+									C_DV_QUANTITY <
+										
+										list = <
+											["1"] = <
+												units = <"deg">
+											>
+										>
+									>
+								}
+							}
+							ELEMENT[at0020] occurrences matches {0..1} matches {    -- Latitude
+								value matches {
+									C_DV_QUANTITY <
+										
+										list = <
+											["1"] = <
+												units = <"deg">
+											>
+										>
+									>
+								}
+							}
+						}
+					}
+				}
+			}
+			ELEMENT[at0009] occurrences matches {0..1} matches {    -- Training experience level
+				value matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0010,    -- Beginner
+							at0011,    -- Intermediate
+							at0012]    -- Elite
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"recreational_race_event">
+					description = <"recreational_race_event">
+				>
+				["at0003"] = <
+					text = <"Name of race">
+					description = <"">
+				>
+				["at0004"] = <
+					text = <"Type of race/exercise">
+					description = <"">
+				>
+				["at0009"] = <
+					text = <"Training experience level">
+					description = <"">
+				>
+				["at0010"] = <
+					text = <"Beginner">
+					description = <"">
+				>
+				["at0011"] = <
+					text = <"Intermediate">
+					description = <"">
+				>
+				["at0012"] = <
+					text = <"Elite">
+					description = <"">
+				>
+				["at0013"] = <
+					text = <"Number of times participated in this race">
+					description = <"">
+				>
+				["at0014"] = <
+					text = <"Time after start">
+					description = <"">
+				>
+				["at0015"] = <
+					text = <"Place">
+					description = <"">
+				>
+				["at0016"] = <
+					text = <"Distance from start">
+					description = <"">
+				>
+				["at0017"] = <
+					text = <"Address or description">
+					description = <"">
+				>
+				["at0018"] = <
+					text = <"Position">
+					description = <"">
+				>
+				["at0019"] = <
+					text = <"Longitude">
+					description = <"">
+				>
+				["at0020"] = <
+					text = <"Latitude">
+					description = <"">
+				>
+				["at0021"] = <
+					text = <"Cycling">
+					description = <"">
+				>
+				["at0022"] = <
+					text = <"Running">
+					description = <"">
+				>
+				["at0023"] = <
+					text = <"Skiing">
+					description = <"">
+				>
+				["at0024"] = <
+					text = <"Swimming">
+					description = <"">
+				>
+			>
+		>
+	>
