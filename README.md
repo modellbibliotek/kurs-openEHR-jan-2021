@@ -17,7 +17,7 @@ Hittar du fel och förbättringsmöjligheter i laborationerna nedan, rapportera 
     1. Hitta på valftitt namn och fyll i under "Repository name"
 1. Ladda ner exempelfilerna för kursen från det här GitHub-projektet (i valfritt bibliotek på din dator):
    1. Klicka på https://github.com/modellbibliotek/kurs-openEHR-jan-2021/archive/main.zip och ladda ner filen
-   1. Packa upp zip-filen på din dator. (Uppdatering 2022: Nuförtiden går det att ladd aupp hela ZIP-filer så de behöver inte nödvändightvis packas upp lokalt, så du kan i nästa steg nedan välja ladda upp hela zip-filen istället)
+   1. Packa upp zip-filen på din dator. (Uppdatering 2022: Nuförtiden går det att ladd aupp hela ZIP-filer så de behöver inte nödvändigtvis packas upp lokalt, så du kan i nästa steg nedan välja ladda upp hela zip-filen istället)
 1. I Archetype Designer:
    1. Klicka på det repository som du skapade. Observera att det kan ta en stund (upp till en minut) att öppna det.
    1. Klicka på "Import" längst upp i fönstret. 
