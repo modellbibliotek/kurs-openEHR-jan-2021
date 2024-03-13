@@ -9,7 +9,7 @@ Remember that you can scout, translate and download archetypes also via https://
 
 If you find errors and opportunities for improvement in the labs below, please report them as under the "Issues" tab above (Direct link: https://github.com/modellbibliotek/kurs-openEHR-jan-2021/issues)
 
-## Preparations to be made before the teaching session 3
+## Preparations to be made before session 3
 1. Create users on Github and in Archetype Designer according to instructions in the first two instructions at https://openehr.atlassian.net/wiki/spaces/healthmod/pages/966295553/Snabbstartsguide+f+r+modelleringsverketig
 1. If you are not already logged in to Archetype Designer (https://tools.openehr.org/designer/) follow instruction 3 (about logging in)
 1. In order to be able to experiment and save withour risking destroying any body elses work, create your own repository by:
@@ -29,10 +29,10 @@ If you find errors and opportunities for improvement in the labs below, please r
 ### Info about emergency template_undervisingsexempel_2a (will be used in exercise 3b)
 Template/template akutumall_undervisingsexempel_2a that was used at the second teaching session (13 Jan) is a simplified (not entirely realistic) subset of things that may be interesting in the emergency care of certain injuries. It is designed to demonstrate various useful properties of models based on a combination of openEHR and Snomed CT.
 
-## Exercises during teaching 3
+## Exercises during session 3
 
 ### 3a. Archetypes - Create and terminology bind archetype for exercise race
-We are now pretending that we are going to help a research project to capture more detailed data about accidents at the Vätternrundan https://vatternrundan.se/en/ that require medical interventions, those of Region Östergötland's clinics that usually deal with the most injuries from the Vätternrundan are in the study and have agreed to expand their accident form. We do not find a suitable ready-made archetype, but decide to write our own. But making a special vätternrunde archetype seems a bit too specific so we decide to make a more general one about events during recreational races.
+We are now pretending that we are going to help a research project to capture more detailed data about accidents at the Vätternrundan https://vatternrundan.se/en/ that require medical interventions, those of Region Östergötland's clinics that usually deal with the most injuries from the Vätternrundan are in the study and have agreed to expand their accident form. We do not find a suitable ready-made archetype, but decide to write our own. But making a special vätternrundan archetype seems a bit too specific so we decide to make a more general one about accidents events details during recreational races.
 
 1. Start Archetype Designer in Google Chrome (https://tools.openehr.org/designer) and log in with your personal account (which you created yourself earlier, see above)
 1. Inspect the existing `Problem/Diagnosis` archetype (it will then open as another tab at the top, to the right of the tab for your created repository). Use the drop-down menu in the top right corner to check different available languages (just so you know how to do it), we will use English though. Find and read the description/metadata ("Details" tab in the right-hand column) for the field `Extension' which is of the type "SLOT" - there we are considering inserting our new exercise/recreational race event archetype later in the template.
