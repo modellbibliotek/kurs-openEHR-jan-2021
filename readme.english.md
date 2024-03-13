@@ -45,7 +45,7 @@ We are now pretending that we are going to help a research project to capture mo
 1. Create a tree (roughly) like the one in the image [English: recreational_race_event.png](https://raw.githubusercontent.com/modellbibliotek/kurs-openEHR-jan-2021/main/images/recreational_race_event.png) or [Swedish: motionslopp.png](https://raw.githubusercontent.com/modellbibliotek/kurs-openEHR-jan-2021/main/images/motionslopp.png)  by clicking on the corresponding symbol in the left edge for each field/row and entering a name.
 Keep the following tips in mind to test different features of the tool.
    * It is possible to duplicate fields so that all settings are included, do it e.g. to copy between the `Latitude` and `Longitude` fields.
-   * For values ​​in `Type of exercise' select "Internal Coded", then press the blue button "Edit" and create a list with e.g. the four lines:
+   * For values ​​in `Type of exercise` select "Internal Coded", then press the blue button "Edit" and create a list with e.g. the four lines:
         * Cycling
         * Running
         * Skiing
@@ -54,10 +54,10 @@ Keep the following tips in mind to test different features of the tool.
         * Beginner
         * Intermediate
         * Elite
-   * For the settings in the field `Number of previous participations in this race' remove the tick in front of "unbound" under the heading "Range". Then new choices appear, set/keep 0 as minimum limit (to prohibit negative values) and remove the tick in front of "Max" so there is no upper limit.
-   * For the field `Time after start' we would like to use the data type "Duration". Instead of using the button on the left side, you can select another data type (e.g. "Any") and by clicking in the box next to "Available types" bring up a scrolling list where, among other things, "Duration" exists.
+   * For the settings in the field `Number of previous participations in this race` remove the tick in front of "unbound" under the heading "Range". Then new choices appear, set/keep 0 as minimum limit (to prohibit negative values) and remove the tick in front of "Max" so there is no upper limit.
+   * For the field `Time after start` we would like to use the data type "Duration". Instead of using the button on the left side, you can select another data type (e.g. "Any") and by clicking in the box next to "Available types" bring up a scrolling list where, among other things, "Duration" exists.
    * In fields of the type "Quantity" you can choose to allow (several) different units by pressing the ´+´ button at the label "Units". Then a box will appear with search fields for "Category" and "Units" by clicking in the field a scrolling list will appear, but you can also start typing what you are looking for. In Category, you can search for size/type, e.g. "length", and when you have selected size/type, you can click in the search field "unit" and only get units that fit the size.
-       * For `Distance from start' choose to allow both meters and kilometers
+       * For `Distance from start` choose to allow both meters and kilometers
        * For `Longitude` and for `Latitude` select "degree (deg)" as unit (which is of category "Angle, plane")
 1. Save your work often, and at least now.
 1. Terminology bind at least "skiing" in the `Type of exercise' field to Snomed CT (Appropriate snomed term: 45033006). *See description of how on e.g. https://youtu.be/BqUWVpnFXiw if you haven't already seen another demo.* Those who have time to spare can start looking into the concepts under [415577004 | sport |](https://browser.ihtsdotools.org/?perspective=full&conceptId1=415577004&edition=MAIN/SNOMEDCT-SE/2020-11-30&release=&languages=sv,en) in Snomed CT and try to terminologically bind more things.
