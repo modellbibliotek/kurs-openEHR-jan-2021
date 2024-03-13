@@ -189,7 +189,7 @@ Keep the following tips in mind to test different features of the tool.
             * In the "Content" tab in the right column, under "Selection values" change "Undetectable" to "Breathing not detected"
         * Select "Regularity"
             * In the "Design" tab in the right column, change "Presentation" to "button group", then turn on the "hide label" and Show in columns switches. Set Number of columns to 2.
-1. Premium:
+1. Optional extra exercise:
     * Connect with when+then+otherwise rules:
         * the pulse oximeter's "On air" checkbox to the equivalent of breathing and to "Air or oxygen?" in NEWS2.
         * the pulse oximeter's "Oxygen flow" (both value and unit) to the corresponding field for breathing
